@@ -1,0 +1,23 @@
+<!DOCTYPE MOProjectXML>
+<MOProject Version="0920750">
+ <Basic name="TestOptimization"/>
+ <MoFiles>
+  <MoFile path="C:/Users/jonathan/Documents/GitHub/Integrated-Tool-Suite/Modelica Unit Tests/Spring3D/Spring3d.mo"/>
+  <MoFile path="C:/Users/jonathan/Documents/GitHub/Integrated-Tool-Suite/Modelica Unit Tests/Mass Prismatic/MassPrismaticSystem.mo"/>
+  <MoFile path="false"/>
+ </MoFiles>
+ <MmoFiles>
+  <MmoFile path="Models/Spring3d/Spring3d.mmo"/>
+  <MmoFile path="Models/MassPrismaticSystem/MassPrismaticSystem.mmo"/>
+ </MmoFiles>
+ <Problems>
+  <Problem path="Problems/Optimization/Optimization.mpb"/>
+  <Problem path="Problems/Simulation Spring3d/Simulation Spring3d.mpb"/>
+  <Problem path="Problems/Optimization (2)/Optimization (2).mpb"/>
+ </Problems>
+ <Results>
+  <Result path="Results/Simulation Spring3d result/Simulation Spring3d result.mpb"/>
+  <Result path="Results/Simulation Spring3d result (2)/Simulation Spring3d result (2).mpb"/>
+  <Result path="Results/Simulation Spring3d result (3)/Simulation Spring3d result (3).mpb"/>
+ </Results>
+</MOProject>

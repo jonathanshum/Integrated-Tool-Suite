@@ -1,0 +1,111 @@
+<!DOCTYPE OMCase>
+<OMCase>
+ <OMProblem>
+  <Optimization>
+   <Infos name="Optimization (2)"/>
+   <Models>
+    <Model name="MassPrismaticSystem">
+     <Controlers curType="0">
+      <Controler type="0">
+       <parameters>
+        <MOParameter Type="5" Description="Stop___time" Name="stopTime" Group="" Value="1" DefaultValue="1" Min="0" Max="2147483647" Panel=""/>
+        <MOParameterListed Type="6" Description="Solver" Name="solver" Group="" Value="0" DefaultValue="0" Min="unknown___field" Max="unknown___field" Panel=""/>
+        <MOParameter Type="5" Description="Tolerance" Name="tolerance" Group="" Value="1e-06" DefaultValue="1e-06" Min="0" Max="2147483647" Panel=""/>
+        <MOParameter Type="4" Description="Number___of___output___intervals" Name="NbIntervals" Group="" Value="2" DefaultValue="2" Min="2" Max="2147483647" Panel=""/>
+        <MOParameter Type="5" Description="Start___time" Name="startTime" Group="" Value="0" DefaultValue="0" Min="0" Max="2147483647" Panel=""/>
+        <MOParameter Type="4" Description="Maximum___time___allowed___for___simulation___[sec]___(-1___:___no___limit)" Name="MaxSimTime" Group="" Value="-1" DefaultValue="-1" Min="-1" Max="2147483647" Panel=""/>
+        <MOParameterListed Type="6" Description="Output" Name="outputFormat" Group="" Value="1" DefaultValue="1" Min="unknown___field" Max="unknown___field" Panel=""/>
+       </parameters>
+      </Controler>
+      <Controler type="1">
+       <parameters>
+        <MOParameter Type="5" Description="Stop___time" Name="stop___time" Group="" Value="1" DefaultValue="1" Min="0" Max="2147483647" Panel=""/>
+        <MOParameter Type="5" Description="Tolerance" Name="tolerance" Group="" Value="0.0001" DefaultValue="0.0001" Min="0" Max="2147483647" Panel=""/>
+        <MOParameter Type="4" Description="nInterval" Name="nInterval" Group="" Value="500" DefaultValue="500" Min="0" Max="2147483647" Panel=""/>
+        <MOParameterListed Type="6" Description="Solver" Name="Solver" Group="" Value="8" DefaultValue="8" Min="unknown___field" Max="unknown___field" Panel=""/>
+        <MOParameter Type="4" Description="Maximum___time___allowed___for___simulation___[sec]___(-1___:___no___limit)" Name="MaxSimTime" Group="" Value="-1" DefaultValue="-1" Min="-1" Max="2147483647" Panel=""/>
+        <MOParameterListed Type="6" Description="File___where___variables___are___read___(longer___if___dsres___but___all___variables___are___within)" Name="Final___file___considered" Group="" Value="0" DefaultValue="0" Min="unknown___field" Max="unknown___field" Panel=""/>
+       </parameters>
+      </Controler>
+     </Controlers>
+    </Model>
+   </Models>
+   <Parameters/>
+   <OptimizedVariables/>
+   <Objectives/>
+   <ScannedVariables/>
+   <OverwritedVariables/>
+   <SavedVariables/>
+   <FilesToCopy></FilesToCopy>
+   <OptimAlgos curAlgo="SPEA2Adapt">
+    <OptimAlgo name="NSGA2">
+     <Parameters>
+      <MOParameter Type="4" Description="Population___size" Name="PopulationSize" Group="" Value="50" DefaultValue="50" Min="1" Max="1000" Panel=""/>
+      <MOParameter Type="4" Description="Max___Iterations" Name="MaxIterations" Group="" Value="10000" DefaultValue="10000" Min="1" Max="1000000000" Panel=""/>
+      <MOParameter Type="5" Description="Epsilon___for___real___variables___mutation" Name="DoubleMutEpsilon" Group="" Value="0.01" DefaultValue="0.01" Min="0" Max="1" Panel=""/>
+      <MOParameter Type="5" Description="Mutation___probability___for___real___variables" Name="DoublePMut" Group="" Value="0.35" DefaultValue="0.35" Min="0" Max="1" Panel=""/>
+      <MOParameter Type="5" Description="Crossover___probability___for___real___variables" Name="DoublePCross" Group="" Value="0.25" DefaultValue="0.25" Min="0" Max="1" Panel=""/>
+      <MOParameter Type="5" Description="Mutation___probability___for___integer___variables" Name="IntPMut" Group="" Value="0.35" DefaultValue="0.35" Min="0" Max="1" Panel=""/>
+      <MOParameter Type="5" Description="Crossover___probability___for___integer___variables" Name="IntPCross" Group="" Value="0.25" DefaultValue="0.25" Min="0" Max="1" Panel=""/>
+      <MOParameter Type="5" Description="Mutation___probability___for___boolean___variables" Name="BoolPMut" Group="" Value="0.35" DefaultValue="0.35" Min="0" Max="1" Panel=""/>
+      <MOParameter Type="5" Description="Crossover___probability___for___boolean___variables" Name="BoolPCross" Group="" Value="0.25" DefaultValue="0.25" Min="0" Max="1" Panel=""/>
+      <MOParameter Type="4" Description="Population___saving___frequency___(#___generations,___0___=___save___only___final___state)" Name="SaveFrequency" Group="" Value="1" DefaultValue="1" Min="0" Max="10000000" Panel=""/>
+      <MOParameter Type="3" Description="Use___start___file___(restart___from___previous___result)" Name="UseStartFile" Group="Pursue___computation" Value="false" DefaultValue="false" Min="0" Max="2147483647" Panel=""/>
+      <MOParameter Type="1" Description="Start___file___path___(only___if___Use___start___file___is___checked)" Name="StartFilePath" Group="Pursue___computation" Value="" DefaultValue="" Min="0" Max="2147483647" Panel=""/>
+     </Parameters>
+    </OptimAlgo>
+    <OptimAlgo name="PSO">
+     <Parameters>
+      <MOParameter Type="4" Description="Population___size" Name="PopulationSize" Group="" Value="50" DefaultValue="50" Min="1" Max="1000" Panel=""/>
+      <MOParameter Type="4" Description="Max___Iterations" Name="MaxIterations" Group="" Value="10000" DefaultValue="10000" Min="1" Max="1000000000" Panel=""/>
+      <MOParameter Type="5" Description="Inertia___Factor" Name="Inertia" Group="" Value="1" DefaultValue="1" Min="0" Max="1" Panel=""/>
+      <MOParameter Type="5" Description="Learning___Factor___Alpha" Name="LearningFactorAlpha" Group="" Value="2" DefaultValue="2" Min="0" Max="2" Panel=""/>
+      <MOParameter Type="5" Description="Learning___Factor___Betta" Name="LearningFactorBetta" Group="" Value="2" DefaultValue="2" Min="0" Max="2" Panel=""/>
+      <MOParameter Type="4" Description="Population___saving___frequency___(#___generations,___0___=___save___only___final___state)" Name="SaveFrequency" Group="" Value="1" DefaultValue="1" Min="0" Max="10000000" Panel=""/>
+      <MOParameter Type="3" Description="Use___start___file___(restart___from___previous___result)" Name="UseStartFile" Group="" Value="false" DefaultValue="false" Min="0" Max="2147483647" Panel=""/>
+      <MOParameter Type="1" Description="Start___file___path___(only___if___Use___start___file___is___checked)" Name="StartFilePath" Group="" Value="" DefaultValue="" Min="0" Max="2147483647" Panel=""/>
+     </Parameters>
+    </OptimAlgo>
+    <OptimAlgo name="SA1">
+     <Parameters>
+      <MOParameter Type="4" Description="Max___Iterations" Name="MaxIterations" Group="" Value="10000" DefaultValue="10000" Min="1" Max="1000000000" Panel=""/>
+      <MOParameter Type="5" Description="Initial___Temperature" Name="InitialTemperature" Group="" Value="1" DefaultValue="1" Min="0.001" Max="10000" Panel=""/>
+      <MOParameter Type="5" Description="Final___Temperature" Name="FinalTemperature" Group="" Value="0.01" DefaultValue="0.01" Min="1e-05" Max="100" Panel=""/>
+      <MOParameter Type="5" Description="Decreasing___Factor" Name="DecreasingFactor" Group="" Value="0.9" DefaultValue="0.9" Min="0.1" Max="0.99" Panel=""/>
+      <MOParameter Type="4" Description="Number___of___iterations___with___the___same___temperature" Name="Span" Group="" Value="100" DefaultValue="100" Min="1" Max="10000" Panel=""/>
+      <MOParameter Type="4" Description="Population___saving___frequency___(#___generations,___0___=___save___only___final___state)" Name="SaveFrequency" Group="" Value="1" DefaultValue="1" Min="0" Max="10000000" Panel=""/>
+      <MOParameter Type="3" Description="Use___start___file___(restart___from___previous___result)" Name="UseStartFile" Group="Pursue___computation" Value="false" DefaultValue="false" Min="0" Max="2147483647" Panel=""/>
+      <MOParameter Type="1" Description="Start___file___path___(only___if___Use___start___file___is___checked)" Name="StartFilePath" Group="Pursue___computation" Value="" DefaultValue="" Min="0" Max="2147483647" Panel=""/>
+     </Parameters>
+    </OptimAlgo>
+    <OptimAlgo name="SPEA2">
+     <Parameters>
+      <MOParameter Type="4" Description="Population___size" Name="PopulationSize" Group="" Value="50" DefaultValue="50" Min="1" Max="1000" Panel=""/>
+      <MOParameter Type="4" Description="Max___Iterations" Name="MaxIterations" Group="" Value="100" DefaultValue="100" Min="1" Max="1000" Panel=""/>
+      <MOParameter Type="5" Description="Epsilon___for___real___variables___mutation" Name="DoubleMutEpsilon" Group="" Value="0.01" DefaultValue="0.01" Min="0" Max="1" Panel=""/>
+      <MOParameter Type="5" Description="Mutation___probability___for___real___variables" Name="DoublePMut" Group="" Value="0.35" DefaultValue="0.35" Min="0" Max="1" Panel=""/>
+      <MOParameter Type="5" Description="Crossover___probability___for___real___variables" Name="DoublePCross" Group="" Value="0.25" DefaultValue="0.25" Min="0" Max="1" Panel=""/>
+      <MOParameter Type="5" Description="Mutation___probability___for___integer___variables" Name="IntPMut" Group="" Value="0.35" DefaultValue="0.35" Min="0" Max="1" Panel=""/>
+      <MOParameter Type="5" Description="Crossover___probability___for___integer___variables" Name="IntPCross" Group="" Value="0.25" DefaultValue="0.25" Min="0" Max="1" Panel=""/>
+      <MOParameter Type="5" Description="Mutation___probability___for___boolean___variables" Name="BoolPMut" Group="" Value="0.35" DefaultValue="0.35" Min="0" Max="1" Panel=""/>
+      <MOParameter Type="5" Description="Crossover___probability___for___boolean___variables" Name="BoolPCross" Group="" Value="0.25" DefaultValue="0.25" Min="0" Max="1" Panel=""/>
+      <MOParameter Type="4" Description="Population___saving___frequency___(#___generations,___0___=___save___only___final___state)" Name="SaveFrequency" Group="" Value="1" DefaultValue="1" Min="0" Max="10000000" Panel=""/>
+      <MOParameter Type="3" Description="Use___start___file___(restart___from___previous___result)" Name="UseStartFile" Group="Pursue___computation" Value="false" DefaultValue="false" Min="0" Max="2147483647" Panel=""/>
+      <MOParameter Type="1" Description="Start___file___path___(only___if___Use___start___file___is___checked)" Name="StartFilePath" Group="Pursue___computation" Value="" DefaultValue="" Min="0" Max="2147483647" Panel=""/>
+     </Parameters>
+    </OptimAlgo>
+    <OptimAlgo name="SPEA2Adapt">
+     <Parameters>
+      <MOParameter Type="4" Description="Population___size" Name="PopulationSize" Group="" Value="50" DefaultValue="50" Min="1" Max="1000" Panel=""/>
+      <MOParameter Type="4" Description="OffSpring___size/PopulationSize" Name="OffspringRate" Group="" Value="3" DefaultValue="3" Min="1" Max="1000" Panel=""/>
+      <MOParameter Type="4" Description="Max___Generations" Name="MaxGen" Group="" Value="100" DefaultValue="100" Min="0" Max="100000" Panel=""/>
+      <MOParameter Type="4" Description="Population___saving___frequency___(#___generations,___0___=___save___only___final___state)" Name="SaveFrequency" Group="" Value="1" DefaultValue="1" Min="0" Max="10000000" Panel=""/>
+      <MOParameter Type="3" Description="Use___start___file___(restart___from___previous___result)" Name="UseStartFile" Group="Pursue___computation" Value="false" DefaultValue="false" Min="0" Max="2147483647" Panel=""/>
+      <MOParameter Type="1" Description="Start___file___path___(only___if___Use___start___file___is___checked)" Name="StartFilePath" Group="Pursue___computation" Value="" DefaultValue="" Min="0" Max="2147483647" Panel=""/>
+      <MOParameter Type="3" Description="Reinitialize___StdDeviation___(for___pursuing___optimization___only)" Name="ReinitStdDev" Group="Pursue___computation" Value="0" DefaultValue="0" Min="0" Max="2147483647" Panel=""/>
+     </Parameters>
+    </OptimAlgo>
+   </OptimAlgos>
+  </Optimization>
+ </OMProblem>
+</OMCase>

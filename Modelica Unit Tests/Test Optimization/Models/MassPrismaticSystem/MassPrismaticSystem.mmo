@@ -1,0 +1,7 @@
+<!DOCTYPE MOModelXML>
+<ModModelPlus>
+ <Basic modelName="MassPrismaticSystem" modelType="0" name="MassPrismaticSystem"/>
+ <Infos text=""/>
+ <Variables/>
+ <moDependencies list=""/>
+</ModModelPlus>

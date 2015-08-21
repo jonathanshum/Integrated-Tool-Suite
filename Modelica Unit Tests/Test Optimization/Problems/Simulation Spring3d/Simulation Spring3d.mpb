@@ -1,0 +1,34 @@
+<!DOCTYPE OMCase>
+<OMCase>
+ <OMProblem>
+  <OneSimulation>
+   <Infos model="Spring3d" name="Simulation Spring3d"/>
+   <OverwritedVariables/>
+   <ScannedVariables/>
+   <Controlers curType="0">
+    <Controler type="0">
+     <parameters>
+      <MOParameter Type="5" Description="Stop___time" Name="stopTime" Group="" Value="1" DefaultValue="1" Min="0" Max="2147483647" Panel=""/>
+      <MOParameterListed Type="6" Description="Solver" Name="solver" Group="" Value="0" DefaultValue="0" Min="unknown___field" Max="unknown___field" Panel=""/>
+      <MOParameter Type="5" Description="Tolerance" Name="tolerance" Group="" Value="1e-06" DefaultValue="1e-06" Min="0" Max="2147483647" Panel=""/>
+      <MOParameter Type="4" Description="Number___of___output___intervals" Name="NbIntervals" Group="" Value="10" DefaultValue="2" Min="2" Max="2147483647" Panel=""/>
+      <MOParameter Type="5" Description="Start___time" Name="startTime" Group="" Value="0" DefaultValue="0" Min="0" Max="2147483647" Panel=""/>
+      <MOParameter Type="4" Description="Maximum___time___allowed___for___simulation___[sec]___(-1___:___no___limit)" Name="MaxSimTime" Group="" Value="-1" DefaultValue="-1" Min="-1" Max="2147483647" Panel=""/>
+      <MOParameterListed Type="6" Description="Output" Name="outputFormat" Group="" Value="1" DefaultValue="1" Min="unknown___field" Max="unknown___field" Panel=""/>
+     </parameters>
+    </Controler>
+    <Controler type="1">
+     <parameters>
+      <MOParameter Type="5" Description="Stop___time" Name="stop___time" Group="" Value="1" DefaultValue="1" Min="0" Max="2147483647" Panel=""/>
+      <MOParameter Type="5" Description="Tolerance" Name="tolerance" Group="" Value="0.0001" DefaultValue="0.0001" Min="0" Max="2147483647" Panel=""/>
+      <MOParameter Type="4" Description="nInterval" Name="nInterval" Group="" Value="500" DefaultValue="500" Min="0" Max="2147483647" Panel=""/>
+      <MOParameterListed Type="6" Description="Solver" Name="Solver" Group="" Value="8" DefaultValue="8" Min="unknown___field" Max="unknown___field" Panel=""/>
+      <MOParameter Type="4" Description="Maximum___time___allowed___for___simulation___[sec]___(-1___:___no___limit)" Name="MaxSimTime" Group="" Value="-1" DefaultValue="-1" Min="-1" Max="2147483647" Panel=""/>
+      <MOParameterListed Type="6" Description="File___where___variables___are___read___(longer___if___dsres___but___all___variables___are___within)" Name="Final___file___considered" Group="" Value="0" DefaultValue="0" Min="unknown___field" Max="unknown___field" Panel=""/>
+     </parameters>
+    </Controler>
+   </Controlers>
+   <FilesToCopy></FilesToCopy>
+  </OneSimulation>
+ </OMProblem>
+</OMCase>

@@ -1,0 +1,5627 @@
+<!DOCTYPE OMCase>
+<OMCase IsAResult="true" ProblemType="OneSimulation">
+ <OMProblem>
+  <OneSimulation>
+   <Infos model="Spring3d" name="Simulation Spring3d"/>
+   <OverwritedVariables/>
+   <ScannedVariables/>
+   <Controlers curType="0">
+    <Controler type="0">
+     <parameters>
+      <MOParameter Type="5" Description="Stop___time" Name="stopTime" Group="" Value="1" DefaultValue="1" Min="0" Max="2147483647" Panel=""/>
+      <MOParameterListed Type="6" Description="Solver" Name="solver" Group="" Value="0" DefaultValue="0" Min="unknown___field" Max="unknown___field" Panel=""/>
+      <MOParameter Type="5" Description="Tolerance" Name="tolerance" Group="" Value="1e-06" DefaultValue="1e-06" Min="0" Max="2147483647" Panel=""/>
+      <MOParameter Type="4" Description="Number___of___output___intervals" Name="NbIntervals" Group="" Value="10" DefaultValue="2" Min="2" Max="2147483647" Panel=""/>
+      <MOParameter Type="5" Description="Start___time" Name="startTime" Group="" Value="0" DefaultValue="0" Min="0" Max="2147483647" Panel=""/>
+      <MOParameter Type="4" Description="Maximum___time___allowed___for___simulation___[sec]___(-1___:___no___limit)" Name="MaxSimTime" Group="" Value="-1" DefaultValue="-1" Min="-1" Max="2147483647" Panel=""/>
+      <MOParameterListed Type="6" Description="Output" Name="outputFormat" Group="" Value="1" DefaultValue="1" Min="unknown___field" Max="unknown___field" Panel=""/>
+     </parameters>
+    </Controler>
+    <Controler type="1">
+     <parameters>
+      <MOParameter Type="5" Description="Stop___time" Name="stop___time" Group="" Value="1" DefaultValue="1" Min="0" Max="2147483647" Panel=""/>
+      <MOParameter Type="5" Description="Tolerance" Name="tolerance" Group="" Value="0.0001" DefaultValue="0.0001" Min="0" Max="2147483647" Panel=""/>
+      <MOParameter Type="4" Description="nInterval" Name="nInterval" Group="" Value="500" DefaultValue="500" Min="0" Max="2147483647" Panel=""/>
+      <MOParameterListed Type="6" Description="Solver" Name="Solver" Group="" Value="8" DefaultValue="8" Min="unknown___field" Max="unknown___field" Panel=""/>
+      <MOParameter Type="4" Description="Maximum___time___allowed___for___simulation___[sec]___(-1___:___no___limit)" Name="MaxSimTime" Group="" Value="-1" DefaultValue="-1" Min="-1" Max="2147483647" Panel=""/>
+      <MOParameterListed Type="6" Description="File___where___variables___are___read___(longer___if___dsres___but___all___variables___are___within)" Name="Final___file___considered" Group="" Value="0" DefaultValue="0" Min="unknown___field" Max="unknown___field" Panel=""/>
+     </parameters>
+    </Controler>
+   </Controlers>
+   <FilesToCopy></FilesToCopy>
+  </OneSimulation>
+ </OMProblem>
+ <OMResult>
+  <OneSimResult>
+   <Infos name="Simulation Spring3d result (2)"/>
+   <FinalVariables>
+    <VariableResult Data___type="4784210" Causality="0" Model="Spring3d" Description="" Name="body1.I[1,1]">
+     <Values>
+0.001	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="187466408" Causality="0" Model="Spring3d" Description="" Name="body1.I[1,2]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="7471205" Causality="0" Model="Spring3d" Description="" Name="body1.I[1,3]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="187465928" Causality="0" Model="Spring3d" Description="" Name="body1.I[2,1]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="6553711" Causality="0" Model="Spring3d" Description="" Name="body1.I[2,2]">
+     <Values>
+0.001	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="187465208" Causality="0" Model="Spring3d" Description="" Name="body1.I[2,3]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="6553711" Causality="0" Model="Spring3d" Description="" Name="body1.I[3,1]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="5177416" Causality="0" Model="Spring3d" Description="" Name="body1.I[3,2]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="7340142" Causality="0" Model="Spring3d" Description="" Name="body1.I[3,3]">
+     <Values>
+0.001	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="6553711" Causality="0" Model="Spring3d" Description="" Name="body1.I_11">
+     <Values>
+0.001	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="7143541" Causality="0" Model="Spring3d" Description="" Name="body1.I_21">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="161978048" Causality="0" Model="Spring3d" Description="" Name="body1.I_22">
+     <Values>
+0.001	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="187467248" Causality="0" Model="Spring3d" Description="" Name="body1.I_31">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="6357096" Causality="0" Model="Spring3d" Description="" Name="body1.I_32">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="187466288" Causality="0" Model="Spring3d" Description="" Name="body1.I_33">
+     <Values>
+0.001	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="187468248" Causality="0" Model="Spring3d" Description="" Name="body1.Q_start[1]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="7143521" Causality="0" Model="Spring3d" Description="" Name="body1.Q_start[2]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="6553711" Causality="0" Model="Spring3d" Description="" Name="body1.Q_start[3]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="187466648" Causality="0" Model="Spring3d" Description="" Name="body1.Q_start[4]">
+     <Values>
+1	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="6619253" Causality="0" Model="Spring3d" Description="" Name="body1.R_start.T[1,1]">
+     <Values>
+1	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="187465808" Causality="0" Model="Spring3d" Description="" Name="body1.R_start.T[1,2]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="5505089" Causality="0" Model="Spring3d" Description="" Name="body1.R_start.T[1,3]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="5046337" Causality="0" Model="Spring3d" Description="" Name="body1.R_start.T[2,1]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="6619218" Causality="0" Model="Spring3d" Description="" Name="body1.R_start.T[2,2]">
+     <Values>
+1	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="6553711" Causality="0" Model="Spring3d" Description="" Name="body1.R_start.T[2,3]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="6553711" Causality="0" Model="Spring3d" Description="" Name="body1.R_start.T[3,1]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="187466248" Causality="0" Model="Spring3d" Description="" Name="body1.R_start.T[3,2]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="187466808" Causality="0" Model="Spring3d" Description="" Name="body1.R_start.T[3,3]">
+     <Values>
+1	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155156448" Causality="0" Model="Spring3d" Description="" Name="body1.R_start.w[1]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155156848" Causality="0" Model="Spring3d" Description="" Name="body1.R_start.w[2]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155155448" Causality="0" Model="Spring3d" Description="" Name="body1.R_start.w[3]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155156368" Causality="0" Model="Spring3d" Description="" Name="body1.a_0[1]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155155048" Causality="0" Model="Spring3d" Description="" Name="body1.a_0[2]">
+     <Values>
+-1.20048	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155157648" Causality="0" Model="Spring3d" Description="" Name="body1.a_0[3]">
+     <Values>
+-1.13138	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155156288" Causality="0" Model="Spring3d" Description="" Name="body1.angles_fixed">
+     <Values>
+1	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155156888" Causality="0" Model="Spring3d" Description="" Name="body1.angles_start[1]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155157808" Causality="0" Model="Spring3d" Description="" Name="body1.angles_start[2]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155157768" Causality="0" Model="Spring3d" Description="" Name="body1.angles_start[3]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155155088" Causality="0" Model="Spring3d" Description="" Name="body1.animation">
+     <Values>
+1	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155154288" Causality="0" Model="Spring3d" Description="" Name="body1.cylinder.Extra">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155155288" Causality="0" Model="Spring3d" Description="" Name="body1.cylinder.R.T[1,1]">
+     <Values>
+1	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155154248" Causality="0" Model="Spring3d" Description="" Name="body1.cylinder.R.T[1,2]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155157528" Causality="0" Model="Spring3d" Description="" Name="body1.cylinder.R.T[1,3]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="6619253" Causality="0" Model="Spring3d" Description="" Name="body1.cylinder.R.T[2,1]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155157568" Causality="0" Model="Spring3d" Description="" Name="body1.cylinder.R.T[2,2]">
+     <Values>
+1	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155155968" Causality="0" Model="Spring3d" Description="" Name="body1.cylinder.R.T[2,3]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155155568" Causality="0" Model="Spring3d" Description="" Name="body1.cylinder.R.T[3,1]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155156488" Causality="0" Model="Spring3d" Description="" Name="body1.cylinder.R.T[3,2]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155155768" Causality="0" Model="Spring3d" Description="" Name="body1.cylinder.R.T[3,3]">
+     <Values>
+1	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155155688" Causality="0" Model="Spring3d" Description="" Name="body1.cylinder.R.w[1]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155155528" Causality="0" Model="Spring3d" Description="" Name="body1.cylinder.R.w[2]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155156088" Causality="0" Model="Spring3d" Description="" Name="body1.cylinder.R.w[3]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155157208" Causality="0" Model="Spring3d" Description="" Name="body1.cylinder.e_x[1]">
+     <Values>
+1	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155156048" Causality="0" Model="Spring3d" Description="" Name="body1.cylinder.e_x[3]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155157688" Causality="0" Model="Spring3d" Description="" Name="body1.cylinder.extra">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155158328" Causality="0" Model="Spring3d" Description="" Name="body1.cylinder.height">
+     <Values>
+0.037037	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155159128" Causality="0" Model="Spring3d" Description="" Name="body1.cylinder.length">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155156728" Causality="0" Model="Spring3d" Description="" Name="body1.cylinder.lengthDirection[1]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155160408" Causality="0" Model="Spring3d" Description="" Name="body1.cylinder.lengthDirection[2]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155158408" Causality="0" Model="Spring3d" Description="" Name="body1.cylinder.lengthDirection[3]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155159208" Causality="0" Model="Spring3d" Description="" Name="body1.cylinder.n_z_aux[1]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155158168" Causality="0" Model="Spring3d" Description="" Name="body1.cylinder.n_z_aux[3]">
+     <Values>
+1	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155157728" Causality="0" Model="Spring3d" Description="" Name="body1.cylinder.r[1]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155158128" Causality="0" Model="Spring3d" Description="" Name="body1.cylinder.r[2]">
+     <Values>
+-5.87669	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155158488" Causality="0" Model="Spring3d" Description="" Name="body1.cylinder.r[3]">
+     <Values>
+0.772259	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155158528" Causality="0" Model="Spring3d" Description="" Name="body1.cylinder.rvisobj[1]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155159808" Causality="0" Model="Spring3d" Description="" Name="body1.cylinder.rvisobj[2]">
+     <Values>
+-5.87669	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="7340078" Causality="0" Model="Spring3d" Description="" Name="body1.cylinder.rvisobj[3]">
+     <Values>
+0.772259	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155156928" Causality="0" Model="Spring3d" Description="" Name="body1.cylinder.size[1]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="6619218" Causality="0" Model="Spring3d" Description="" Name="body1.cylinder.size[2]">
+     <Values>
+0.037037	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155158048" Causality="0" Model="Spring3d" Description="" Name="body1.cylinder.size[3]">
+     <Values>
+0.037037	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155157048" Causality="0" Model="Spring3d" Description="" Name="body1.cylinder.specularCoefficient">
+     <Values>
+0.7	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155157968" Causality="0" Model="Spring3d" Description="" Name="body1.cylinder.width">
+     <Values>
+0.037037	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="6619253" Causality="0" Model="Spring3d" Description="" Name="body1.cylinderColor[1]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155157848" Causality="0" Model="Spring3d" Description="" Name="body1.cylinderColor[2]">
+     <Values>
+128	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155159048" Causality="0" Model="Spring3d" Description="" Name="body1.cylinderColor[3]">
+     <Values>
+255	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155159008" Causality="0" Model="Spring3d" Description="" Name="body1.cylinderDiameter">
+     <Values>
+0.037037	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155158568" Causality="0" Model="Spring3d" Description="" Name="body1.enforceStates">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155160488" Causality="0" Model="Spring3d" Description="" Name="body1.frame_a.R.T[1,1]">
+     <Values>
+1	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155158848" Causality="0" Model="Spring3d" Description="" Name="body1.frame_a.R.T[1,2]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155157128" Causality="0" Model="Spring3d" Description="" Name="body1.frame_a.R.T[1,3]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155157288" Causality="0" Model="Spring3d" Description="" Name="body1.frame_a.R.T[2,1]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155158968" Causality="0" Model="Spring3d" Description="" Name="body1.frame_a.R.T[2,2]">
+     <Values>
+1	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155158768" Causality="0" Model="Spring3d" Description="" Name="body1.frame_a.R.T[2,3]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155159168" Causality="0" Model="Spring3d" Description="" Name="body1.frame_a.R.T[3,1]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="5636210" Causality="0" Model="Spring3d" Description="" Name="body1.frame_a.R.T[3,2]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155158368" Causality="0" Model="Spring3d" Description="" Name="body1.frame_a.R.T[3,3]">
+     <Values>
+1	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155160688" Causality="0" Model="Spring3d" Description="" Name="body1.frame_a.R.w[1]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155160528" Causality="0" Model="Spring3d" Description="" Name="body1.frame_a.R.w[2]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155161608" Causality="0" Model="Spring3d" Description="" Name="body1.frame_a.R.w[3]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155160888" Causality="0" Model="Spring3d" Description="" Name="body1.frame_a.f[1]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155161528" Causality="0" Model="Spring3d" Description="" Name="body1.frame_a.f[2]">
+     <Values>
+6.45714	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155159968" Causality="0" Model="Spring3d" Description="" Name="body1.frame_a.f[3]">
+     <Values>
+-0.848536	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155160048" Causality="0" Model="Spring3d" Description="" Name="body1.frame_a.r_0[1]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155160368" Causality="0" Model="Spring3d" Description="" Name="body1.frame_a.r_0[2]">
+     <Values>
+-5.87669	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155159648" Causality="0" Model="Spring3d" Description="" Name="body1.frame_a.r_0[3]">
+     <Values>
+0.772259	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="7340078" Causality="0" Model="Spring3d" Description="" Name="body1.frame_a.t[1]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155160928" Causality="0" Model="Spring3d" Description="" Name="body1.frame_a.t[2]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155160848" Causality="0" Model="Spring3d" Description="" Name="body1.frame_a.t[3]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155161728" Causality="0" Model="Spring3d" Description="" Name="body1.g_0[1]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155161288" Causality="0" Model="Spring3d" Description="" Name="body1.g_0[2]">
+     <Values>
+-9.81	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155161488" Causality="0" Model="Spring3d" Description="" Name="body1.g_0[3]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="6619218" Causality="0" Model="Spring3d" Description="" Name="body1.m">
+     <Values>
+0.75	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155161648" Causality="0" Model="Spring3d" Description="" Name="body1.phi_start[1]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155160448" Causality="0" Model="Spring3d" Description="" Name="body1.phi_start[2]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155159688" Causality="0" Model="Spring3d" Description="" Name="body1.phi_start[3]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155161008" Causality="0" Model="Spring3d" Description="" Name="body1.r_0[1]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155160768" Causality="0" Model="Spring3d" Description="" Name="body1.r_0[2]">
+     <Values>
+-5.87669	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155161328" Causality="0" Model="Spring3d" Description="" Name="body1.r_0[3]">
+     <Values>
+0.772259	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155159368" Causality="0" Model="Spring3d" Description="" Name="body1.r_CM[1]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155162688" Causality="0" Model="Spring3d" Description="" Name="body1.r_CM[2]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="7340078" Causality="0" Model="Spring3d" Description="" Name="body1.r_CM[3]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="7340078" Causality="0" Model="Spring3d" Description="" Name="body1.sequence_angleStates[1]">
+     <Values>
+1	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155162368" Causality="0" Model="Spring3d" Description="" Name="body1.sequence_angleStates[2]">
+     <Values>
+2	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155162848" Causality="0" Model="Spring3d" Description="" Name="body1.sequence_angleStates[3]">
+     <Values>
+3	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155162288" Causality="0" Model="Spring3d" Description="" Name="body1.sequence_start[1]">
+     <Values>
+1	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="6619253" Causality="0" Model="Spring3d" Description="" Name="body1.sequence_start[2]">
+     <Values>
+2	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155163808" Causality="0" Model="Spring3d" Description="" Name="body1.sequence_start[3]">
+     <Values>
+3	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155162488" Causality="0" Model="Spring3d" Description="" Name="body1.specularCoefficient">
+     <Values>
+0.7	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155162248" Causality="0" Model="Spring3d" Description="" Name="body1.sphere.Extra">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155162448" Causality="0" Model="Spring3d" Description="" Name="body1.sphere.R.T[1,1]">
+     <Values>
+1	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155163968" Causality="0" Model="Spring3d" Description="" Name="body1.sphere.R.T[1,2]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="6619253" Causality="0" Model="Spring3d" Description="" Name="body1.sphere.R.T[1,3]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155162608" Causality="0" Model="Spring3d" Description="" Name="body1.sphere.R.T[2,1]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155163528" Causality="0" Model="Spring3d" Description="" Name="body1.sphere.R.T[2,2]">
+     <Values>
+1	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155162928" Causality="0" Model="Spring3d" Description="" Name="body1.sphere.R.T[2,3]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155162408" Causality="0" Model="Spring3d" Description="" Name="body1.sphere.R.T[3,1]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155161928" Causality="0" Model="Spring3d" Description="" Name="body1.sphere.R.T[3,2]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155162648" Causality="0" Model="Spring3d" Description="" Name="body1.sphere.R.T[3,3]">
+     <Values>
+1	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155162808" Causality="0" Model="Spring3d" Description="" Name="body1.sphere.R.w[1]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155160648" Causality="0" Model="Spring3d" Description="" Name="body1.sphere.R.w[2]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155163928" Causality="0" Model="Spring3d" Description="" Name="body1.sphere.R.w[3]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155162968" Causality="0" Model="Spring3d" Description="" Name="body1.sphere.e_x[1]">
+     <Values>
+1	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155161888" Causality="0" Model="Spring3d" Description="" Name="body1.sphere.extra">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155162208" Causality="0" Model="Spring3d" Description="" Name="body1.sphere.height">
+     <Values>
+0.111111	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155161968" Causality="0" Model="Spring3d" Description="" Name="body1.sphere.length">
+     <Values>
+0.111111	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="6619218" Causality="0" Model="Spring3d" Description="" Name="body1.sphere.n_z_aux[3]">
+     <Values>
+1	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155163488" Causality="0" Model="Spring3d" Description="" Name="body1.sphere.r[1]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="6619218" Causality="0" Model="Spring3d" Description="" Name="body1.sphere.r[2]">
+     <Values>
+-5.87669	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155165008" Causality="0" Model="Spring3d" Description="" Name="body1.sphere.r[3]">
+     <Values>
+0.772259	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155164368" Causality="0" Model="Spring3d" Description="" Name="body1.sphere.r_shape[2]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155164728" Causality="0" Model="Spring3d" Description="" Name="body1.sphere.r_shape[3]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155165368" Causality="0" Model="Spring3d" Description="" Name="body1.sphere.size[1]">
+     <Values>
+0.111111	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155166088" Causality="0" Model="Spring3d" Description="" Name="body1.sphere.size[2]">
+     <Values>
+0.111111	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="7340078" Causality="0" Model="Spring3d" Description="" Name="body1.sphere.size[3]">
+     <Values>
+0.111111	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155164688" Causality="0" Model="Spring3d" Description="" Name="body1.sphere.specularCoefficient">
+     <Values>
+0.7	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155164848" Causality="0" Model="Spring3d" Description="" Name="body1.sphere.width">
+     <Values>
+0.111111	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155165488" Causality="0" Model="Spring3d" Description="" Name="body1.sphereColor[1]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155165568" Causality="0" Model="Spring3d" Description="" Name="body1.sphereColor[2]">
+     <Values>
+128	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155163688" Causality="0" Model="Spring3d" Description="" Name="body1.sphereColor[3]">
+     <Values>
+255	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155164448" Causality="0" Model="Spring3d" Description="" Name="body1.sphereDiameter">
+     <Values>
+0.111111	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155166488" Causality="0" Model="Spring3d" Description="" Name="body1.useQuaternions">
+     <Values>
+1	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155163088" Causality="0" Model="Spring3d" Description="" Name="body1.v_0[1]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155164328" Causality="0" Model="Spring3d" Description="" Name="body1.v_0[2]">
+     <Values>
+0.303622	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155164888" Causality="0" Model="Spring3d" Description="" Name="body1.v_0[3]">
+     <Values>
+0.351369	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155166408" Causality="0" Model="Spring3d" Description="" Name="body1.w_0_fixed">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155163768" Causality="0" Model="Spring3d" Description="" Name="body1.w_0_start[1]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155164088" Causality="0" Model="Spring3d" Description="" Name="body1.w_0_start[2]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="6619253" Causality="0" Model="Spring3d" Description="" Name="body1.w_0_start[3]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155164408" Causality="0" Model="Spring3d" Description="" Name="body1.w_a[1]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="6619218" Causality="0" Model="Spring3d" Description="" Name="body1.w_a[2]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155164568" Causality="0" Model="Spring3d" Description="" Name="body1.w_a[3]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155164208" Causality="0" Model="Spring3d" Description="" Name="body1.z_0_fixed">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155168048" Causality="0" Model="Spring3d" Description="" Name="body1.z_0_start[1]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155167408" Causality="0" Model="Spring3d" Description="" Name="body1.z_0_start[2]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155166168" Causality="0" Model="Spring3d" Description="" Name="body1.z_0_start[3]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155167768" Causality="0" Model="Spring3d" Description="" Name="body1.z_a[1]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="6619218" Causality="0" Model="Spring3d" Description="" Name="body1.z_a[2]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155165968" Causality="0" Model="Spring3d" Description="" Name="body1.z_a[3]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155166848" Causality="0" Model="Spring3d" Description="" Name="body1.z_a_start[1]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155167888" Causality="0" Model="Spring3d" Description="" Name="body1.z_a_start[2]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155166688" Causality="0" Model="Spring3d" Description="" Name="body1.z_a_start[3]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155167488" Causality="0" Model="Spring3d" Description="" Name="der($STATESET0.x[1])">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="7340078" Causality="0" Model="Spring3d" Description="" Name="der($STATESET0.x[2])">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155167168" Causality="0" Model="Spring3d" Description="" Name="der($STATESET0.x[3])">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155165928" Causality="0" Model="Spring3d" Description="" Name="der(body1.Q[1])">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155167208" Causality="0" Model="Spring3d" Description="" Name="der(body1.Q[2])">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="6619253" Causality="0" Model="Spring3d" Description="" Name="der(body1.Q[3])">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155168008" Causality="0" Model="Spring3d" Description="" Name="der(body1.Q[4])">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155165808" Causality="0" Model="Spring3d" Description="" Name="der(body1.frame_a.r_0[1])">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155166568" Causality="0" Model="Spring3d" Description="" Name="der(body1.frame_a.r_0[2])">
+     <Values>
+0.303622	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155166128" Causality="0" Model="Spring3d" Description="" Name="der(body1.frame_a.r_0[3])">
+     <Values>
+0.351369	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155167448" Causality="0" Model="Spring3d" Description="" Name="der(body1.v_0[1])">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155166048" Causality="0" Model="Spring3d" Description="" Name="der(body1.v_0[2])">
+     <Values>
+-1.20048	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155136328" Causality="0" Model="Spring3d" Description="" Name="der(body1.v_0[3])">
+     <Values>
+-1.13138	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="6619218" Causality="0" Model="Spring3d" Description="" Name="der(body1.w_a[1])">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155136368" Causality="0" Model="Spring3d" Description="" Name="der(body1.w_a[2])">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155168128" Causality="0" Model="Spring3d" Description="" Name="der(body1.w_a[3])">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155168208" Causality="0" Model="Spring3d" Description="" Name="der(springDamperParallel1.r_rel_a[1])">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155167528" Causality="0" Model="Spring3d" Description="" Name="der(springDamperParallel1.r_rel_a[2])">
+     <Values>
+0.303622	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155138368" Causality="0" Model="Spring3d" Description="" Name="der(springDamperParallel1.r_rel_a[3])">
+     <Values>
+0.351369	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155136488" Causality="0" Model="Spring3d" Description="" Name="der(springDamperParallel1.s)">
+     <Values>
+-0.255254	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155167608" Causality="0" Model="Spring3d" Description="" Name="k">
+     <Values>
+49	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155136448" Causality="0" Model="Spring3d" Description="" Name="springDamperParallel1.animation">
+     <Values>
+1	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155136568" Causality="0" Model="Spring3d" Description="" Name="springDamperParallel1.c">
+     <Values>
+1.2	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155136648" Causality="0" Model="Spring3d" Description="" Name="springDamperParallel1.coilWidth">
+     <Values>
+0.005	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155168448" Causality="0" Model="Spring3d" Description="" Name="springDamperParallel1.color[1]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155136728" Causality="0" Model="Spring3d" Description="" Name="springDamperParallel1.color[2]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155136608" Causality="0" Model="Spring3d" Description="" Name="springDamperParallel1.color[3]">
+     <Values>
+255	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155137368" Causality="0" Model="Spring3d" Description="" Name="springDamperParallel1.d">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155136808" Causality="0" Model="Spring3d" Description="" Name="springDamperParallel1.e_a[1]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155136888" Causality="0" Model="Spring3d" Description="" Name="springDamperParallel1.e_a[2]">
+     <Values>
+-0.991476	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155136408" Causality="0" Model="Spring3d" Description="" Name="springDamperParallel1.e_a[3]">
+     <Values>
+0.13029	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155136288" Causality="0" Model="Spring3d" Description="" Name="springDamperParallel1.f">
+     <Values>
+6.51266	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155168328" Causality="0" Model="Spring3d" Description="" Name="springDamperParallel1.frame_a.R.T[1,1]">
+     <Values>
+1	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155137408" Causality="0" Model="Spring3d" Description="" Name="springDamperParallel1.frame_a.R.T[1,2]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155137288" Causality="0" Model="Spring3d" Description="" Name="springDamperParallel1.frame_a.R.T[1,3]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155168088" Causality="0" Model="Spring3d" Description="" Name="springDamperParallel1.frame_a.R.T[2,1]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155168168" Causality="0" Model="Spring3d" Description="" Name="springDamperParallel1.frame_a.R.T[2,2]">
+     <Values>
+1	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="5636210" Causality="0" Model="Spring3d" Description="" Name="springDamperParallel1.frame_a.R.T[2,3]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="7536686" Causality="0" Model="Spring3d" Description="" Name="springDamperParallel1.frame_a.R.T[3,1]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155137528" Causality="0" Model="Spring3d" Description="" Name="springDamperParallel1.frame_a.R.T[3,2]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="5636210" Causality="0" Model="Spring3d" Description="" Name="springDamperParallel1.frame_a.R.T[3,3]">
+     <Values>
+1	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155138408" Causality="0" Model="Spring3d" Description="" Name="springDamperParallel1.frame_a.R.w[1]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155139048" Causality="0" Model="Spring3d" Description="" Name="springDamperParallel1.frame_a.R.w[2]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155139008" Causality="0" Model="Spring3d" Description="" Name="springDamperParallel1.frame_a.R.w[3]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155137768" Causality="0" Model="Spring3d" Description="" Name="springDamperParallel1.frame_a.f[1]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="6619253" Causality="0" Model="Spring3d" Description="" Name="springDamperParallel1.frame_a.f[2]">
+     <Values>
+6.45714	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155137568" Causality="0" Model="Spring3d" Description="" Name="springDamperParallel1.frame_a.f[3]">
+     <Values>
+-0.848536	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155138048" Causality="0" Model="Spring3d" Description="" Name="springDamperParallel1.frame_a.r_0[1]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155137808" Causality="0" Model="Spring3d" Description="" Name="springDamperParallel1.frame_a.r_0[2]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155138488" Causality="0" Model="Spring3d" Description="" Name="springDamperParallel1.frame_a.r_0[3]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155137648" Causality="0" Model="Spring3d" Description="" Name="springDamperParallel1.frame_a.t[1]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="6619218" Causality="0" Model="Spring3d" Description="" Name="springDamperParallel1.frame_a.t[2]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155137928" Causality="0" Model="Spring3d" Description="" Name="springDamperParallel1.frame_a.t[3]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155138528" Causality="0" Model="Spring3d" Description="" Name="springDamperParallel1.frame_b.R.T[1,1]">
+     <Values>
+1	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155139528" Causality="0" Model="Spring3d" Description="" Name="springDamperParallel1.frame_b.R.T[1,2]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155137608" Causality="0" Model="Spring3d" Description="" Name="springDamperParallel1.frame_b.R.T[1,3]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155138568" Causality="0" Model="Spring3d" Description="" Name="springDamperParallel1.frame_b.R.T[2,1]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155139568" Causality="0" Model="Spring3d" Description="" Name="springDamperParallel1.frame_b.R.T[2,2]">
+     <Values>
+1	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="5636210" Causality="0" Model="Spring3d" Description="" Name="springDamperParallel1.frame_b.R.T[2,3]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="6619218" Causality="0" Model="Spring3d" Description="" Name="springDamperParallel1.frame_b.R.T[3,1]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155139968" Causality="0" Model="Spring3d" Description="" Name="springDamperParallel1.frame_b.R.T[3,2]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155140008" Causality="0" Model="Spring3d" Description="" Name="springDamperParallel1.frame_b.R.T[3,3]">
+     <Values>
+1	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155139248" Causality="0" Model="Spring3d" Description="" Name="springDamperParallel1.frame_b.R.w[1]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155138608" Causality="0" Model="Spring3d" Description="" Name="springDamperParallel1.frame_b.R.w[2]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155137888" Causality="0" Model="Spring3d" Description="" Name="springDamperParallel1.frame_b.R.w[3]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155139288" Causality="0" Model="Spring3d" Description="" Name="springDamperParallel1.frame_b.f[1]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="6619253" Causality="0" Model="Spring3d" Description="" Name="springDamperParallel1.frame_b.f[2]">
+     <Values>
+-6.45714	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155138688" Causality="0" Model="Spring3d" Description="" Name="springDamperParallel1.frame_b.f[3]">
+     <Values>
+0.848536	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155138768" Causality="0" Model="Spring3d" Description="" Name="springDamperParallel1.frame_b.r_0[1]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155138648" Causality="0" Model="Spring3d" Description="" Name="springDamperParallel1.frame_b.r_0[2]">
+     <Values>
+-5.87669	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155139208" Causality="0" Model="Spring3d" Description="" Name="springDamperParallel1.frame_b.r_0[3]">
+     <Values>
+0.772259	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="5636210" Causality="0" Model="Spring3d" Description="" Name="springDamperParallel1.frame_b.t[1]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155139328" Causality="0" Model="Spring3d" Description="" Name="springDamperParallel1.frame_b.t[2]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155142248" Causality="0" Model="Spring3d" Description="" Name="springDamperParallel1.frame_b.t[3]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155141488" Causality="0" Model="Spring3d" Description="" Name="springDamperParallel1.numberOfWindings">
+     <Values>
+5	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155141248" Causality="0" Model="Spring3d" Description="" Name="springDamperParallel1.r_rel_a[1]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155141448" Causality="0" Model="Spring3d" Description="" Name="springDamperParallel1.r_rel_a[2]">
+     <Values>
+-5.87669	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155140808" Causality="0" Model="Spring3d" Description="" Name="springDamperParallel1.r_rel_a[3]">
+     <Values>
+0.772259	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155140888" Causality="0" Model="Spring3d" Description="" Name="springDamperParallel1.s">
+     <Values>
+5.92721	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155142408" Causality="0" Model="Spring3d" Description="" Name="springDamperParallel1.s_small">
+     <Values>
+1e-06	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155138808" Causality="0" Model="Spring3d" Description="" Name="springDamperParallel1.s_unstretched">
+     <Values>
+0.5	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155141048" Causality="0" Model="Spring3d" Description="" Name="springDamperParallel1.shape.Extra">
+     <Values>
+5	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="6619218" Causality="0" Model="Spring3d" Description="" Name="springDamperParallel1.shape.R.T[1,1]">
+     <Values>
+1	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155140128" Causality="0" Model="Spring3d" Description="" Name="springDamperParallel1.shape.R.T[1,2]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155141888" Causality="0" Model="Spring3d" Description="" Name="springDamperParallel1.shape.R.T[1,3]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="7274528" Causality="0" Model="Spring3d" Description="" Name="springDamperParallel1.shape.R.T[2,1]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155139448" Causality="0" Model="Spring3d" Description="" Name="springDamperParallel1.shape.R.T[2,2]">
+     <Values>
+1	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155140408" Causality="0" Model="Spring3d" Description="" Name="springDamperParallel1.shape.R.T[2,3]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155140968" Causality="0" Model="Spring3d" Description="" Name="springDamperParallel1.shape.R.T[3,1]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155140928" Causality="0" Model="Spring3d" Description="" Name="springDamperParallel1.shape.R.T[3,2]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155139408" Causality="0" Model="Spring3d" Description="" Name="springDamperParallel1.shape.R.T[3,3]">
+     <Values>
+1	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155141848" Causality="0" Model="Spring3d" Description="" Name="springDamperParallel1.shape.R.w[1]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155140728" Causality="0" Model="Spring3d" Description="" Name="springDamperParallel1.shape.R.w[2]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="6619253" Causality="0" Model="Spring3d" Description="" Name="springDamperParallel1.shape.R.w[3]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155140648" Causality="0" Model="Spring3d" Description="" Name="springDamperParallel1.shape.e_x[1]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155141808" Causality="0" Model="Spring3d" Description="" Name="springDamperParallel1.shape.e_x[2]">
+     <Values>
+-0.991476	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155142568" Causality="0" Model="Spring3d" Description="" Name="springDamperParallel1.shape.e_x[3]">
+     <Values>
+0.13029	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155140608" Causality="0" Model="Spring3d" Description="" Name="springDamperParallel1.shape.e_y[1]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155141368" Causality="0" Model="Spring3d" Description="" Name="springDamperParallel1.shape.e_y[2]">
+     <Values>
+0.13029	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155139648" Causality="0" Model="Spring3d" Description="" Name="springDamperParallel1.shape.e_y[3]">
+     <Values>
+0.991476	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155141088" Causality="0" Model="Spring3d" Description="" Name="springDamperParallel1.shape.extra">
+     <Values>
+5	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155141408" Causality="0" Model="Spring3d" Description="" Name="springDamperParallel1.shape.height">
+     <Values>
+0.01	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155139368" Causality="0" Model="Spring3d" Description="" Name="springDamperParallel1.shape.length">
+     <Values>
+5.92721	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155143488" Causality="0" Model="Spring3d" Description="" Name="springDamperParallel1.shape.lengthDirection[1]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155143288" Causality="0" Model="Spring3d" Description="" Name="springDamperParallel1.shape.lengthDirection[2]">
+     <Values>
+-0.991476	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155142888" Causality="0" Model="Spring3d" Description="" Name="springDamperParallel1.shape.lengthDirection[3]">
+     <Values>
+0.13029	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155142608" Causality="0" Model="Spring3d" Description="" Name="springDamperParallel1.shape.n_z_aux[1]">
+     <Values>
+-0.13029	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155143728" Causality="0" Model="Spring3d" Description="" Name="springDamperParallel1.shape.n_z_aux[3]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155143128" Causality="0" Model="Spring3d" Description="" Name="springDamperParallel1.shape.r[1]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155143688" Causality="0" Model="Spring3d" Description="" Name="springDamperParallel1.shape.r[2]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155141568" Causality="0" Model="Spring3d" Description="" Name="springDamperParallel1.shape.r[3]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="6619253" Causality="0" Model="Spring3d" Description="" Name="springDamperParallel1.shape.rxvisobj[1]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155142768" Causality="0" Model="Spring3d" Description="" Name="springDamperParallel1.shape.rxvisobj[2]">
+     <Values>
+-0.991476	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="6619218" Causality="0" Model="Spring3d" Description="" Name="springDamperParallel1.shape.rxvisobj[3]">
+     <Values>
+0.13029	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155142968" Causality="0" Model="Spring3d" Description="" Name="springDamperParallel1.shape.ryvisobj[1]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155142728" Causality="0" Model="Spring3d" Description="" Name="springDamperParallel1.shape.ryvisobj[2]">
+     <Values>
+0.13029	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155142928" Causality="0" Model="Spring3d" Description="" Name="springDamperParallel1.shape.ryvisobj[3]">
+     <Values>
+0.991476	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="6619218" Causality="0" Model="Spring3d" Description="" Name="springDamperParallel1.shape.size[1]">
+     <Values>
+5.92721	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155143248" Causality="0" Model="Spring3d" Description="" Name="springDamperParallel1.shape.size[2]">
+     <Values>
+0.05	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155143608" Causality="0" Model="Spring3d" Description="" Name="springDamperParallel1.shape.size[3]">
+     <Values>
+0.01	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="5636210" Causality="0" Model="Spring3d" Description="" Name="springDamperParallel1.shape.width">
+     <Values>
+0.05	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155142688" Causality="0" Model="Spring3d" Description="" Name="springDamperParallel1.specularCoefficient">
+     <Values>
+0.7	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155142128" Causality="0" Model="Spring3d" Description="" Name="springDamperParallel1.width">
+     <Values>
+0.05	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155142168" Causality="0" Model="Spring3d" Description="" Name="time">
+     <Values>
+1	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155142288" Causality="0" Model="Spring3d" Description="" Name="world.animateGravity">
+     <Values>
+1	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155143648" Causality="0" Model="Spring3d" Description="" Name="world.animateWorld">
+     <Values>
+1	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155143208" Causality="0" Model="Spring3d" Description="" Name="world.axisColor_x[1]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155142808" Causality="0" Model="Spring3d" Description="" Name="world.axisColor_x[2]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="5636210" Causality="0" Model="Spring3d" Description="" Name="world.axisColor_x[3]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155141968" Causality="0" Model="Spring3d" Description="" Name="world.axisColor_y[1]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155141688" Causality="0" Model="Spring3d" Description="" Name="world.axisColor_y[2]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155143048" Causality="0" Model="Spring3d" Description="" Name="world.axisColor_y[3]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155142648" Causality="0" Model="Spring3d" Description="" Name="world.axisColor_z[1]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155143768" Causality="0" Model="Spring3d" Description="" Name="world.axisColor_z[2]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="6619253" Causality="0" Model="Spring3d" Description="" Name="world.axisColor_z[3]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155144408" Causality="0" Model="Spring3d" Description="" Name="world.axisDiameter">
+     <Values>
+0.0125	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155144768" Causality="0" Model="Spring3d" Description="" Name="world.axisLength">
+     <Values>
+0.5	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="5636210" Causality="0" Model="Spring3d" Description="" Name="world.axisShowLabels">
+     <Values>
+1	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155146168" Causality="0" Model="Spring3d" Description="" Name="world.defaultArrowDiameter">
+     <Values>
+0.025	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="6619218" Causality="0" Model="Spring3d" Description="" Name="world.defaultAxisLength">
+     <Values>
+0.2	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155145288" Causality="0" Model="Spring3d" Description="" Name="world.defaultBodyDiameter">
+     <Values>
+0.111111	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155144168" Causality="0" Model="Spring3d" Description="" Name="world.defaultForceLength">
+     <Values>
+0.1	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155145688" Causality="0" Model="Spring3d" Description="" Name="world.defaultForceWidth">
+     <Values>
+0.05	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155144048" Causality="0" Model="Spring3d" Description="" Name="world.defaultFrameDiameterFraction">
+     <Values>
+40	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155145128" Causality="0" Model="Spring3d" Description="" Name="world.defaultJointLength">
+     <Values>
+0.1	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155145648" Causality="0" Model="Spring3d" Description="" Name="world.defaultJointWidth">
+     <Values>
+0.05	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155144008" Causality="0" Model="Spring3d" Description="" Name="world.defaultN_to_m">
+     <Values>
+1000	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155143968" Causality="0" Model="Spring3d" Description="" Name="world.defaultNm_to_m">
+     <Values>
+1000	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155144608" Causality="0" Model="Spring3d" Description="" Name="world.defaultSpecularCoefficient">
+     <Values>
+0.7	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155144448" Causality="0" Model="Spring3d" Description="" Name="world.defaultWidthFraction">
+     <Values>
+20	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="7274528" Causality="0" Model="Spring3d" Description="" Name="world.driveTrainMechanics3D">
+     <Values>
+1	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155145048" Causality="0" Model="Spring3d" Description="" Name="world.enableAnimation">
+     <Values>
+1	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="6619253" Causality="0" Model="Spring3d" Description="" Name="world.frame_b.R.T[1,1]">
+     <Values>
+1	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155146408" Causality="0" Model="Spring3d" Description="" Name="world.frame_b.R.T[1,2]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155144488" Causality="0" Model="Spring3d" Description="" Name="world.frame_b.R.T[1,3]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155145728" Causality="0" Model="Spring3d" Description="" Name="world.frame_b.R.T[2,1]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155144288" Causality="0" Model="Spring3d" Description="" Name="world.frame_b.R.T[2,2]">
+     <Values>
+1	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155144328" Causality="0" Model="Spring3d" Description="" Name="world.frame_b.R.T[2,3]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155144928" Causality="0" Model="Spring3d" Description="" Name="world.frame_b.R.T[3,1]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155145528" Causality="0" Model="Spring3d" Description="" Name="world.frame_b.R.T[3,2]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155144088" Causality="0" Model="Spring3d" Description="" Name="world.frame_b.R.T[3,3]">
+     <Values>
+1	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155144568" Causality="0" Model="Spring3d" Description="" Name="world.frame_b.R.w[1]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155146248" Causality="0" Model="Spring3d" Description="" Name="world.frame_b.R.w[2]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155145848" Causality="0" Model="Spring3d" Description="" Name="world.frame_b.R.w[3]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155146848" Causality="0" Model="Spring3d" Description="" Name="world.frame_b.f[1]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="6619253" Causality="0" Model="Spring3d" Description="" Name="world.frame_b.f[2]">
+     <Values>
+-6.45714	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155145208" Causality="0" Model="Spring3d" Description="" Name="world.frame_b.f[3]">
+     <Values>
+0.848536	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="5636210" Causality="0" Model="Spring3d" Description="" Name="world.frame_b.r_0[1]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155146568" Causality="0" Model="Spring3d" Description="" Name="world.frame_b.r_0[2]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155420392" Causality="0" Model="Spring3d" Description="" Name="world.frame_b.r_0[3]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155147408" Causality="0" Model="Spring3d" Description="" Name="world.frame_b.t[1]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155420752" Causality="0" Model="Spring3d" Description="" Name="world.frame_b.t[2]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155147288" Causality="0" Model="Spring3d" Description="" Name="world.frame_b.t[3]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155147528" Causality="0" Model="Spring3d" Description="" Name="world.g">
+     <Values>
+9.81	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="6619218" Causality="0" Model="Spring3d" Description="" Name="world.gravityArrowColor[1]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155146128" Causality="0" Model="Spring3d" Description="" Name="world.gravityArrowColor[2]">
+     <Values>
+230	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155420872" Causality="0" Model="Spring3d" Description="" Name="world.gravityArrowColor[3]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155420192" Causality="0" Model="Spring3d" Description="" Name="world.gravityArrowDiameter">
+     <Values>
+0.0125	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155145928" Causality="0" Model="Spring3d" Description="" Name="world.gravityArrowHead.Extra">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155145968" Causality="0" Model="Spring3d" Description="" Name="world.gravityArrowHead.e_x[1]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155420312" Causality="0" Model="Spring3d" Description="" Name="world.gravityArrowHead.e_x[2]">
+     <Values>
+-1	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155147088" Causality="0" Model="Spring3d" Description="" Name="world.gravityArrowHead.e_x[3]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155147608" Causality="0" Model="Spring3d" Description="" Name="world.gravityArrowHead.e_y[1]">
+     <Values>
+1	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155146648" Causality="0" Model="Spring3d" Description="" Name="world.gravityArrowHead.e_y[2]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155145168" Causality="0" Model="Spring3d" Description="" Name="world.gravityArrowHead.e_y[3]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155147568" Causality="0" Model="Spring3d" Description="" Name="world.gravityArrowHead.extra">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155146728" Causality="0" Model="Spring3d" Description="" Name="world.gravityArrowHead.height">
+     <Values>
+0.0375	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155146368" Causality="0" Model="Spring3d" Description="" Name="world.gravityArrowHead.length">
+     <Values>
+0.05	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155146448" Causality="0" Model="Spring3d" Description="" Name="world.gravityArrowHead.n_z_aux[3]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155420992" Causality="0" Model="Spring3d" Description="" Name="world.gravityArrowHead.r_shape[1]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155420512" Causality="0" Model="Spring3d" Description="" Name="world.gravityArrowHead.r_shape[2]">
+     <Values>
+-0.2	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155422312" Causality="0" Model="Spring3d" Description="" Name="world.gravityArrowHead.r_shape[3]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="6619218" Causality="0" Model="Spring3d" Description="" Name="world.gravityArrowHead.rvisobj[1]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155421632" Causality="0" Model="Spring3d" Description="" Name="world.gravityArrowHead.rvisobj[2]">
+     <Values>
+-0.2	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155421072" Causality="0" Model="Spring3d" Description="" Name="world.gravityArrowHead.rvisobj[3]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155422432" Causality="0" Model="Spring3d" Description="" Name="world.gravityArrowHead.rxvisobj[1]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155422072" Causality="0" Model="Spring3d" Description="" Name="world.gravityArrowHead.rxvisobj[2]">
+     <Values>
+-1	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="5636210" Causality="0" Model="Spring3d" Description="" Name="world.gravityArrowHead.rxvisobj[3]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155421992" Causality="0" Model="Spring3d" Description="" Name="world.gravityArrowHead.ryvisobj[1]">
+     <Values>
+1	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155421832" Causality="0" Model="Spring3d" Description="" Name="world.gravityArrowHead.ryvisobj[2]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155421592" Causality="0" Model="Spring3d" Description="" Name="world.gravityArrowHead.ryvisobj[3]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155420232" Causality="0" Model="Spring3d" Description="" Name="world.gravityArrowHead.size[1]">
+     <Values>
+0.05	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155421432" Causality="0" Model="Spring3d" Description="" Name="world.gravityArrowHead.size[2]">
+     <Values>
+0.0375	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155421912" Causality="0" Model="Spring3d" Description="" Name="world.gravityArrowHead.size[3]">
+     <Values>
+0.0375	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155420952" Causality="0" Model="Spring3d" Description="" Name="world.gravityArrowHead.width">
+     <Values>
+0.0375	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155422632" Causality="0" Model="Spring3d" Description="" Name="world.gravityArrowLength">
+     <Values>
+0.25	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155422552" Causality="0" Model="Spring3d" Description="" Name="world.gravityArrowLine.Extra">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155421952" Causality="0" Model="Spring3d" Description="" Name="world.gravityArrowLine.e_x[1]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155422112" Causality="0" Model="Spring3d" Description="" Name="world.gravityArrowLine.e_x[2]">
+     <Values>
+-1	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155422032" Causality="0" Model="Spring3d" Description="" Name="world.gravityArrowLine.e_x[3]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155422512" Causality="0" Model="Spring3d" Description="" Name="world.gravityArrowLine.e_y[1]">
+     <Values>
+1	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155422672" Causality="0" Model="Spring3d" Description="" Name="world.gravityArrowLine.e_y[2]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155422472" Causality="0" Model="Spring3d" Description="" Name="world.gravityArrowLine.e_y[3]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="6619253" Causality="0" Model="Spring3d" Description="" Name="world.gravityArrowLine.extra">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155421032" Causality="0" Model="Spring3d" Description="" Name="world.gravityArrowLine.height">
+     <Values>
+0.0125	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155421752" Causality="0" Model="Spring3d" Description="" Name="world.gravityArrowLine.length">
+     <Values>
+0.2	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="5636210" Causality="0" Model="Spring3d" Description="" Name="world.gravityArrowLine.n_z_aux[3]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155421872" Causality="0" Model="Spring3d" Description="" Name="world.gravityArrowLine.r_shape[1]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="6619218" Causality="0" Model="Spring3d" Description="" Name="world.gravityArrowLine.r_shape[2]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155421472" Causality="0" Model="Spring3d" Description="" Name="world.gravityArrowLine.r_shape[3]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155421672" Causality="0" Model="Spring3d" Description="" Name="world.gravityArrowLine.rvisobj[1]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155420272" Causality="0" Model="Spring3d" Description="" Name="world.gravityArrowLine.rvisobj[2]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155423672" Causality="0" Model="Spring3d" Description="" Name="world.gravityArrowLine.rvisobj[3]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155422712" Causality="0" Model="Spring3d" Description="" Name="world.gravityArrowLine.rxvisobj[1]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155424552" Causality="0" Model="Spring3d" Description="" Name="world.gravityArrowLine.rxvisobj[2]">
+     <Values>
+-1	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155425112" Causality="0" Model="Spring3d" Description="" Name="world.gravityArrowLine.rxvisobj[3]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155423552" Causality="0" Model="Spring3d" Description="" Name="world.gravityArrowLine.ryvisobj[1]">
+     <Values>
+1	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155423592" Causality="0" Model="Spring3d" Description="" Name="world.gravityArrowLine.ryvisobj[2]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155423752" Causality="0" Model="Spring3d" Description="" Name="world.gravityArrowLine.ryvisobj[3]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155423912" Causality="0" Model="Spring3d" Description="" Name="world.gravityArrowLine.size[1]">
+     <Values>
+0.2	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155424472" Causality="0" Model="Spring3d" Description="" Name="world.gravityArrowLine.size[2]">
+     <Values>
+0.0125	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155423792" Causality="0" Model="Spring3d" Description="" Name="world.gravityArrowLine.size[3]">
+     <Values>
+0.0125	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="6619253" Causality="0" Model="Spring3d" Description="" Name="world.gravityArrowLine.width">
+     <Values>
+0.0125	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155425192" Causality="0" Model="Spring3d" Description="" Name="world.gravityArrowTail[1]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155424992" Causality="0" Model="Spring3d" Description="" Name="world.gravityArrowTail[2]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="6619218" Causality="0" Model="Spring3d" Description="" Name="world.gravityArrowTail[3]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155424712" Causality="0" Model="Spring3d" Description="" Name="world.gravityHeadLength">
+     <Values>
+0.05	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155424952" Causality="0" Model="Spring3d" Description="" Name="world.gravityHeadWidth">
+     <Values>
+0.0375	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155423472" Causality="0" Model="Spring3d" Description="" Name="world.gravityLineLength">
+     <Values>
+0.2	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155423152" Causality="0" Model="Spring3d" Description="" Name="world.gravitySphereColor[1]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155425232" Causality="0" Model="Spring3d" Description="" Name="world.gravitySphereColor[2]">
+     <Values>
+230	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155423192" Causality="0" Model="Spring3d" Description="" Name="world.gravitySphereColor[3]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155423952" Causality="0" Model="Spring3d" Description="" Name="world.gravitySphereDiameter">
+     <Values>
+1.2742e+07	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155423072" Causality="0" Model="Spring3d" Description="" Name="world.gravityType">
+     <Values>
+2	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="5636210" Causality="0" Model="Spring3d" Description="" Name="world.headLength">
+     <Values>
+0.0625	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155423312" Causality="0" Model="Spring3d" Description="" Name="world.headWidth">
+     <Values>
+0.0375	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155422872" Causality="0" Model="Spring3d" Description="" Name="world.labelStart">
+     <Values>
+0.525	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155422912" Causality="0" Model="Spring3d" Description="" Name="world.lineLength">
+     <Values>
+0.4375	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155424592" Causality="0" Model="Spring3d" Description="" Name="world.lineWidth">
+     <Values>
+0.0125	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155427632" Causality="0" Model="Spring3d" Description="" Name="world.mue">
+     <Values>
+3.986e+14	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155426112" Causality="0" Model="Spring3d" Description="" Name="world.n[1]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155426032" Causality="0" Model="Spring3d" Description="" Name="world.n[2]">
+     <Values>
+-1	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155424032" Causality="0" Model="Spring3d" Description="" Name="world.n[3]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="6619218" Causality="0" Model="Spring3d" Description="" Name="world.ndim">
+     <Values>
+1	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="6619253" Causality="0" Model="Spring3d" Description="" Name="world.ndim2">
+     <Values>
+1	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155427752" Causality="0" Model="Spring3d" Description="" Name="world.ndim_pointGravity">
+     <Values>
+1	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155427352" Causality="0" Model="Spring3d" Description="" Name="world.nominalLength">
+     <Values>
+1	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155426592" Causality="0" Model="Spring3d" Description="" Name="world.scaledLabel">
+     <Values>
+0.0375	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155426472" Causality="0" Model="Spring3d" Description="" Name="world.x_arrowHead.Extra">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155425992" Causality="0" Model="Spring3d" Description="" Name="world.x_arrowHead.e_x[1]">
+     <Values>
+1	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155427712" Causality="0" Model="Spring3d" Description="" Name="world.x_arrowHead.e_x[2]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155425632" Causality="0" Model="Spring3d" Description="" Name="world.x_arrowHead.e_x[3]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155425512" Causality="0" Model="Spring3d" Description="" Name="world.x_arrowHead.e_y[1]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155426992" Causality="0" Model="Spring3d" Description="" Name="world.x_arrowHead.e_y[2]">
+     <Values>
+1	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155427112" Causality="0" Model="Spring3d" Description="" Name="world.x_arrowHead.e_y[3]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155425592" Causality="0" Model="Spring3d" Description="" Name="world.x_arrowHead.extra">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155424232" Causality="0" Model="Spring3d" Description="" Name="world.x_arrowHead.height">
+     <Values>
+0.0375	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155426952" Causality="0" Model="Spring3d" Description="" Name="world.x_arrowHead.length">
+     <Values>
+0.0625	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="5636210" Causality="0" Model="Spring3d" Description="" Name="world.x_arrowHead.n_z_aux[3]">
+     <Values>
+1	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155427432" Causality="0" Model="Spring3d" Description="" Name="world.x_arrowHead.rxvisobj[1]">
+     <Values>
+1	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155427552" Causality="0" Model="Spring3d" Description="" Name="world.x_arrowHead.rxvisobj[2]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155426192" Causality="0" Model="Spring3d" Description="" Name="world.x_arrowHead.rxvisobj[3]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155427032" Causality="0" Model="Spring3d" Description="" Name="world.x_arrowHead.ryvisobj[1]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155424112" Causality="0" Model="Spring3d" Description="" Name="world.x_arrowHead.ryvisobj[2]">
+     <Values>
+1	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155426672" Causality="0" Model="Spring3d" Description="" Name="world.x_arrowHead.ryvisobj[3]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155425712" Causality="0" Model="Spring3d" Description="" Name="world.x_arrowHead.size[1]">
+     <Values>
+0.0625	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155425552" Causality="0" Model="Spring3d" Description="" Name="world.x_arrowHead.size[2]">
+     <Values>
+0.0375	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155424632" Causality="0" Model="Spring3d" Description="" Name="world.x_arrowHead.size[3]">
+     <Values>
+0.0375	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155425912" Causality="0" Model="Spring3d" Description="" Name="world.x_arrowHead.width">
+     <Values>
+0.0375	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155428672" Causality="0" Model="Spring3d" Description="" Name="world.x_arrowLine.Extra">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155427272" Causality="0" Model="Spring3d" Description="" Name="world.x_arrowLine.e_x[1]">
+     <Values>
+1	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155428472" Causality="0" Model="Spring3d" Description="" Name="world.x_arrowLine.e_x[2]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155427872" Causality="0" Model="Spring3d" Description="" Name="world.x_arrowLine.e_x[3]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155428872" Causality="0" Model="Spring3d" Description="" Name="world.x_arrowLine.e_y[1]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155427992" Causality="0" Model="Spring3d" Description="" Name="world.x_arrowLine.e_y[2]">
+     <Values>
+1	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155427832" Causality="0" Model="Spring3d" Description="" Name="world.x_arrowLine.e_y[3]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155428432" Causality="0" Model="Spring3d" Description="" Name="world.x_arrowLine.extra">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="6619218" Causality="0" Model="Spring3d" Description="" Name="world.x_arrowLine.height">
+     <Values>
+0.0125	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155428232" Causality="0" Model="Spring3d" Description="" Name="world.x_arrowLine.length">
+     <Values>
+0.4375	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155429392" Causality="0" Model="Spring3d" Description="" Name="world.x_arrowLine.n_z_aux[3]">
+     <Values>
+1	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="5636210" Causality="0" Model="Spring3d" Description="" Name="world.x_arrowLine.rxvisobj[1]">
+     <Values>
+1	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155428632" Causality="0" Model="Spring3d" Description="" Name="world.x_arrowLine.rxvisobj[2]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155428712" Causality="0" Model="Spring3d" Description="" Name="world.x_arrowLine.rxvisobj[3]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155428552" Causality="0" Model="Spring3d" Description="" Name="world.x_arrowLine.ryvisobj[1]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155426632" Causality="0" Model="Spring3d" Description="" Name="world.x_arrowLine.ryvisobj[2]">
+     <Values>
+1	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155428992" Causality="0" Model="Spring3d" Description="" Name="world.x_arrowLine.ryvisobj[3]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155428512" Causality="0" Model="Spring3d" Description="" Name="world.x_arrowLine.size[1]">
+     <Values>
+0.4375	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155427912" Causality="0" Model="Spring3d" Description="" Name="world.x_arrowLine.size[2]">
+     <Values>
+0.0125	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155428832" Causality="0" Model="Spring3d" Description="" Name="world.x_arrowLine.size[3]">
+     <Values>
+0.0125	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155430152" Causality="0" Model="Spring3d" Description="" Name="world.x_arrowLine.width">
+     <Values>
+0.0125	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155428752" Causality="0" Model="Spring3d" Description="" Name="world.x_label.R.T[1,1]">
+     <Values>
+1	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="6619218" Causality="0" Model="Spring3d" Description="" Name="world.x_label.R.T[1,2]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155428032" Causality="0" Model="Spring3d" Description="" Name="world.x_label.R.T[1,3]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="5636210" Causality="0" Model="Spring3d" Description="" Name="world.x_label.R.T[2,1]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155429032" Causality="0" Model="Spring3d" Description="" Name="world.x_label.R.T[2,2]">
+     <Values>
+1	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155427072" Causality="0" Model="Spring3d" Description="" Name="world.x_label.R.T[2,3]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155428272" Causality="0" Model="Spring3d" Description="" Name="world.x_label.R.T[3,1]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155426712" Causality="0" Model="Spring3d" Description="" Name="world.x_label.R.T[3,2]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155427592" Causality="0" Model="Spring3d" Description="" Name="world.x_label.R.T[3,3]">
+     <Values>
+1	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="6619253" Causality="0" Model="Spring3d" Description="" Name="world.x_label.R.w[1]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155428792" Causality="0" Model="Spring3d" Description="" Name="world.x_label.R.w[2]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155398472" Causality="0" Model="Spring3d" Description="" Name="world.x_label.R.w[3]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155429112" Causality="0" Model="Spring3d" Description="" Name="world.x_label.R_lines[1,1]">
+     <Values>
+1	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155399192" Causality="0" Model="Spring3d" Description="" Name="world.x_label.R_lines[1,2]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155429312" Causality="0" Model="Spring3d" Description="" Name="world.x_label.R_lines[1,3]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155430352" Causality="0" Model="Spring3d" Description="" Name="world.x_label.R_lines[2,1]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155429152" Causality="0" Model="Spring3d" Description="" Name="world.x_label.R_lines[2,2]">
+     <Values>
+1	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155429192" Causality="0" Model="Spring3d" Description="" Name="world.x_label.R_lines[2,3]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155430912" Causality="0" Model="Spring3d" Description="" Name="world.x_label.R_lines[3,1]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155430712" Causality="0" Model="Spring3d" Description="" Name="world.x_label.R_lines[3,2]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="6619253" Causality="0" Model="Spring3d" Description="" Name="world.x_label.R_lines[3,3]">
+     <Values>
+1	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155429552" Causality="0" Model="Spring3d" Description="" Name="world.x_label.R_rel[1,1]">
+     <Values>
+1	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155430672" Causality="0" Model="Spring3d" Description="" Name="world.x_label.R_rel[1,2]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155398952" Causality="0" Model="Spring3d" Description="" Name="world.x_label.R_rel[1,3]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155429472" Causality="0" Model="Spring3d" Description="" Name="world.x_label.R_rel[2,1]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155429512" Causality="0" Model="Spring3d" Description="" Name="world.x_label.R_rel[2,2]">
+     <Values>
+1	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155399592" Causality="0" Model="Spring3d" Description="" Name="world.x_label.R_rel[2,3]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155429272" Causality="0" Model="Spring3d" Description="" Name="world.x_label.R_rel[3,1]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155429952" Causality="0" Model="Spring3d" Description="" Name="world.x_label.R_rel[3,2]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155430072" Causality="0" Model="Spring3d" Description="" Name="world.x_label.R_rel[3,3]">
+     <Values>
+1	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="6619253" Causality="0" Model="Spring3d" Description="" Name="world.x_label.color[1]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155429632" Causality="0" Model="Spring3d" Description="" Name="world.x_label.color[2]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155430472" Causality="0" Model="Spring3d" Description="" Name="world.x_label.color[3]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155430272" Causality="0" Model="Spring3d" Description="" Name="world.x_label.cylinders[1].Extra">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155430312" Causality="0" Model="Spring3d" Description="" Name="world.x_label.cylinders[1].R.T[1,1]">
+     <Values>
+1	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155430792" Causality="0" Model="Spring3d" Description="" Name="world.x_label.cylinders[1].R.T[1,2]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="5636210" Causality="0" Model="Spring3d" Description="" Name="world.x_label.cylinders[1].R.T[1,3]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155429832" Causality="0" Model="Spring3d" Description="" Name="world.x_label.cylinders[1].R.T[2,1]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155429352" Causality="0" Model="Spring3d" Description="" Name="world.x_label.cylinders[1].R.T[2,2]">
+     <Values>
+1	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="6619218" Causality="0" Model="Spring3d" Description="" Name="world.x_label.cylinders[1].R.T[2,3]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155429232" Causality="0" Model="Spring3d" Description="" Name="world.x_label.cylinders[1].R.T[3,1]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="6619218" Causality="0" Model="Spring3d" Description="" Name="world.x_label.cylinders[1].R.T[3,2]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155398752" Causality="0" Model="Spring3d" Description="" Name="world.x_label.cylinders[1].R.T[3,3]">
+     <Values>
+1	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155399352" Causality="0" Model="Spring3d" Description="" Name="world.x_label.cylinders[1].R.w[1]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155398672" Causality="0" Model="Spring3d" Description="" Name="world.x_label.cylinders[1].R.w[2]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155399472" Causality="0" Model="Spring3d" Description="" Name="world.x_label.cylinders[1].R.w[3]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155399152" Causality="0" Model="Spring3d" Description="" Name="world.x_label.cylinders[1].e_x[1]">
+     <Values>
+0.707107	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155398992" Causality="0" Model="Spring3d" Description="" Name="world.x_label.cylinders[1].e_x[2]">
+     <Values>
+0.707107	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155400872" Causality="0" Model="Spring3d" Description="" Name="world.x_label.cylinders[1].e_y[1]">
+     <Values>
+-0.707107	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155400752" Causality="0" Model="Spring3d" Description="" Name="world.x_label.cylinders[1].e_y[2]">
+     <Values>
+0.707107	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155400232" Causality="0" Model="Spring3d" Description="" Name="world.x_label.cylinders[1].e_y[3]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155399832" Causality="0" Model="Spring3d" Description="" Name="world.x_label.cylinders[1].extra">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155400592" Causality="0" Model="Spring3d" Description="" Name="world.x_label.cylinders[1].height">
+     <Values>
+0.0125	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155399232" Causality="0" Model="Spring3d" Description="" Name="world.x_label.cylinders[1].length">
+     <Values>
+0.053033	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155398792" Causality="0" Model="Spring3d" Description="" Name="world.x_label.cylinders[1].n_z_aux[3]">
+     <Values>
+0.707107	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155399272" Causality="0" Model="Spring3d" Description="" Name="world.x_label.cylinders[1].r[1]">
+     <Values>
+0.525	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155398872" Causality="0" Model="Spring3d" Description="" Name="world.x_label.cylinders[1].r[2]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155398832" Causality="0" Model="Spring3d" Description="" Name="world.x_label.cylinders[1].r[3]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155399792" Causality="0" Model="Spring3d" Description="" Name="world.x_label.cylinders[1].rvisobj[1]">
+     <Values>
+0.525	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155398712" Causality="0" Model="Spring3d" Description="" Name="world.x_label.cylinders[1].rvisobj[2]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155400672" Causality="0" Model="Spring3d" Description="" Name="world.x_label.cylinders[1].rvisobj[3]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="6619253" Causality="0" Model="Spring3d" Description="" Name="world.x_label.cylinders[1].rxvisobj[1]">
+     <Values>
+0.707107	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155400632" Causality="0" Model="Spring3d" Description="" Name="world.x_label.cylinders[1].rxvisobj[2]">
+     <Values>
+0.707107	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155399952" Causality="0" Model="Spring3d" Description="" Name="world.x_label.cylinders[1].ryvisobj[1]">
+     <Values>
+-0.707107	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155399032" Causality="0" Model="Spring3d" Description="" Name="world.x_label.cylinders[1].ryvisobj[2]">
+     <Values>
+0.707107	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155399992" Causality="0" Model="Spring3d" Description="" Name="world.x_label.cylinders[1].ryvisobj[3]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155400392" Causality="0" Model="Spring3d" Description="" Name="world.x_label.cylinders[1].size[1]">
+     <Values>
+0.053033	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155400152" Causality="0" Model="Spring3d" Description="" Name="world.x_label.cylinders[1].size[2]">
+     <Values>
+0.0125	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155400032" Causality="0" Model="Spring3d" Description="" Name="world.x_label.cylinders[1].size[3]">
+     <Values>
+0.0125	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155398392" Causality="0" Model="Spring3d" Description="" Name="world.x_label.cylinders[1].specularCoefficient">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155400192" Causality="0" Model="Spring3d" Description="" Name="world.x_label.cylinders[1].width">
+     <Values>
+0.0125	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="5636210" Causality="0" Model="Spring3d" Description="" Name="world.x_label.cylinders[2].Extra">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="5636210" Causality="0" Model="Spring3d" Description="" Name="world.x_label.cylinders[2].R.T[1,1]">
+     <Values>
+1	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155403112" Causality="0" Model="Spring3d" Description="" Name="world.x_label.cylinders[2].R.T[1,2]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155402752" Causality="0" Model="Spring3d" Description="" Name="world.x_label.cylinders[2].R.T[1,3]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155401232" Causality="0" Model="Spring3d" Description="" Name="world.x_label.cylinders[2].R.T[2,1]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155400352" Causality="0" Model="Spring3d" Description="" Name="world.x_label.cylinders[2].R.T[2,2]">
+     <Values>
+1	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155403232" Causality="0" Model="Spring3d" Description="" Name="world.x_label.cylinders[2].R.T[2,3]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155403432" Causality="0" Model="Spring3d" Description="" Name="world.x_label.cylinders[2].R.T[3,1]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155403352" Causality="0" Model="Spring3d" Description="" Name="world.x_label.cylinders[2].R.T[3,2]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155400952" Causality="0" Model="Spring3d" Description="" Name="world.x_label.cylinders[2].R.T[3,3]">
+     <Values>
+1	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155402432" Causality="0" Model="Spring3d" Description="" Name="world.x_label.cylinders[2].R.w[1]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155402112" Causality="0" Model="Spring3d" Description="" Name="world.x_label.cylinders[2].R.w[2]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155400992" Causality="0" Model="Spring3d" Description="" Name="world.x_label.cylinders[2].R.w[3]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="6619253" Causality="0" Model="Spring3d" Description="" Name="world.x_label.cylinders[2].e_x[1]">
+     <Values>
+0.707107	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155401192" Causality="0" Model="Spring3d" Description="" Name="world.x_label.cylinders[2].e_x[2]">
+     <Values>
+-0.707107	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155401072" Causality="0" Model="Spring3d" Description="" Name="world.x_label.cylinders[2].e_y[1]">
+     <Values>
+0.707107	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155403312" Causality="0" Model="Spring3d" Description="" Name="world.x_label.cylinders[2].e_y[2]">
+     <Values>
+0.707107	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155402392" Causality="0" Model="Spring3d" Description="" Name="world.x_label.cylinders[2].e_y[3]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155401552" Causality="0" Model="Spring3d" Description="" Name="world.x_label.cylinders[2].extra">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155400072" Causality="0" Model="Spring3d" Description="" Name="world.x_label.cylinders[2].height">
+     <Values>
+0.0125	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="6619218" Causality="0" Model="Spring3d" Description="" Name="world.x_label.cylinders[2].length">
+     <Values>
+0.053033	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155403272" Causality="0" Model="Spring3d" Description="" Name="world.x_label.cylinders[2].n_z_aux[3]">
+     <Values>
+0.707107	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155401112" Causality="0" Model="Spring3d" Description="" Name="world.x_label.cylinders[2].r[1]">
+     <Values>
+0.525	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155401432" Causality="0" Model="Spring3d" Description="" Name="world.x_label.cylinders[2].r[2]">
+     <Values>
+0.0375	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155401912" Causality="0" Model="Spring3d" Description="" Name="world.x_label.cylinders[2].r[3]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155401312" Causality="0" Model="Spring3d" Description="" Name="world.x_label.cylinders[2].rvisobj[1]">
+     <Values>
+0.525	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155401272" Causality="0" Model="Spring3d" Description="" Name="world.x_label.cylinders[2].rvisobj[2]">
+     <Values>
+0.0375	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155403912" Causality="0" Model="Spring3d" Description="" Name="world.x_label.cylinders[2].rvisobj[3]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="5636210" Causality="0" Model="Spring3d" Description="" Name="world.x_label.cylinders[2].rxvisobj[1]">
+     <Values>
+0.707107	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155402992" Causality="0" Model="Spring3d" Description="" Name="world.x_label.cylinders[2].rxvisobj[2]">
+     <Values>
+-0.707107	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155404392" Causality="0" Model="Spring3d" Description="" Name="world.x_label.cylinders[2].ryvisobj[1]">
+     <Values>
+0.707107	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155404232" Causality="0" Model="Spring3d" Description="" Name="world.x_label.cylinders[2].ryvisobj[2]">
+     <Values>
+0.707107	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155404312" Causality="0" Model="Spring3d" Description="" Name="world.x_label.cylinders[2].ryvisobj[3]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155404152" Causality="0" Model="Spring3d" Description="" Name="world.x_label.cylinders[2].size[1]">
+     <Values>
+0.053033	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155403952" Causality="0" Model="Spring3d" Description="" Name="world.x_label.cylinders[2].size[2]">
+     <Values>
+0.0125	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155404032" Causality="0" Model="Spring3d" Description="" Name="world.x_label.cylinders[2].size[3]">
+     <Values>
+0.0125	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155403752" Causality="0" Model="Spring3d" Description="" Name="world.x_label.cylinders[2].specularCoefficient">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155403392" Causality="0" Model="Spring3d" Description="" Name="world.x_label.cylinders[2].width">
+     <Values>
+0.0125	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155404592" Causality="0" Model="Spring3d" Description="" Name="world.x_label.diameter">
+     <Values>
+0.0125	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155404432" Causality="0" Model="Spring3d" Description="" Name="world.x_label.n">
+     <Values>
+2	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155403712" Causality="0" Model="Spring3d" Description="" Name="world.x_label.r_abs[1]">
+     <Values>
+0.525	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="6619218" Causality="0" Model="Spring3d" Description="" Name="world.x_label.r_abs[2]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155403512" Causality="0" Model="Spring3d" Description="" Name="world.x_label.r_abs[3]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155402952" Causality="0" Model="Spring3d" Description="" Name="world.x_label.specularCoefficient">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155402272" Causality="0" Model="Spring3d" Description="" Name="world.y_arrowHead.Extra">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155403872" Causality="0" Model="Spring3d" Description="" Name="world.y_arrowHead.e_x[1]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155403832" Causality="0" Model="Spring3d" Description="" Name="world.y_arrowHead.e_x[3]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="6619253" Causality="0" Model="Spring3d" Description="" Name="world.y_arrowHead.e_y[1]">
+     <Values>
+1	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155403152" Causality="0" Model="Spring3d" Description="" Name="world.y_arrowHead.e_y[2]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155402552" Causality="0" Model="Spring3d" Description="" Name="world.y_arrowHead.e_y[3]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155402832" Causality="0" Model="Spring3d" Description="" Name="world.y_arrowHead.extra">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155404352" Causality="0" Model="Spring3d" Description="" Name="world.y_arrowHead.height">
+     <Values>
+0.0375	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155402672" Causality="0" Model="Spring3d" Description="" Name="world.y_arrowHead.length">
+     <Values>
+0.0625	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155404552" Causality="0" Model="Spring3d" Description="" Name="world.y_arrowHead.n_z_aux[2]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155402512" Causality="0" Model="Spring3d" Description="" Name="world.y_arrowHead.rxvisobj[1]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155403632" Causality="0" Model="Spring3d" Description="" Name="world.y_arrowHead.rxvisobj[3]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155404472" Causality="0" Model="Spring3d" Description="" Name="world.y_arrowHead.ryvisobj[1]">
+     <Values>
+1	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155406632" Causality="0" Model="Spring3d" Description="" Name="world.y_arrowHead.ryvisobj[2]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="6619253" Causality="0" Model="Spring3d" Description="" Name="world.y_arrowHead.ryvisobj[3]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="5636210" Causality="0" Model="Spring3d" Description="" Name="world.y_arrowHead.size[1]">
+     <Values>
+0.0625	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155405712" Causality="0" Model="Spring3d" Description="" Name="world.y_arrowHead.size[2]">
+     <Values>
+0.0375	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155405392" Causality="0" Model="Spring3d" Description="" Name="world.y_arrowHead.size[3]">
+     <Values>
+0.0375	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155405992" Causality="0" Model="Spring3d" Description="" Name="world.y_arrowHead.width">
+     <Values>
+0.0375	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155405872" Causality="0" Model="Spring3d" Description="" Name="world.y_arrowLine.Extra">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155407032" Causality="0" Model="Spring3d" Description="" Name="world.y_arrowLine.e_x[1]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155405832" Causality="0" Model="Spring3d" Description="" Name="world.y_arrowLine.e_x[3]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155405472" Causality="0" Model="Spring3d" Description="" Name="world.y_arrowLine.e_y[1]">
+     <Values>
+1	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155406672" Causality="0" Model="Spring3d" Description="" Name="world.y_arrowLine.e_y[2]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155405352" Causality="0" Model="Spring3d" Description="" Name="world.y_arrowLine.e_y[3]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155406872" Causality="0" Model="Spring3d" Description="" Name="world.y_arrowLine.extra">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155405432" Causality="0" Model="Spring3d" Description="" Name="world.y_arrowLine.height">
+     <Values>
+0.0125	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155405552" Causality="0" Model="Spring3d" Description="" Name="world.y_arrowLine.length">
+     <Values>
+0.4375	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="6619218" Causality="0" Model="Spring3d" Description="" Name="world.y_arrowLine.n_z_aux[2]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155405232" Causality="0" Model="Spring3d" Description="" Name="world.y_arrowLine.rxvisobj[1]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="6619218" Causality="0" Model="Spring3d" Description="" Name="world.y_arrowLine.rxvisobj[3]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155405152" Causality="0" Model="Spring3d" Description="" Name="world.y_arrowLine.ryvisobj[1]">
+     <Values>
+1	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155405672" Causality="0" Model="Spring3d" Description="" Name="world.y_arrowLine.ryvisobj[2]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155405032" Causality="0" Model="Spring3d" Description="" Name="world.y_arrowLine.ryvisobj[3]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155406592" Causality="0" Model="Spring3d" Description="" Name="world.y_arrowLine.size[1]">
+     <Values>
+0.4375	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155405512" Causality="0" Model="Spring3d" Description="" Name="world.y_arrowLine.size[2]">
+     <Values>
+0.0125	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155406272" Causality="0" Model="Spring3d" Description="" Name="world.y_arrowLine.size[3]">
+     <Values>
+0.0125	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="5636210" Causality="0" Model="Spring3d" Description="" Name="world.y_arrowLine.width">
+     <Values>
+0.0125	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155405792" Causality="0" Model="Spring3d" Description="" Name="world.y_label.R.T[1,1]">
+     <Values>
+1	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155406032" Causality="0" Model="Spring3d" Description="" Name="world.y_label.R.T[1,2]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155404952" Causality="0" Model="Spring3d" Description="" Name="world.y_label.R.T[1,3]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="6619253" Causality="0" Model="Spring3d" Description="" Name="world.y_label.R.T[2,1]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155405912" Causality="0" Model="Spring3d" Description="" Name="world.y_label.R.T[2,2]">
+     <Values>
+1	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155407232" Causality="0" Model="Spring3d" Description="" Name="world.y_label.R.T[2,3]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155405632" Causality="0" Model="Spring3d" Description="" Name="world.y_label.R.T[3,1]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155406192" Causality="0" Model="Spring3d" Description="" Name="world.y_label.R.T[3,2]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155406152" Causality="0" Model="Spring3d" Description="" Name="world.y_label.R.T[3,3]">
+     <Values>
+1	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="5636210" Causality="0" Model="Spring3d" Description="" Name="world.y_label.R.w[1]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155406072" Causality="0" Model="Spring3d" Description="" Name="world.y_label.R.w[2]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155409472" Causality="0" Model="Spring3d" Description="" Name="world.y_label.R.w[3]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155407552" Causality="0" Model="Spring3d" Description="" Name="world.y_label.R_lines[1,1]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155407152" Causality="0" Model="Spring3d" Description="" Name="world.y_label.R_lines[1,2]">
+     <Values>
+1	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155409872" Causality="0" Model="Spring3d" Description="" Name="world.y_label.R_lines[1,3]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155409592" Causality="0" Model="Spring3d" Description="" Name="world.y_label.R_lines[2,1]">
+     <Values>
+-1	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="6619218" Causality="0" Model="Spring3d" Description="" Name="world.y_label.R_lines[2,2]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155407472" Causality="0" Model="Spring3d" Description="" Name="world.y_label.R_lines[2,3]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155408912" Causality="0" Model="Spring3d" Description="" Name="world.y_label.R_lines[3,1]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155408312" Causality="0" Model="Spring3d" Description="" Name="world.y_label.R_lines[3,2]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155408672" Causality="0" Model="Spring3d" Description="" Name="world.y_label.R_lines[3,3]">
+     <Values>
+1	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155407792" Causality="0" Model="Spring3d" Description="" Name="world.y_label.R_rel[1,1]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155409152" Causality="0" Model="Spring3d" Description="" Name="world.y_label.R_rel[1,2]">
+     <Values>
+1	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155408272" Causality="0" Model="Spring3d" Description="" Name="world.y_label.R_rel[1,3]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155407592" Causality="0" Model="Spring3d" Description="" Name="world.y_label.R_rel[2,1]">
+     <Values>
+-1	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155407392" Causality="0" Model="Spring3d" Description="" Name="world.y_label.R_rel[2,2]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155409032" Causality="0" Model="Spring3d" Description="" Name="world.y_label.R_rel[2,3]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155408952" Causality="0" Model="Spring3d" Description="" Name="world.y_label.R_rel[3,1]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155406232" Causality="0" Model="Spring3d" Description="" Name="world.y_label.R_rel[3,2]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="6619253" Causality="0" Model="Spring3d" Description="" Name="world.y_label.R_rel[3,3]">
+     <Values>
+1	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155407872" Causality="0" Model="Spring3d" Description="" Name="world.y_label.color[1]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155407672" Causality="0" Model="Spring3d" Description="" Name="world.y_label.color[2]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155407512" Causality="0" Model="Spring3d" Description="" Name="world.y_label.color[3]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155407432" Causality="0" Model="Spring3d" Description="" Name="world.y_label.cylinders[1].Extra">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155408032" Causality="0" Model="Spring3d" Description="" Name="world.y_label.cylinders[1].R.T[1,1]">
+     <Values>
+1	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155408352" Causality="0" Model="Spring3d" Description="" Name="world.y_label.cylinders[1].R.T[1,2]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155408512" Causality="0" Model="Spring3d" Description="" Name="world.y_label.cylinders[1].R.T[1,3]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155408072" Causality="0" Model="Spring3d" Description="" Name="world.y_label.cylinders[1].R.T[2,1]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155408112" Causality="0" Model="Spring3d" Description="" Name="world.y_label.cylinders[1].R.T[2,2]">
+     <Values>
+1	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155410352" Causality="0" Model="Spring3d" Description="" Name="world.y_label.cylinders[1].R.T[2,3]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155409552" Causality="0" Model="Spring3d" Description="" Name="world.y_label.cylinders[1].R.T[3,1]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155409312" Causality="0" Model="Spring3d" Description="" Name="world.y_label.cylinders[1].R.T[3,2]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155409832" Causality="0" Model="Spring3d" Description="" Name="world.y_label.cylinders[1].R.T[3,3]">
+     <Values>
+1	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155410832" Causality="0" Model="Spring3d" Description="" Name="world.y_label.cylinders[1].R.w[1]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155410752" Causality="0" Model="Spring3d" Description="" Name="world.y_label.cylinders[1].R.w[2]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155410552" Causality="0" Model="Spring3d" Description="" Name="world.y_label.cylinders[1].R.w[3]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="6619218" Causality="0" Model="Spring3d" Description="" Name="world.y_label.cylinders[1].e_x[1]">
+     <Values>
+-0.83205	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155410592" Causality="0" Model="Spring3d" Description="" Name="world.y_label.cylinders[1].e_x[2]">
+     <Values>
+0.5547	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155410632" Causality="0" Model="Spring3d" Description="" Name="world.y_label.cylinders[1].e_y[1]">
+     <Values>
+0.5547	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155411032" Causality="0" Model="Spring3d" Description="" Name="world.y_label.cylinders[1].e_y[2]">
+     <Values>
+0.83205	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155409792" Causality="0" Model="Spring3d" Description="" Name="world.y_label.cylinders[1].e_y[3]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155410992" Causality="0" Model="Spring3d" Description="" Name="world.y_label.cylinders[1].extra">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155411152" Causality="0" Model="Spring3d" Description="" Name="world.y_label.cylinders[1].height">
+     <Values>
+0.0125	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155410032" Causality="0" Model="Spring3d" Description="" Name="world.y_label.cylinders[1].length">
+     <Values>
+0.0676041	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155410432" Causality="0" Model="Spring3d" Description="" Name="world.y_label.cylinders[1].n_z_aux[3]">
+     <Values>
+-0.83205	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155410232" Causality="0" Model="Spring3d" Description="" Name="world.y_label.cylinders[1].r[1]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="6619253" Causality="0" Model="Spring3d" Description="" Name="world.y_label.cylinders[1].r[2]">
+     <Values>
+0.525	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155409512" Causality="0" Model="Spring3d" Description="" Name="world.y_label.cylinders[1].r[3]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="5636210" Causality="0" Model="Spring3d" Description="" Name="world.y_label.cylinders[1].rvisobj[1]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155409192" Causality="0" Model="Spring3d" Description="" Name="world.y_label.cylinders[1].rvisobj[2]">
+     <Values>
+0.525	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155411112" Causality="0" Model="Spring3d" Description="" Name="world.y_label.cylinders[1].rvisobj[3]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155410872" Causality="0" Model="Spring3d" Description="" Name="world.y_label.cylinders[1].rxvisobj[1]">
+     <Values>
+-0.83205	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155410192" Causality="0" Model="Spring3d" Description="" Name="world.y_label.cylinders[1].rxvisobj[2]">
+     <Values>
+0.5547	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155409712" Causality="0" Model="Spring3d" Description="" Name="world.y_label.cylinders[1].ryvisobj[1]">
+     <Values>
+0.5547	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155410472" Causality="0" Model="Spring3d" Description="" Name="world.y_label.cylinders[1].ryvisobj[2]">
+     <Values>
+0.83205	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155409672" Causality="0" Model="Spring3d" Description="" Name="world.y_label.cylinders[1].ryvisobj[3]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155409352" Causality="0" Model="Spring3d" Description="" Name="world.y_label.cylinders[1].size[1]">
+     <Values>
+0.0676041	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155409752" Causality="0" Model="Spring3d" Description="" Name="world.y_label.cylinders[1].size[2]">
+     <Values>
+0.0125	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155410392" Causality="0" Model="Spring3d" Description="" Name="world.y_label.cylinders[1].size[3]">
+     <Values>
+0.0125	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155410512" Causality="0" Model="Spring3d" Description="" Name="world.y_label.cylinders[1].specularCoefficient">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155408632" Causality="0" Model="Spring3d" Description="" Name="world.y_label.cylinders[1].width">
+     <Values>
+0.0125	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155413472" Causality="0" Model="Spring3d" Description="" Name="world.y_label.cylinders[2].Extra">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155411072" Causality="0" Model="Spring3d" Description="" Name="world.y_label.cylinders[2].R.T[1,1]">
+     <Values>
+1	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155411792" Causality="0" Model="Spring3d" Description="" Name="world.y_label.cylinders[2].R.T[1,2]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="5636210" Causality="0" Model="Spring3d" Description="" Name="world.y_label.cylinders[2].R.T[1,3]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155411232" Causality="0" Model="Spring3d" Description="" Name="world.y_label.cylinders[2].R.T[2,1]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155412832" Causality="0" Model="Spring3d" Description="" Name="world.y_label.cylinders[2].R.T[2,2]">
+     <Values>
+1	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155412872" Causality="0" Model="Spring3d" Description="" Name="world.y_label.cylinders[2].R.T[2,3]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155413672" Causality="0" Model="Spring3d" Description="" Name="world.y_label.cylinders[2].R.T[3,1]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155411712" Causality="0" Model="Spring3d" Description="" Name="world.y_label.cylinders[2].R.T[3,2]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155413272" Causality="0" Model="Spring3d" Description="" Name="world.y_label.cylinders[2].R.T[3,3]">
+     <Values>
+1	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155412592" Causality="0" Model="Spring3d" Description="" Name="world.y_label.cylinders[2].R.w[1]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155413352" Causality="0" Model="Spring3d" Description="" Name="world.y_label.cylinders[2].R.w[2]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155412712" Causality="0" Model="Spring3d" Description="" Name="world.y_label.cylinders[2].R.w[3]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155413392" Causality="0" Model="Spring3d" Description="" Name="world.y_label.cylinders[2].e_x[1]">
+     <Values>
+0.83205	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155411192" Causality="0" Model="Spring3d" Description="" Name="world.y_label.cylinders[2].e_x[2]">
+     <Values>
+0.5547	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155411592" Causality="0" Model="Spring3d" Description="" Name="world.y_label.cylinders[2].e_y[1]">
+     <Values>
+-0.5547	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155413432" Causality="0" Model="Spring3d" Description="" Name="world.y_label.cylinders[2].e_y[2]">
+     <Values>
+0.83205	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155413312" Causality="0" Model="Spring3d" Description="" Name="world.y_label.cylinders[2].e_y[3]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155411992" Causality="0" Model="Spring3d" Description="" Name="world.y_label.cylinders[2].extra">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155411512" Causality="0" Model="Spring3d" Description="" Name="world.y_label.cylinders[2].height">
+     <Values>
+0.0125	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="6619218" Causality="0" Model="Spring3d" Description="" Name="world.y_label.cylinders[2].length">
+     <Values>
+0.033802	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155412952" Causality="0" Model="Spring3d" Description="" Name="world.y_label.cylinders[2].n_z_aux[3]">
+     <Values>
+0.83205	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155412032" Causality="0" Model="Spring3d" Description="" Name="world.y_label.cylinders[2].r[1]">
+     <Values>
+-0.05625	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155413072" Causality="0" Model="Spring3d" Description="" Name="world.y_label.cylinders[2].r[2]">
+     <Values>
+0.525	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155413192" Causality="0" Model="Spring3d" Description="" Name="world.y_label.cylinders[2].r[3]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="6619253" Causality="0" Model="Spring3d" Description="" Name="world.y_label.cylinders[2].rvisobj[1]">
+     <Values>
+-0.05625	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155412792" Causality="0" Model="Spring3d" Description="" Name="world.y_label.cylinders[2].rvisobj[2]">
+     <Values>
+0.525	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155411632" Causality="0" Model="Spring3d" Description="" Name="world.y_label.cylinders[2].rvisobj[3]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155412512" Causality="0" Model="Spring3d" Description="" Name="world.y_label.cylinders[2].rxvisobj[1]">
+     <Values>
+0.83205	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155412552" Causality="0" Model="Spring3d" Description="" Name="world.y_label.cylinders[2].rxvisobj[2]">
+     <Values>
+0.5547	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155413512" Causality="0" Model="Spring3d" Description="" Name="world.y_label.cylinders[2].ryvisobj[1]">
+     <Values>
+-0.5547	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155412232" Causality="0" Model="Spring3d" Description="" Name="world.y_label.cylinders[2].ryvisobj[2]">
+     <Values>
+0.83205	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155413832" Causality="0" Model="Spring3d" Description="" Name="world.y_label.cylinders[2].ryvisobj[3]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155414632" Causality="0" Model="Spring3d" Description="" Name="world.y_label.cylinders[2].size[1]">
+     <Values>
+0.033802	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="6619218" Causality="0" Model="Spring3d" Description="" Name="world.y_label.cylinders[2].size[2]">
+     <Values>
+0.0125	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155415832" Causality="0" Model="Spring3d" Description="" Name="world.y_label.cylinders[2].size[3]">
+     <Values>
+0.0125	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155413712" Causality="0" Model="Spring3d" Description="" Name="world.y_label.cylinders[2].specularCoefficient">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155414112" Causality="0" Model="Spring3d" Description="" Name="world.y_label.cylinders[2].width">
+     <Values>
+0.0125	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155412472" Causality="0" Model="Spring3d" Description="" Name="world.y_label.diameter">
+     <Values>
+0.0125	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="5636210" Causality="0" Model="Spring3d" Description="" Name="world.y_label.n">
+     <Values>
+2	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155414352" Causality="0" Model="Spring3d" Description="" Name="world.y_label.r_abs[1]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="5636210" Causality="0" Model="Spring3d" Description="" Name="world.y_label.r_abs[2]">
+     <Values>
+0.525	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155414672" Causality="0" Model="Spring3d" Description="" Name="world.y_label.r_abs[3]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="6619253" Causality="0" Model="Spring3d" Description="" Name="world.y_label.specularCoefficient">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155414232" Causality="0" Model="Spring3d" Description="" Name="world.z_arrowHead.Extra">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155414312" Causality="0" Model="Spring3d" Description="" Name="world.z_arrowHead.e_x[1]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155414872" Causality="0" Model="Spring3d" Description="" Name="world.z_arrowHead.e_x[2]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155414952" Causality="0" Model="Spring3d" Description="" Name="world.z_arrowHead.e_y[1]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155415432" Causality="0" Model="Spring3d" Description="" Name="world.z_arrowHead.e_y[2]">
+     <Values>
+1	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155414272" Causality="0" Model="Spring3d" Description="" Name="world.z_arrowHead.e_y[3]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="6619218" Causality="0" Model="Spring3d" Description="" Name="world.z_arrowHead.extra">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155413552" Causality="0" Model="Spring3d" Description="" Name="world.z_arrowHead.height">
+     <Values>
+0.0375	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155414912" Causality="0" Model="Spring3d" Description="" Name="world.z_arrowHead.length">
+     <Values>
+0.0625	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155413792" Causality="0" Model="Spring3d" Description="" Name="world.z_arrowHead.n_z_aux[3]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155415792" Causality="0" Model="Spring3d" Description="" Name="world.z_arrowHead.rxvisobj[1]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155414392" Causality="0" Model="Spring3d" Description="" Name="world.z_arrowHead.rxvisobj[2]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155414992" Causality="0" Model="Spring3d" Description="" Name="world.z_arrowHead.ryvisobj[1]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155413912" Causality="0" Model="Spring3d" Description="" Name="world.z_arrowHead.ryvisobj[2]">
+     <Values>
+1	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155416152" Causality="0" Model="Spring3d" Description="" Name="world.z_arrowHead.ryvisobj[3]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155415672" Causality="0" Model="Spring3d" Description="" Name="world.z_arrowHead.size[1]">
+     <Values>
+0.0625	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155413952" Causality="0" Model="Spring3d" Description="" Name="world.z_arrowHead.size[2]">
+     <Values>
+0.0375	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155415472" Causality="0" Model="Spring3d" Description="" Name="world.z_arrowHead.size[3]">
+     <Values>
+0.0375	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="6619218" Causality="0" Model="Spring3d" Description="" Name="world.z_arrowHead.width">
+     <Values>
+0.0375	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155416512" Causality="0" Model="Spring3d" Description="" Name="world.z_arrowLine.Extra">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155415752" Causality="0" Model="Spring3d" Description="" Name="world.z_arrowLine.e_x[1]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155415032" Causality="0" Model="Spring3d" Description="" Name="world.z_arrowLine.e_x[2]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155415952" Causality="0" Model="Spring3d" Description="" Name="world.z_arrowLine.e_y[1]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155415072" Causality="0" Model="Spring3d" Description="" Name="world.z_arrowLine.e_y[2]">
+     <Values>
+1	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155417472" Causality="0" Model="Spring3d" Description="" Name="world.z_arrowLine.e_y[3]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155417632" Causality="0" Model="Spring3d" Description="" Name="world.z_arrowLine.extra">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155417552" Causality="0" Model="Spring3d" Description="" Name="world.z_arrowLine.height">
+     <Values>
+0.0125	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155417312" Causality="0" Model="Spring3d" Description="" Name="world.z_arrowLine.length">
+     <Values>
+0.4375	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155416872" Causality="0" Model="Spring3d" Description="" Name="world.z_arrowLine.n_z_aux[3]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155416072" Causality="0" Model="Spring3d" Description="" Name="world.z_arrowLine.rxvisobj[1]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155415152" Causality="0" Model="Spring3d" Description="" Name="world.z_arrowLine.rxvisobj[2]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="6619253" Causality="0" Model="Spring3d" Description="" Name="world.z_arrowLine.ryvisobj[1]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155416792" Causality="0" Model="Spring3d" Description="" Name="world.z_arrowLine.ryvisobj[2]">
+     <Values>
+1	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155417512" Causality="0" Model="Spring3d" Description="" Name="world.z_arrowLine.ryvisobj[3]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155416552" Causality="0" Model="Spring3d" Description="" Name="world.z_arrowLine.size[1]">
+     <Values>
+0.4375	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155416992" Causality="0" Model="Spring3d" Description="" Name="world.z_arrowLine.size[2]">
+     <Values>
+0.0125	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155416472" Causality="0" Model="Spring3d" Description="" Name="world.z_arrowLine.size[3]">
+     <Values>
+0.0125	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155417192" Causality="0" Model="Spring3d" Description="" Name="world.z_arrowLine.width">
+     <Values>
+0.0125	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155417352" Causality="0" Model="Spring3d" Description="" Name="world.z_label.R.T[1,1]">
+     <Values>
+1	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="5636210" Causality="0" Model="Spring3d" Description="" Name="world.z_label.R.T[1,2]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155417792" Causality="0" Model="Spring3d" Description="" Name="world.z_label.R.T[1,3]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155418632" Causality="0" Model="Spring3d" Description="" Name="world.z_label.R.T[2,1]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155417112" Causality="0" Model="Spring3d" Description="" Name="world.z_label.R.T[2,2]">
+     <Values>
+1	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="6619253" Causality="0" Model="Spring3d" Description="" Name="world.z_label.R.T[2,3]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155415232" Causality="0" Model="Spring3d" Description="" Name="world.z_label.R.T[3,1]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155416832" Causality="0" Model="Spring3d" Description="" Name="world.z_label.R.T[3,2]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155416712" Causality="0" Model="Spring3d" Description="" Name="world.z_label.R.T[3,3]">
+     <Values>
+1	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155417952" Causality="0" Model="Spring3d" Description="" Name="world.z_label.R.w[1]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155418032" Causality="0" Model="Spring3d" Description="" Name="world.z_label.R.w[2]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155415712" Causality="0" Model="Spring3d" Description="" Name="world.z_label.R.w[3]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155419112" Causality="0" Model="Spring3d" Description="" Name="world.z_label.R_lines[1,1]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155420072" Causality="0" Model="Spring3d" Description="" Name="world.z_label.R_lines[1,2]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155419952" Causality="0" Model="Spring3d" Description="" Name="world.z_label.R_lines[1,3]">
+     <Values>
+1	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="6619253" Causality="0" Model="Spring3d" Description="" Name="world.z_label.R_lines[2,1]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155419512" Causality="0" Model="Spring3d" Description="" Name="world.z_label.R_lines[2,2]">
+     <Values>
+1	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155418512" Causality="0" Model="Spring3d" Description="" Name="world.z_label.R_lines[2,3]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155418272" Causality="0" Model="Spring3d" Description="" Name="world.z_label.R_lines[3,1]">
+     <Values>
+-1	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155419192" Causality="0" Model="Spring3d" Description="" Name="world.z_label.R_lines[3,2]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155418072" Causality="0" Model="Spring3d" Description="" Name="world.z_label.R_lines[3,3]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155419432" Causality="0" Model="Spring3d" Description="" Name="world.z_label.R_rel[1,1]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155419792" Causality="0" Model="Spring3d" Description="" Name="world.z_label.R_rel[1,2]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155418112" Causality="0" Model="Spring3d" Description="" Name="world.z_label.R_rel[1,3]">
+     <Values>
+1	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155419312" Causality="0" Model="Spring3d" Description="" Name="world.z_label.R_rel[2,1]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="5636210" Causality="0" Model="Spring3d" Description="" Name="world.z_label.R_rel[2,2]">
+     <Values>
+1	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="6619218" Causality="0" Model="Spring3d" Description="" Name="world.z_label.R_rel[2,3]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155419032" Causality="0" Model="Spring3d" Description="" Name="world.z_label.R_rel[3,1]">
+     <Values>
+-1	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155419352" Causality="0" Model="Spring3d" Description="" Name="world.z_label.R_rel[3,2]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155418792" Causality="0" Model="Spring3d" Description="" Name="world.z_label.R_rel[3,3]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155419832" Causality="0" Model="Spring3d" Description="" Name="world.z_label.color[1]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155417992" Causality="0" Model="Spring3d" Description="" Name="world.z_label.color[2]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155418752" Causality="0" Model="Spring3d" Description="" Name="world.z_label.color[3]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155419392" Causality="0" Model="Spring3d" Description="" Name="world.z_label.cylinders[1].Extra">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155419752" Causality="0" Model="Spring3d" Description="" Name="world.z_label.cylinders[1].R.T[1,1]">
+     <Values>
+1	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155417912" Causality="0" Model="Spring3d" Description="" Name="world.z_label.cylinders[1].R.T[1,2]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155417672" Causality="0" Model="Spring3d" Description="" Name="world.z_label.cylinders[1].R.T[1,3]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155418432" Causality="0" Model="Spring3d" Description="" Name="world.z_label.cylinders[1].R.T[2,1]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155419552" Causality="0" Model="Spring3d" Description="" Name="world.z_label.cylinders[1].R.T[2,2]">
+     <Values>
+1	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155419592" Causality="0" Model="Spring3d" Description="" Name="world.z_label.cylinders[1].R.T[2,3]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155417592" Causality="0" Model="Spring3d" Description="" Name="world.z_label.cylinders[1].R.T[3,1]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155417832" Causality="0" Model="Spring3d" Description="" Name="world.z_label.cylinders[1].R.T[3,2]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155418672" Causality="0" Model="Spring3d" Description="" Name="world.z_label.cylinders[1].R.T[3,3]">
+     <Values>
+1	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155419712" Causality="0" Model="Spring3d" Description="" Name="world.z_label.cylinders[1].R.w[1]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="176558720" Causality="0" Model="Spring3d" Description="" Name="world.z_label.cylinders[1].R.w[2]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="176557240" Causality="0" Model="Spring3d" Description="" Name="world.z_label.cylinders[1].R.w[3]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="176558240" Causality="0" Model="Spring3d" Description="" Name="world.z_label.cylinders[1].e_x[1]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="176557680" Causality="0" Model="Spring3d" Description="" Name="world.z_label.cylinders[1].e_x[2]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="176557800" Causality="0" Model="Spring3d" Description="" Name="world.z_label.cylinders[1].e_y[1]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="176556200" Causality="0" Model="Spring3d" Description="" Name="world.z_label.cylinders[1].e_y[2]">
+     <Values>
+1	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="176556280" Causality="0" Model="Spring3d" Description="" Name="world.z_label.cylinders[1].e_y[3]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="176558320" Causality="0" Model="Spring3d" Description="" Name="world.z_label.cylinders[1].extra">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="6619218" Causality="0" Model="Spring3d" Description="" Name="world.z_label.cylinders[1].height">
+     <Values>
+0.0125	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="176557280" Causality="0" Model="Spring3d" Description="" Name="world.z_label.cylinders[1].length">
+     <Values>
+0.0375	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="176557720" Causality="0" Model="Spring3d" Description="" Name="world.z_label.cylinders[1].n_z_aux[3]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="6619253" Causality="0" Model="Spring3d" Description="" Name="world.z_label.cylinders[1].r[1]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="176558280" Causality="0" Model="Spring3d" Description="" Name="world.z_label.cylinders[1].r[2]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155419912" Causality="0" Model="Spring3d" Description="" Name="world.z_label.cylinders[1].r[3]">
+     <Values>
+0.525	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="176557840" Causality="0" Model="Spring3d" Description="" Name="world.z_label.cylinders[1].rvisobj[1]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="176557600" Causality="0" Model="Spring3d" Description="" Name="world.z_label.cylinders[1].rvisobj[2]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="176557480" Causality="0" Model="Spring3d" Description="" Name="world.z_label.cylinders[1].rvisobj[3]">
+     <Values>
+0.525	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="176557400" Causality="0" Model="Spring3d" Description="" Name="world.z_label.cylinders[1].rxvisobj[1]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="176556760" Causality="0" Model="Spring3d" Description="" Name="world.z_label.cylinders[1].rxvisobj[2]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="176557920" Causality="0" Model="Spring3d" Description="" Name="world.z_label.cylinders[1].ryvisobj[1]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="5636210" Causality="0" Model="Spring3d" Description="" Name="world.z_label.cylinders[1].ryvisobj[2]">
+     <Values>
+1	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155418872" Causality="0" Model="Spring3d" Description="" Name="world.z_label.cylinders[1].ryvisobj[3]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="176558440" Causality="0" Model="Spring3d" Description="" Name="world.z_label.cylinders[1].size[1]">
+     <Values>
+0.0375	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="176557040" Causality="0" Model="Spring3d" Description="" Name="world.z_label.cylinders[1].size[2]">
+     <Values>
+0.0125	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="176557560" Causality="0" Model="Spring3d" Description="" Name="world.z_label.cylinders[1].size[3]">
+     <Values>
+0.0125	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="176557640" Causality="0" Model="Spring3d" Description="" Name="world.z_label.cylinders[1].specularCoefficient">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="176556560" Causality="0" Model="Spring3d" Description="" Name="world.z_label.cylinders[1].width">
+     <Values>
+0.0125	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="176556720" Causality="0" Model="Spring3d" Description="" Name="world.z_label.cylinders[2].Extra">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="176556520" Causality="0" Model="Spring3d" Description="" Name="world.z_label.cylinders[2].R.T[1,1]">
+     <Values>
+1	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="176558120" Causality="0" Model="Spring3d" Description="" Name="world.z_label.cylinders[2].R.T[1,2]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="155418912" Causality="0" Model="Spring3d" Description="" Name="world.z_label.cylinders[2].R.T[1,3]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="176558520" Causality="0" Model="Spring3d" Description="" Name="world.z_label.cylinders[2].R.T[2,1]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="176558560" Causality="0" Model="Spring3d" Description="" Name="world.z_label.cylinders[2].R.T[2,2]">
+     <Values>
+1	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="176558080" Causality="0" Model="Spring3d" Description="" Name="world.z_label.cylinders[2].R.T[2,3]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="5636210" Causality="0" Model="Spring3d" Description="" Name="world.z_label.cylinders[2].R.T[3,1]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="176559920" Causality="0" Model="Spring3d" Description="" Name="world.z_label.cylinders[2].R.T[3,2]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="176559320" Causality="0" Model="Spring3d" Description="" Name="world.z_label.cylinders[2].R.T[3,3]">
+     <Values>
+1	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="176559040" Causality="0" Model="Spring3d" Description="" Name="world.z_label.cylinders[2].R.w[1]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="176559560" Causality="0" Model="Spring3d" Description="" Name="world.z_label.cylinders[2].R.w[2]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="176559800" Causality="0" Model="Spring3d" Description="" Name="world.z_label.cylinders[2].R.w[3]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="176558360" Causality="0" Model="Spring3d" Description="" Name="world.z_label.cylinders[2].e_x[1]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="176559200" Causality="0" Model="Spring3d" Description="" Name="world.z_label.cylinders[2].e_x[2]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="176559880" Causality="0" Model="Spring3d" Description="" Name="world.z_label.cylinders[2].e_y[1]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="176558200" Causality="0" Model="Spring3d" Description="" Name="world.z_label.cylinders[2].e_y[2]">
+     <Values>
+1	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="176559280" Causality="0" Model="Spring3d" Description="" Name="world.z_label.cylinders[2].e_y[3]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="176558600" Causality="0" Model="Spring3d" Description="" Name="world.z_label.cylinders[2].extra">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="176559360" Causality="0" Model="Spring3d" Description="" Name="world.z_label.cylinders[2].height">
+     <Values>
+0.0125	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="176559520" Causality="0" Model="Spring3d" Description="" Name="world.z_label.cylinders[2].length">
+     <Values>
+0.0375	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="176559680" Causality="0" Model="Spring3d" Description="" Name="world.z_label.cylinders[2].n_z_aux[3]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="176560840" Causality="0" Model="Spring3d" Description="" Name="world.z_label.cylinders[2].r[1]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="176559440" Causality="0" Model="Spring3d" Description="" Name="world.z_label.cylinders[2].r[2]">
+     <Values>
+0.0375	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="176558840" Causality="0" Model="Spring3d" Description="" Name="world.z_label.cylinders[2].r[3]">
+     <Values>
+0.525	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="176560480" Causality="0" Model="Spring3d" Description="" Name="world.z_label.cylinders[2].rvisobj[1]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="176559400" Causality="0" Model="Spring3d" Description="" Name="world.z_label.cylinders[2].rvisobj[2]">
+     <Values>
+0.0375	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="176560400" Causality="0" Model="Spring3d" Description="" Name="world.z_label.cylinders[2].rvisobj[3]">
+     <Values>
+0.525	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="176559160" Causality="0" Model="Spring3d" Description="" Name="world.z_label.cylinders[2].rxvisobj[1]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="176559960" Causality="0" Model="Spring3d" Description="" Name="world.z_label.cylinders[2].rxvisobj[2]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="176560680" Causality="0" Model="Spring3d" Description="" Name="world.z_label.cylinders[2].ryvisobj[1]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="5636210" Causality="0" Model="Spring3d" Description="" Name="world.z_label.cylinders[2].ryvisobj[2]">
+     <Values>
+1	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="6619218" Causality="0" Model="Spring3d" Description="" Name="world.z_label.cylinders[2].ryvisobj[3]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="176558880" Causality="0" Model="Spring3d" Description="" Name="world.z_label.cylinders[2].size[1]">
+     <Values>
+0.0375	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="6619253" Causality="0" Model="Spring3d" Description="" Name="world.z_label.cylinders[2].size[2]">
+     <Values>
+0.0125	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="176559760" Causality="0" Model="Spring3d" Description="" Name="world.z_label.cylinders[2].size[3]">
+     <Values>
+0.0125	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="176558640" Causality="0" Model="Spring3d" Description="" Name="world.z_label.cylinders[2].specularCoefficient">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="6619253" Causality="0" Model="Spring3d" Description="" Name="world.z_label.cylinders[2].width">
+     <Values>
+0.0125	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="176562160" Causality="0" Model="Spring3d" Description="" Name="world.z_label.cylinders[3].Extra">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="176560720" Causality="0" Model="Spring3d" Description="" Name="world.z_label.cylinders[3].R.T[1,1]">
+     <Values>
+1	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="176560760" Causality="0" Model="Spring3d" Description="" Name="world.z_label.cylinders[3].R.T[1,2]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="6619218" Causality="0" Model="Spring3d" Description="" Name="world.z_label.cylinders[3].R.T[1,3]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="176560080" Causality="0" Model="Spring3d" Description="" Name="world.z_label.cylinders[3].R.T[2,1]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="176562480" Causality="0" Model="Spring3d" Description="" Name="world.z_label.cylinders[3].R.T[2,2]">
+     <Values>
+1	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="6619218" Causality="0" Model="Spring3d" Description="" Name="world.z_label.cylinders[3].R.T[2,3]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="176560920" Causality="0" Model="Spring3d" Description="" Name="world.z_label.cylinders[3].R.T[3,1]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="176560280" Causality="0" Model="Spring3d" Description="" Name="world.z_label.cylinders[3].R.T[3,2]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="176561880" Causality="0" Model="Spring3d" Description="" Name="world.z_label.cylinders[3].R.T[3,3]">
+     <Values>
+1	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="176560880" Causality="0" Model="Spring3d" Description="" Name="world.z_label.cylinders[3].R.w[1]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="176561120" Causality="0" Model="Spring3d" Description="" Name="world.z_label.cylinders[3].R.w[2]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="176562320" Causality="0" Model="Spring3d" Description="" Name="world.z_label.cylinders[3].R.w[3]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="176561800" Causality="0" Model="Spring3d" Description="" Name="world.z_label.cylinders[3].e_x[1]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="176562520" Causality="0" Model="Spring3d" Description="" Name="world.z_label.cylinders[3].e_x[2]">
+     <Values>
+-0.707107	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="176561680" Causality="0" Model="Spring3d" Description="" Name="world.z_label.cylinders[3].e_y[1]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="176561840" Causality="0" Model="Spring3d" Description="" Name="world.z_label.cylinders[3].e_y[2]">
+     <Values>
+0.707107	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="176562080" Causality="0" Model="Spring3d" Description="" Name="world.z_label.cylinders[3].e_y[3]">
+     <Values>
+0.707107	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="176562200" Causality="0" Model="Spring3d" Description="" Name="world.z_label.cylinders[3].extra">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="176562440" Causality="0" Model="Spring3d" Description="" Name="world.z_label.cylinders[3].height">
+     <Values>
+0.0125	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="176561200" Causality="0" Model="Spring3d" Description="" Name="world.z_label.cylinders[3].length">
+     <Values>
+0.053033	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="176562040" Causality="0" Model="Spring3d" Description="" Name="world.z_label.cylinders[3].n_z_aux[3]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="176562880" Causality="0" Model="Spring3d" Description="" Name="world.z_label.cylinders[3].r[1]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="176562120" Causality="0" Model="Spring3d" Description="" Name="world.z_label.cylinders[3].r[2]">
+     <Values>
+0.0375	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="176563840" Causality="0" Model="Spring3d" Description="" Name="world.z_label.cylinders[3].r[3]">
+     <Values>
+0.525	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="176560240" Causality="0" Model="Spring3d" Description="" Name="world.z_label.cylinders[3].rvisobj[1]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="5636210" Causality="0" Model="Spring3d" Description="" Name="world.z_label.cylinders[3].rvisobj[2]">
+     <Values>
+0.0375	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="176561280" Causality="0" Model="Spring3d" Description="" Name="world.z_label.cylinders[3].rvisobj[3]">
+     <Values>
+0.525	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="176562960" Causality="0" Model="Spring3d" Description="" Name="world.z_label.cylinders[3].rxvisobj[1]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="176562680" Causality="0" Model="Spring3d" Description="" Name="world.z_label.cylinders[3].rxvisobj[2]">
+     <Values>
+-0.707107	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="6619253" Causality="0" Model="Spring3d" Description="" Name="world.z_label.cylinders[3].ryvisobj[1]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="176564000" Causality="0" Model="Spring3d" Description="" Name="world.z_label.cylinders[3].ryvisobj[2]">
+     <Values>
+0.707107	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="176564400" Causality="0" Model="Spring3d" Description="" Name="world.z_label.cylinders[3].ryvisobj[3]">
+     <Values>
+0.707107	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="176563160" Causality="0" Model="Spring3d" Description="" Name="world.z_label.cylinders[3].size[1]">
+     <Values>
+0.053033	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="176564320" Causality="0" Model="Spring3d" Description="" Name="world.z_label.cylinders[3].size[2]">
+     <Values>
+0.0125	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="176563240" Causality="0" Model="Spring3d" Description="" Name="world.z_label.cylinders[3].size[3]">
+     <Values>
+0.0125	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="5636210" Causality="0" Model="Spring3d" Description="" Name="world.z_label.cylinders[3].specularCoefficient">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="176563280" Causality="0" Model="Spring3d" Description="" Name="world.z_label.cylinders[3].width">
+     <Values>
+0.0125	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="176564120" Causality="0" Model="Spring3d" Description="" Name="world.z_label.diameter">
+     <Values>
+0.0125	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="176564280" Causality="0" Model="Spring3d" Description="" Name="world.z_label.n">
+     <Values>
+3	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="6619253" Causality="0" Model="Spring3d" Description="" Name="world.z_label.r_abs[1]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="176563600" Causality="0" Model="Spring3d" Description="" Name="world.z_label.r_abs[2]">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="176563040" Causality="0" Model="Spring3d" Description="" Name="world.z_label.r_abs[3]">
+     <Values>
+0.525	
+
+</Values>
+    </VariableResult>
+    <VariableResult Data___type="176562760" Causality="0" Model="Spring3d" Description="" Name="world.z_label.specularCoefficient">
+     <Values>
+0	
+
+</Values>
+    </VariableResult>
+   </FinalVariables>
+  </OneSimResult>
+ </OMResult>
+</OMCase>

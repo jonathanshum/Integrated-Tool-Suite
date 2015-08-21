@@ -1,0 +1,33 @@
+model SeeSawModelicaBlocks
+  Modelica.Mechanics.MultiBody.Parts.Fixed fixed1(r = {1, -1, 0}, animation = false) annotation(Placement(visible = true, transformation(origin = {80, 40}, extent = {{10, -10}, {-10, 10}}, rotation = 0)));
+  Modelica.Mechanics.MultiBody.Forces.Spring spring1(c = 5, width = 0.1, animation = false, showMass = false) annotation(Placement(visible = true, transformation(origin = {60, 40}, extent = {{-10, -10}, {10, 10}}, rotation = 0)));
+  Modelica.Mechanics.MultiBody.Parts.Fixed fixed2(r = {-1, -1, 0}, animation = false) annotation(Placement(visible = true, transformation(origin = {80, -20}, extent = {{10, -10}, {-10, 10}}, rotation = 0)));
+  Modelica.Mechanics.MultiBody.Forces.Spring spring2(c = 5, animation = false, showMass = false) annotation(Placement(visible = true, transformation(origin = {60, -20}, extent = {{-10, -10}, {10, 10}}, rotation = 0)));
+  Modelica.Mechanics.MultiBody.Joints.Revolute revolute1(useAxisFlange = false, animation = false) annotation(Placement(visible = true, transformation(origin = {-40, 20}, extent = {{-10, -10}, {10, 10}}, rotation = 0)));
+  Modelica.Mechanics.MultiBody.Parts.FixedTranslation fixedtranslation1(r = {1, 0, 0}, animation = false) annotation(Placement(visible = true, transformation(origin = {0, 40}, extent = {{-10, -10}, {10, 10}}, rotation = 0)));
+  Modelica.Mechanics.MultiBody.Parts.FixedTranslation fixedtranslation2(r = {-1, 0, 0}, animation = false) annotation(Placement(visible = true, transformation(origin = {0, -20}, extent = {{-10, -10}, {10, 10}}, rotation = 0)));
+  Modelica.Mechanics.MultiBody.Parts.PointMass pointmass2(m = 2.7, animation = false) annotation(Placement(visible = true, transformation(origin = {40, -20}, extent = {{-10, -10}, {10, 10}}, rotation = 0)));
+  Modelica.Mechanics.MultiBody.Parts.PointMass pointmass1(m = 3, animation = false) annotation(Placement(visible = true, transformation(origin = {40, 40}, extent = {{-10, -10}, {10, 10}}, rotation = 0)));
+  inner Modelica.Mechanics.MultiBody.World world(enableAnimation = false, animateWorld = false, animateGravity = false) annotation(Placement(visible = true, transformation(origin = {-80, 20}, extent = {{-10, -10}, {10, 10}}, rotation = 0)));
+  Modelica.Mechanics.MultiBody.Sensors.AbsolutePosition absoluteposition1(resolveInFrame = Modelica.Mechanics.MultiBody.Types.ResolveInFrameA.frame_resolve) annotation(Placement(visible = true, transformation(origin = {-20, -60}, extent = {{-10, -10}, {10, 10}}, rotation = 0)));
+  Modelica.Blocks.Routing.DeMultiplex2 demultiplex21 annotation(Placement(visible = true, transformation(origin = {20, -60}, extent = {{-10, -10}, {10, 10}}, rotation = 0)));
+  Modelica.Blocks.Interfaces.RealOutput x annotation(Placement(visible = true, transformation(origin = {60, -60}, extent = {{-10, -10}, {10, 10}}, rotation = 0), iconTransformation(origin = {60, -50}, extent = {{-10, -10}, {10, 10}}, rotation = 0)));
+  Modelica.Blocks.Interfaces.RealOutput y annotation(Placement(visible = true, transformation(origin = {60, -80}, extent = {{-10, -10}, {10, 10}}, rotation = 0), iconTransformation(origin = {60, -80}, extent = {{-10, -10}, {10, 10}}, rotation = 0)));
+equation
+  connect(demultiplex21.y2[1], y) annotation(Line(points = {{31, -66}, {38.646, -66}, {38.646, -80.11279999999999}, {53.3145, -80.11279999999999}, {53.3145, -80.11279999999999}}));
+  connect(demultiplex21.y1[1], x) annotation(Line(points = {{31, -54}, {52.4683, -54}, {52.4683, -59.5205}, {52.4683, -59.5205}}));
+  connect(absoluteposition1.r[2], demultiplex21.u[2]) annotation(Line(points = {{-9, -60}, {7.33427, -60}, {7.33427, -59.8025}, {7.33427, -59.8025}}));
+  connect(absoluteposition1.r[1], demultiplex21.u[1]) annotation(Line(points = {{-9, -60}, {7.89845, -60}, {7.89845, -59.8025}, {7.89845, -59.8025}}));
+  connect(pointmass2.frame_a, absoluteposition1.frame_a) annotation(Line(points = {{40, -20}, {40.6206, -20}, {40.6206, -32.7221}, {-39.2102, -32.7221}, {-39.2102, -60.3667}, {-29.6192, -60.3667}, {-29.6192, -60.3667}}));
+  connect(absoluteposition1.frame_resolve, world.frame_b) annotation(Line(points = {{-20, -70.09999999999999}, {-69.87520000000001, -70.09999999999999}, {-69.87520000000001, 20}, {-70, 20}}));
+  connect(fixedtranslation2.frame_a, revolute1.frame_b) annotation(Line(points = {{-10, -20}, {-25.9012, -20}, {-25.9012, 20.0267}, {-29.9065, 20.0267}, {-29.9065, 20.0267}}));
+  connect(revolute1.frame_b, fixedtranslation1.frame_a) annotation(Line(points = {{-30, 20}, {-25.3672, 20}, {-25.3672, 39.5194}, {-9.87984, 39.5194}, {-9.87984, 39.5194}}));
+  connect(world.frame_b, revolute1.frame_a) annotation(Line(points = {{-70, 20}, {-49.9332, 20}, {-49.9332, 19.7597}, {-49.9332, 19.7597}}));
+  connect(fixedtranslation1.frame_b, pointmass1.frame_a) annotation(Line(points = {{10, 40}, {20.2937, 40}, {40, 39.7864}, {40, 40}}));
+  connect(pointmass1.frame_a, spring1.frame_a) annotation(Line(points = {{40, 40}, {50.4673, 40}, {50.4673, 39.7864}, {50.4673, 39.7864}}));
+  connect(pointmass2.frame_a, spring2.frame_a) annotation(Line(points = {{40, -20}, {49.9332, -20}, {49.9332, -20.0267}, {49.9332, -20.0267}}));
+  connect(fixedtranslation2.frame_b, pointmass2.frame_a) annotation(Line(points = {{10, -20}, {20.5607, -20}, {40, -20.0267}, {40, -20}}));
+  connect(spring2.frame_b, fixed2.frame_b) annotation(Line(points = {{70, -20}, {70.227, -20}, {70.227, -20}, {70, -20}}));
+  connect(spring1.frame_b, fixed1.frame_b) annotation(Line(points = {{70, 40}, {69.69289999999999, 40}, {69.69289999999999, 40}, {70, 40}}));
+  annotation(Icon(coordinateSystem(extent = {{-100, -100}, {100, 100}}, preserveAspectRatio = true, initialScale = 0.1, grid = {1, 1})), Diagram(coordinateSystem(extent = {{-100, -100}, {100, 100}}, preserveAspectRatio = true, initialScale = 0.1, grid = {2, 2})), experiment(StartTime = 0, StopTime = 10, Tolerance = 1e-6, Interval = 0.02));
+end SeeSawModelicaBlocks;

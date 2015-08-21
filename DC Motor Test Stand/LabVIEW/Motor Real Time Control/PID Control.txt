@@ -1,0 +1,8 @@
+Velocity Control:
+Kp = 0.15,  Ki = 0.0002, Kd = 0;
+Velocity Interval = 20000 us
+
+Noisy at low speed especially under 10 round/s
+Stable up to 80 rps with a jumpup at [count = 35000]
+
+Position Control:

@@ -1,0 +1,34 @@
+model BevelGears
+  Modelica.Mechanics.MultiBody.Parts.BevelGear1D bevelgear1d2(ratio = 1) annotation(Placement(visible = true, transformation(origin = {36, -4}, extent = {{-10, -10}, {10, 10}}, rotation = 0)));
+  Modelica.Electrical.Machines.BasicMachines.DCMachines.DC_PermanentMagnet dcpm annotation(Placement(visible = true, transformation(origin = {-58, -4}, extent = {{-10, -10}, {10, 10}}, rotation = 0)));
+  Modelica.Electrical.Analog.Basic.Ground ground1 annotation(Placement(visible = true, transformation(origin = {-86, -4}, extent = {{-10, -10}, {10, 10}}, rotation = 0)));
+  Modelica.Electrical.Analog.Sources.SignalVoltage signalvoltage1 annotation(Placement(visible = true, transformation(origin = {-62, 32}, extent = {{10, -10}, {-10, 10}}, rotation = 0)));
+  Modelica.Electrical.Analog.Sources.SignalVoltage signalvoltage2 annotation(Placement(visible = true, transformation(origin = {66, 34}, extent = {{-10, -10}, {10, 10}}, rotation = 0)));
+  Modelica.Blocks.Sources.Ramp ramp1(height = 10, duration = 3, offset = 0, startTime = 0) annotation(Placement(visible = true, transformation(origin = {-62, 84}, extent = {{-10, -10}, {10, 10}}, rotation = 0)));
+  Modelica.Blocks.Sources.Ramp ramp2(height = -10, duration = 3, offset = 0, startTime = 0) annotation(Placement(visible = true, transformation(origin = {50, 84}, extent = {{-10, -10}, {10, 10}}, rotation = 0)));
+  Modelica.Mechanics.MultiBody.Parts.BevelGear1D bevelgear1d1(ratio = 1) annotation(Placement(visible = true, transformation(origin = {-24, -4}, extent = {{-10, -10}, {10, 10}}, rotation = 0)));
+  Modelica.Mechanics.Rotational.Components.IdealGear idealgear1(ratio = 1) annotation(Placement(visible = true, transformation(origin = {6, -4}, extent = {{-10, -10}, {10, 10}}, rotation = 0)));
+  Modelica.Electrical.Machines.BasicMachines.DCMachines.DC_PermanentMagnet dc_permanentmagnet1 annotation(Placement(visible = true, transformation(origin = {82, -4}, extent = {{10, -10}, {-10, 10}}, rotation = 0)));
+  Modelica.Mechanics.MultiBody.Parts.Fixed fixed1(r = {1, 0, 0}) annotation(Placement(visible = true, transformation(origin = {66, -34}, extent = {{-10, -10}, {10, 10}}, rotation = 0)));
+  Modelica.Mechanics.MultiBody.Parts.Fixed fixed2(r = {0, 0, 0}) annotation(Placement(visible = true, transformation(origin = {-68, -38}, extent = {{-10, -10}, {10, 10}}, rotation = 0)));
+  inner Modelica.Mechanics.MultiBody.World world annotation(Placement(visible = true, transformation(origin = {-76, -70}, extent = {{-10, -10}, {10, 10}}, rotation = 0)));
+  Modelica.Mechanics.MultiBody.Parts.Body body1(r_CM = {0.2, 0, 0}, m = 2) annotation(Placement(visible = true, transformation(origin = {-6, -40}, extent = {{-10, -10}, {10, 10}}, rotation = 0)));
+equation
+  connect(bevelgear1d1.frame_a, body1.frame_a) annotation(Line(points = {{-24, -14}, {-24, -40}, {-16, -40}}, color = {95, 95, 95}));
+  connect(bevelgear1d2.frame_a, fixed1.frame_b) annotation(Line(points = {{36, -14}, {76, -14}, {76, -34}, {76, -34}}, color = {95, 95, 95}));
+  connect(fixed2.frame_b, dcpm.thermalPort) annotation(Line(points = {{-58, -38}, {-58, -14}}, color = {95, 95, 95}));
+  connect(fixed1.frame_b, dc_permanentmagnet1.thermalPort) annotation(Line(points = {{76, -34}, {82, -34}, {82, -14}}, color = {95, 95, 95}));
+  connect(signalvoltage2.p, dc_permanentmagnet1.pin_ap) annotation(Line(points = {{56, 34}, {56, 34}, {56, 6}, {76, 6}, {76, 6}}, color = {0, 0, 255}));
+  connect(signalvoltage2.n, dc_permanentmagnet1.pin_an) annotation(Line(points = {{76, 34}, {88, 34}, {88, 6}, {88, 6}}, color = {0, 0, 255}));
+  connect(dc_permanentmagnet1.pin_an, ground1.p) annotation(Line(points = {{88, 6}, {88, 66}, {-86, 66}, {-86, 6}}, color = {0, 0, 255}));
+  connect(dc_permanentmagnet1.flange, bevelgear1d2.flange_b) annotation(Line(points = {{72, -4}, {46, -4}}));
+  connect(idealgear1.flange_b, bevelgear1d2.flange_a) annotation(Line(points = {{16, -4}, {26, -4}}));
+  connect(bevelgear1d1.flange_b, idealgear1.flange_a) annotation(Line(points = {{-14, -4}, {-4, -4}}));
+  connect(dcpm.flange, bevelgear1d1.flange_a) annotation(Line(points = {{-48, -4}, {-34, -4}}));
+  connect(ramp2.y, signalvoltage2.v) annotation(Line(points = {{61, 84}, {68, 84}, {68, 40}, {66, 40}, {66, 40}}, color = {0, 0, 127}));
+  connect(signalvoltage1.v, ramp1.y) annotation(Line(points = {{-62, 39}, {-50, 39}, {-50, 84}, {-52, 84}, {-52, 84}}, color = {0, 0, 127}));
+  connect(dcpm.pin_an, signalvoltage1.n) annotation(Line(points = {{-64, 6}, {-72, 6}, {-72, 32}}, color = {0, 0, 255}));
+  connect(dcpm.pin_ap, signalvoltage1.p) annotation(Line(points = {{-52, 6}, {-52, 32}}, color = {0, 0, 255}));
+  connect(ground1.p, dcpm.pin_an) annotation(Line(points = {{-86, 6}, {-64, 6}}, color = {0, 0, 255}));
+  annotation(Icon(coordinateSystem(extent = {{-100, -100}, {100, 100}}, preserveAspectRatio = true, initialScale = 0.1, grid = {2, 2})), Diagram(coordinateSystem(extent = {{-100, -100}, {100, 100}}, preserveAspectRatio = true, initialScale = 0.1, grid = {2, 2})));
+end BevelGears;

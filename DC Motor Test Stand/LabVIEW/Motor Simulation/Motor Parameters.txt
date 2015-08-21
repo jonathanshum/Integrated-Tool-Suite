@@ -1,0 +1,11 @@
+J = 3.129*E-6 [kg*m^2]    -- moment of inertia of the rotor
+
+B = 1.65*E-5 [N*m*s]      -- Viscous Damping coeff
+
+Kemf = 0.0208 [V/rad/s]   -- Back-emf Constant
+
+Kt = 0.0208 [N*m/Amp]     -- Torque Constant
+
+R = 4 [Ohm]               -- Resistance
+
+L = 5.14*E-4 [H]          -- Inductance

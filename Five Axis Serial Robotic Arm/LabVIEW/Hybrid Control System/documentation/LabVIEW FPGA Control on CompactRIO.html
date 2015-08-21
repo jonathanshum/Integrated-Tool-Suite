@@ -1,0 +1,621 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1252">
+<title>LabVIEW FPGA Control on CompactRIO</title>
+<style>
+
+<!--
+
+/***************************************************/
+
+/* MINIMAL STYLES */
+
+/* The following section defines styles that every HTML Help project should need. */
+
+
+
+/* Specifies White Background color */
+
+body {background-color:#FFFFFF; font-family:Verdana, sans-serif; font-size:8pt; color: #000000;}
+
+
+
+/* The default style of P is red to alert you that you need to apply a style class, such as Body. */
+
+P { margin-top:6.00pt; margin-bottom:6.00pt;}
+
+
+
+BR { font-size:4.00pt; }
+
+
+
+/* Use H1 for all topic headings. */
+
+H1 { margin-top:3.00pt; margin-bottom:3.00pt; font-size:150%; font-weight:bold;  }
+
+
+
+/* Use H2 for second-level headings. */
+
+H2 { margin-top:9.00pt; margin-bottom:3.00pt; font-size:125%; font-weight:bold;  }
+
+
+
+/* Use H3 for third-level headings. */
+
+H3 { margin-top:6.00pt; margin-bottom:3.00pt; font-size:100%; font-weight:bold;  }
+
+
+
+/* Use H4 for fourth-level headings. */
+
+H4 { margin-top:6.00pt; margin-bottom:3.00pt; font-size:100%; font-weight:bold;  }
+
+
+
+/* H5 and H6 have the same definition as H4 because you should not need this level of heading in one topic. If you need to use H5 or H6, consider breaking up your topic into more than one topic. */
+
+H5 { margin-top:6.00pt; margin-bottom:3.00pt; font-size:100%; font-weight:bold;  }
+
+H6 { margin-top:6.00pt; margin-bottom:3.00pt; font-size:100%; font-weight:bold;  }
+
+
+
+/* Use the Body style class for normal paragraphs. */
+
+P.Body {  }
+
+
+
+/* Use the Anchor style class for graphic references on a line by themselves. */
+
+P.Anchor { font-size:125%;  }
+
+
+
+/* Use the Indent style classes to indent a paragraph. If you need to indent text below a list item, use <br><br> to start the new paragraph within the same set of <li></li> tags. If you need to indent a list within another list, nest the indented list within the first list's set of <ol></ol> or <ul></ul> tags. */
+
+P.Indent1 { margin-left:12.00pt; margin-bottom:3.00pt;  }
+
+P.Indent2 { margin-left:24.00pt; margin-bottom:3.00pt;  }
+
+P.Indent3 { margin-left:36.00pt; margin-bottom:3.00pt;  }
+
+P.Indent4 { margin-left:48.00pt; margin-bottom:3.00pt;  }
+
+P.Indent5 { margin-left:60.00pt; margin-bottom:3.00pt;  }
+
+
+
+/* Use the LI style for all list items. */
+
+LI { margin-top:3.00pt; margin-bottom:3.00pt; }
+
+
+
+/* Use the OL style for numbered lists. You do not have to type the number for each list item in a numbered list. */
+
+OL { margin-left:22.00pt; margin-top:3.00pt; margin-bottom:3.00pt; text-indent:0pt; list-style-type: decimal; }
+
+
+
+/* Use the OL style for numbered lists. Nested lists will use the bullet types according to the nesting scheme below */
+
+ol ol {list-style-type:lower-alpha}
+
+ol ol ol {list-style-type:decimal}
+
+ol ol ol ol {list-style-type:lower-alpha}
+
+ol ol ol ol ol {list-style-type:decimal}
+
+ol ol ol ol ol ol {list-style-type:lower-alpha}
+
+ol ol ol ol ol ol ol {list-style-type:decimal}
+
+ol ol ol ol ol ol ol ol {list-style-type:lower-alpha}
+
+
+
+
+
+/* Use the EquationNum style class for numbered lists of equations. You do not have to type the number for each list item in a numbered list. */
+
+OL.EquationNum { margin-left:36.00pt; text-indent:0pt; list-style-type: decimal; }
+
+
+
+/* Use the List-abc style class for lettered lists. You do not have to type the letter for each list item in a lettered list. */
+
+OL.List-abc { margin-left:22.00pt; text-indent:0pt; list-style-type:lower-alpha; }
+
+
+
+/* Use the UL style for bulleted lists. You do not have to type the bullet for each list item in a bulleted list. */
+
+UL { margin-left:22.00pt; text-indent:0pt; margin-top:3.00pt; margin-bottom:3.00pt; list-style-type: disc; }
+
+
+
+/* Use the UL style for bulleted lists. Nested lists will use the bullet types according to the nesting scheme below. */
+
+ul ul {list-style-image: none;list-style-type: circle}
+
+ul ul ul {list-style-image:none;list-style-type:disc}
+
+ul ul ul ul {list-style-image: none;list-style-type: circle}
+
+ul ul ul ul ul {list-style-image:none;list-style-type:disc}
+
+ul ul ul ul ul ul {list-style-image: none;list-style-type: circle}
+
+ul ul ul ul ul ul ul {list-style-image:none;list-style-type:disc}
+
+ul ul ul ul ul ul ul ul ul{list-style-image: none;list-style-type: circle}
+
+
+
+/* Use the List-Box style class for bulleted lists with boxes instead of bullets. You do not have to type the box for each list item in a box list. */
+
+UL.List-Box { list-style-image: none;list-style-type: square}
+
+
+
+Table { font-size:100%; }
+
+
+
+/* Use the Borderless style class for tables that do not need borders, such as for 2-column or 3-column lists with no headings. */
+
+Table.Borderless { border:none; }
+
+
+
+/* Use the Bordered style class for tables that need borders. */
+
+Table.Bordered { border-width: 1pt; border-style: solid; border-color: #000000; border-collapse: collapse; }
+
+
+
+/* Use the TD style for table cells in Borderless or Borderless-Wide tables. */
+
+TD { vertical-align:top; padding:3px; }
+
+
+
+/* Use the Bordered style class for table headings and cells in Bordered or Bordered-Wide tables. */
+
+.Bordered { border-width: 1pt; border-style: solid; border-color: #000000; }
+
+
+
+/* Use the Icon style class for table cells that contain note, caution, warning, or tip icons, or LabVIEW datatype terminals. */
+
+TD.Icon { width:40px; }
+
+
+
+/* Use the TH style for table heading cells in Borderless or Borderless-Wide tables. */
+
+TH { font-weight:bold; padding:3px; }
+
+
+
+/* Use the Left-Align style class for table headings and cells that you want to left align instead of center align. */
+
+.Left-Align { text-align:left; }
+
+
+
+/***************************************************/
+
+/* CHARACTER FORMATS */
+
+/* The following section defines character formats that every HTML Help project should need. */
+
+
+
+/* CHARACTER FORMATS Updated to conform with the CSE HTML Validator Pro */
+
+/* The following section defines character formats that every HTML Help project should need. */
+
+
+
+/* Use the Dark-Red format for warnings or cautions. */
+
+.Dark-Red { color: #800000 }
+
+
+
+/* Use the Monospace format for code or syntax examples. */
+
+.Monospace { font-family: Courier New; font-size: 100%; }
+
+
+
+/* Use the Monospace-Bold format for messages and responses that the computer automatically prints to the screen. */
+
+.Monospace-Bold { font-family: Courier New; font-weight: bold; font-size: 100%; }
+
+
+
+/* Use the Monospace-Italic format to denote text that is a placeholder for a word or value that the user must supply. */
+
+.Monospace-Italic { font-family: Courier New; font-style: italic; font-size: 100%; }
+
+
+
+/* small class */
+
+.smallFont { font-size:87.5%; }
+
+
+
+/* Bold class */
+
+.Bold { font-weight: bold; }
+
+
+
+/* Italic class */
+
+.Italic { font-style: italic; }
+
+
+
+/* Use the Platform format to denote a specific platform. */
+
+.Platform { color: #0000FF; font-weight: bold; }
+
+
+
+/* Use the Symbol format for characters not in the Verdana character set. Use this format sparingly. When possible, you should use the correct ASCII code for the symbol or use a graphic to recreate the symbol. */
+
+.Symbol { font-family: Symbol; }
+
+
+
+/* Use the Red-text format to call attention to text that needs  information added or edited by techcomm */
+
+.Red-text {color: #FF0000;}
+
+
+
+/* Use the Green-Underline format for the green defintion in the conventions topic */
+
+.Green-Underline {color: #007700; text-decoration : underline;}
+
+
+
+/* Use the glossButton format for the glossary buttons used in the glossary topic */
+
+.glossButton { font-size:12px; color:black; }
+
+
+
+/* Use for text sections and hyphenated words that should not break at line wraps */
+
+.nobreak{white-space:nowrap}
+
+
+
+/* Use for template instructions. */
+
+.instructions{color:red; font-style:italic}
+
+
+
+/*Use for words and text sections that do not need to be localized */
+
+.DNL { }
+
+
+
+/* The following styles define the color of links. */
+
+a:link { color: #007700 }
+
+a:visited { color: #7F007F }
+
+a:link:hover { color: #FF0000 }
+
+a:link:active { color: #FF0000 }
+
+
+
+/***************************************************
+
+** Forms */
+
+
+
+form { margin-top:0pt; margin-bottom:3pt; color:black; }
+
+select { font-size:100%; color:black; }
+
+
+
+/*******************************************************
+
+** Margins **
+
+** Use these styles for block-level elements inside tables cells or list items where you do not want extra padding at the top or bottom of a cell. */
+
+.noTopMargin { margin-top:0pt;}
+
+.noBottomMargin { margin-bottom:0pt;}
+
+
+
+/***************************************************
+
+** CODE STYLES **
+
+** The following section defines styles that you need to format entire sections of code or syntax examples. If you have just a few words you need to format as a code or syntax example, use the Monospace character format. */
+
+
+
+P.Code { margin-top:3.00pt; margin-bottom:0.00pt; font-family:Courier New;  }
+
+P.Code1 { margin-left:12.00pt; margin-top:3.00pt; margin-bottom:0.00pt; font-family:Courier New;  }
+
+P.Code2 { margin-left:24.00pt; margin-top:3.00pt; margin-bottom:0.00pt; font-family:Courier New;  }
+
+P.Code3 { margin-left:36.00pt; margin-top:3.00pt; margin-bottom:0.00pt; font-family:Courier New;  }
+
+-->
+</style>
+<script type="text/javascript"> // define hyperlinks and function for launching a URL in a browser
+
+var L_case_structure = "http://digital.ni.com/express.nsf/bycode/ex746b2013";
+var L_while_loops = "http://digital.ni.com/express.nsf/bycode/ext9fg2013";
+var L_shift_registers = "http://digital.ni.com/express.nsf/bycode/exar5k2013";
+var L_enums = "http://digital.ni.com/express.nsf/bycode/ex3zj72013";
+var L_typedefs = "http://digital.ni.com/express.nsf/bycode/exicsz2013";
+var L_event_structures = "http://digital.ni.com/express.nsf/bycode/exfjrp2013";
+var L_value_change_events = "http://digital.ni.com/express.nsf/bycode/exb2cb2013";
+var L_error_handling = "http://digital.ni.com/express.nsf/bycode/exfbp32013";
+var L_clusters = "http://digital.ni.com/express.nsf/bycode/exwemq2013";
+var L_control_refnums = "http://digital.ni.com/express.nsf/bycode/exend62013";
+var L_parallel = "http://digital.ni.com/express.nsf/bycode/exxaf62013";
+var L_PC = "http://digital.ni.com/express.nsf/bycode/exbfny";
+var L_state_machines = "http://digital.ni.com/express.nsf/bycode/ex85gn";
+var L_user_events = "http://digital.ni.com/express.nsf/bycode/ex9s6m2013";
+var L_queues = "http://digital.ni.com/express.nsf/bycode/ex8wbs";
+var L_fxp = "http://digital.ni.com/express.nsf/bycode/ex3j5g2013";
+var L_flat_sequence = "http://digital.ni.com/express.nsf/bycode/exxnii2013";
+var L_fpga_io = "http://digital.ni.com/express.nsf/bycode/expxk52013";
+var L_fpga_interface = "http://digital.ni.com/express.nsf/bycode/exsiv32013";
+var L_global_var = "http://digital.ni.com/express.nsf/bycode/exjuwv2013";
+var L_libraries = "http://digital.ni.com/express.nsf/bycode/exge572013";
+var L_np_sv = "http://digital.ni.com/express.nsf/bycode/ex64tb2013";
+var L_network_streams = "http://digital.ni.com/express.nsf/bycode/ex64kt2013";
+var L_qmh = "http://digital.ni.com/express.nsf/bycode/LVqueuedmsg";
+var L_sv_api = "http://digital.ni.com/express.nsf/bycode/exfe6p2013";
+var L_ssm = "http://digital.ni.com/express.nsf/bycode/LVstatemachine";
+var L_schema = "http://digital.ni.com/express.nsf/bycode/exwf6i2013";
+var L_walkthrough = "http://digital.ni.com/express.nsf/bycode/DW_RTRIO";
+var L_trademarks = "http://digital.ni.com/express.nsf/bycode/rdtrad";
+var L_patents = "http://digital.ni.com/express.nsf/bycode/rdlv17";
+
+function WWW(url) 
+	{
+	var urlWindow;
+	urlWindow = window.open(url, "New", "directories=yes,location=yes,menubar=yes,resizable=yes,scrollbars=yes,status=yes,toolbar=yes");
+	}
+</script>
+
+</HEAD>
+<body>
+
+<h1>LabVIEW FPGA Control on CompactRIO</h1>
+
+<p class="Body">The LabVIEW FPGA Control on CompactRIO sample project implements deterministic, hardware-based control of a plant. The control algorithm, which was written with the LabVIEW FPGA Module, runs on the FPGA inside the CompactRIO device. You send commands and setpoint changes to the FPGA from the user interface, running on a desktop computer, by way of the real-time controller in the device. This controller also monitors the status of the application, such as CPU load and memory usage.</p>
+
+<p class="Body">This sample project is based on the Simple State Machine and Queued Message Handler templates. Refer to the Simple State Machine and Queued Message Handler templates and their documentation, available from the <strong>Create Project</strong> dialog box, for information about how these templates work.</p>
+
+<h2>Features</h2>
+
+<ul>
+	<li>High-performance control&#8212;The control loop can run faster than 10 kHz and features four control algorithms operating in parallel, all with minimal jitter.</li>
+	<li>Hardware-based control&#8212;Running the control algorithm and safety logic on the FPGA provides maximum reliability.</li>
+	<li>User interface with headless option&#8212;The user interface VI interacts with the CompactRIO device and displays data. This VI can connect and disconnect from the device at any time without affecting the control loop.</li>
+	<li>Error handling&#8212;The application reports and logs all errors from the CompactRIO device, shutting down on any critical error.</li>
+</ul>
+
+<a name="system_req"></a><h2>System Requirements</h2>
+<h3>Development System</h3>
+<ul>
+	<li>LabVIEW Full or Professional Development System</li>
+	<li>LabVIEW FPGA Module</li>
+	<li>LabVIEW Real-Time Module</li>
+	<li>NI-RIO device driver software</li>
+</ul>
+
+<h3>NI CompactRIO Device in FPGA Interface Mode</h3>
+<p class="Body">This sample project is designed for an NI cRIO-9074 with the following components:</p>
+<ul>
+	<li>Software:
+	<ul>
+		<li>LabVIEW Real-Time</li>
+		<li>Network Streams</li>
+		<li>Network Variable Engine</li>
+		<li>NI System Configuration</li>
+		<li>NI-RIO</li>
+		<li>NI-Watchdog</li>
+	</ul>
+	</li>
+	<li>I/O modules:
+	<ul>
+		<li>NI C Series analog input module. This sample project is designed to read four channels of analog input from an NI 9201 module in slot 1.</li>
+		<li>NI C Series analog output module. This sample project is designed to write four channels of analog output to an NI 9263 module in slot 2.</li>
+	</ul>
+	</li>
+</ul>
+
+<h2>Overview</h2>
+
+<p class="Body">This sample project consists of nine parallel loops across three execution targets. </p>
+
+<p class="Body">The following loops run in parallel on the desktop computer:</p>
+<ul>
+	<li>Handling events from the user interface (UI Main.vi - Event Handling Loop)&#8212;Produces messages to the UI Message Loop based on front panel events.</li>
+	<li>Handling messages from the user interface and the real-time controller (UI Main.vi - UI Message Loop)&#8212;Receives and responds to messages from the Event Handling Loop and, using network streams, the RT Message Handling Loop.</li>
+	<li>Displaying messages and data from the CompactRIO device (UI Main.vi - Monitoring Loop)&#8212;Displays the latest values of information acquired from RT Loop - System Health and FPGA Monitoring.vi.</li>
+</ul>	
+
+<p class="Body">The following loops run in parallel on the real-time controller:</p>
+<ul>
+	<li>Handling commands from the user interface (RT Loop - UI Commands.vi)&#8212;Reads commands sent from UI Main.vi, using network streams, and produces the appropriate messages.</li>
+	<li>Handling messages from all loops on the real-time controller (RT Main.vi - Message Handling Loop)&#8212;Consumes messages from all loops that run on the real-time controller.</li>
+	<li>Ensuring the FPGA can communicate with the real-time controller (RT Loop - Watchdog.vi)&#8212;Pets the watchdog, which tells the FPGA that the RT controller still is running, by asserting a register on the FPGA.</li>
+	<li>Monitoring diagnostic information from the real-time controller and data from the FPGA (RT Loop - System Health and FPGA Monitoring.vi)&#8212;Monitors CPU and memory usage of the real-time controller and data from FPGA Main.vi. This information is written to network-published shared variables and appears on the <strong>Data Monitoring</strong> and <strong>System Monitoring</strong> tabs of UI Main.vi.</li>
+</ul>	
+
+<p class="Body">The following loops run in parallel on the FPGA:</p>
+<ul>
+	<li>Controlling the plant (FPGA Main.vi - Control Loop)&#8212;Reads from the NI 9201 inputs, applies a control algorithm to each channel, and writes to the NI 9263 outputs. The control algorithm uses setpoint data and PID gains sent from the user interface.</li>
+	<li>Ensuring the FPGA can communicate with the real-time controller (FPGA Main.vi - Watchdog Loop)&#8212;Checks the watchdog register, set by RT Loop - Watchdog.vi, to ensure the real-time controller is communicating with the FPGA. If communication cannot be established, the Watchdog Loop sets the FPGA to a safe state and reboots the device.</li>
+</ul>	
+
+<p class="Body">The following illustration shows how PID setpoint values are transferred from the user interface to the FPGA. This process involves a subset of the loops described above.</p>
+
+<img src="loc_fpga_control_crio.png">
+
+<p class="Body">This illustration shows the following sequence of steps:</p>
+<ol>
+	<li>A user changes the value of a setpoint; for example, changing the <strong>Channel 0 Setpoint</strong> control from 0 to 3. This change causes LabVIEW to register an event.</li>
+	<li>The Event structure in the User Interface Event Handling Loop triggers the appropriate message diagram, which produces the Update Setpoints message to the message queue. The values of all four setpoint controls, including the changed value, are enqueued as data along with the message.</li>
+	<li>The UI Message Handling Loop consumes the message and data, dequeuing it and executing the corresponding message diagram.</li>
+	<li>The message diagram contains code that writes the Update Setpoints message and data to a network stream.</li>
+	<li>On the real-time controller, the UI Commands loop reads the message and the data from the network stream.</li>
+	<li>The UI Commands loop relays the same Update Setpoints message and data to the RT Message Handling Loop that is also running on the real-time controller.</li>
+	<li>The RT Message Handling Loop consumes the message and data, dequeueing it and executing the corresponding message diagram.</li>
+	<li>The message diagram contains code that writes the data to the front panel of the FPGA VI, using the Read/Write Control function.</li>
+	<li>On the FPGA, the Control Loop uses the data in its control algorithm.</li>
+</ol>	
+
+<h2>Running this Sample Project</h2>
+<ol>
+	<li><a href="#adapt_hardware">Adapt the sample project to your hardware</a>.</li>
+	<li>In the <strong>Project Explorer</strong> window, run <strong>RT CompactRIO Target&#0187RT Main.vi</strong>. This VI initializes the FPGA and runs FPGA Main.vi.</li>
+	<li>Open and run <strong>My Computer&#0187;UI Main.vi</strong>.</li>
+	<li>Enter the IP address of the CompactRIO device in the <strong>Controller Address</strong> text box and click <strong>Connect</strong>.</li>
+	<li>After you are connected, click either <strong>Run Control</strong> (on the <strong>Control Settings</strong> page) or <strong>Run Manual</strong> (on the <strong>Manual Settings</strong> page).</li>
+	<li>Adjust the channel values as necessary and view the outputs on the <strong>Data Monitoring</strong> page. Until you <a href="#define_control">define a control algorithm</a>, all <strong>Output Values</strong> will read 0.</li>
+	<li>Click <strong>Exit</strong> to exit the application.</li>
+</ol>
+
+<h2>Modifying this Sample Project</h2>
+
+<a name="adapt_hardware"></a><h3>Adapting the Sample Project to Your Hardware</h3>
+
+<p class="Body">The FPGA VI in this sample project is compiled for <a href="#system_req">specific FPGA and I/O hardware</a>. If you have a different FPGA or different C Series modules, you must adapt this sample project to your hardware. The following steps refer to NI CompactRIO devices, but you also can adapt this sample project to an NI Single-Board RIO device.</p>
+
+<ol>
+	<li>Ensure all devices are configured and connected to the same network as the development computer.</li>
+	<li>In the <strong>Project Explorer</strong> window, add or discover your RT CompactRIO target to the to the top-level project item.</li>
+	<li>Add or discover your CompactRIO chassis to the RT Compact RIO target you added in the previous step. Ensure the chassis is set to LabVIEW FPGA Interface mode.</li>
+	<li>Add or discover your FPGA target to the CompactRIO chassis you added in the previous step. When prompted to deploy settings, click <strong>Deploy Later</strong>.</li>
+	<li>Add or discover your C Series input and output modules to the FPGA target you added in the previous step.</li>
+	<li>Drag the following project items from the default RT CompactRIO target to the one you added in step 2:
+		<ul>
+			<li>Error Handlers folder</li>
+			<li>Globals folder</li>
+			<li>Support VIs folder</li>
+			<li>RT Loops folder</li>				
+			<li>Type Definitions folder</li>
+			<li>Shared Variables.lvlib</li>
+			<li>RT Main.vi</li>		
+		</ul>
+	</li>
+	<li>Drag the following project items from the default FPGA target to the one you added in step 4:
+		<ul>
+			<li>Support VIs folder</li>
+			<li>Type Definitions folder</li>
+			<li>FPGA Main.vi</li>	
+		</ul>	
+	</li>
+	<li>Delete the default RT CompactRIO Target project item that no longer has any VIs associated with it.</li>
+	<li>Re-establish the link between RT Main.vi and the bitfile:
+		<ol>
+			<li>Open Initialize and Run FPGA VI.vi, located in the Support VIs folder on the RT CompactRIO Target.</li>
+			<li>Drag FPGA Main.vi from the <strong>Project Explorer</strong> window to the Open FPGA VI Reference VI function.</li>
+		</ol>
+	</li>
+	<li>Open FPGA Main.vi and ensure the FPGA I/O Nodes use the input and output channels you want. For example, you may want an FPGA I/O Node to read from Mod2/AI5 instead of Mod1/AI2. The actual channels you read from and write to depend on your application.<br><br>By default, the FPGA I/O Nodes in this VI read from Mod1/AI0&#8211;3 and write to Mod2/AO0&#8211;3.</li>
+	<li> To minimize time spent compiling, make necessary changes, such as <a href="#define_control">defining a control algorithm</a> and <a href="#define_safe_state">defining a safe state</a>, now. You can compile and run the FPGA before making these changes; however, you will have to compile the FPGA VI again afterwards.</li>
+</ol>
+
+<a name="define_control"></a><h3>Defining a Control Algorithm</h3>
+<p class="Body">Locate the Control (PID) subdiagram of the Case structure in FPGA Main.vi and modify this subdiagram to apply a control algorithm. For example, you can use the PID Express VI that is included in the LabVIEW FPGA Module when you activate a license for the NI LabVIEW PID &amp; Fuzzy Logic Toolkit. By default, this algorithm returns a constant value of 0 on all output channels. You can perform a different algorithm on each individual channel.</p>
+
+<p class="Body">Although this sample project is designed to implement a PID algorithm, you can modify the sample project to use any algorithm.</p>
+
+<a name="define_safe_state"></a><h3>Defining Safe Values for Hardware Connected to the C Series Modules</h3>
+<p class="Body">Modify the Safe State, Default subdiagram of the Case structure in FPGA Main.vi to write safe values to the output channels. The values you write here should be ones that you know the connected hardware can safely handle. By default, this subdiagram writes a value of 0 to all output channels.</p>
+
+<p class="Body">This subdiagram executes in the following situations:</p>
+
+<ul>
+	<li>When FPGA Main.vi first runs</li>
+	<li>The watchdog algorithm times out</li>
+	<li>An error occurs while reading from or writing to an FPGA I/O channel</li>
+	<li>A &quot;Critical&quot; or &quot;Non-Critical&quot; error occurs on the desktop computer or real-time controller</li>
+	<li>You click the <strong>Switch Target to Safe State</strong>, <strong>Stop Control</strong>, <strong>Stop Manual</strong>, or <strong>Exit</strong> button in UI Main.vi</li>
+</ul>
+
+<h3>Configuring the Application</h3>
+<p class="Body">In the <strong>Project Explorer</strong> window, open <strong>My Computer&#0187;Globals&#0187;Global - Configuration Options.vi</strong>. Use this VI to configure the following settings:</p>
+
+<ul>
+	<li>If you are programming or testing the application, leave <strong>Debugging</strong> as TRUE. If you are building an application for deployment, set <strong>Debugging</strong> to FALSE.</li>
+	<li>To change how the often the control algorithm executes, change the <strong>Control Period (ticks)</strong>. The default is 40000 ticks of the FPGA clock.</li>
+	<li>To change the time period during which both endpoints of a network stream must be established, change the <strong>Network Stream Connect Timeout (ms)</strong>. The default is 5000 ms.</li>
+	<li>To change how often the real-time controller polls the user interface for commands, change the <strong>Network Stream Polling Timeout (ms)</strong>. The default is 500 ms.</li>
+	<li>To change how often the real-time controller pets the watchdog, change the <strong>Watchdog Pet Rate (ms)</strong>.The default is 100 ms.</li>
+	<li>To change how long the FPGA has to respond to a watchdog pet, change the <strong>Timeout Period (ticks)</strong>. The default is 40000000 ticks of the FPGA clock.</li>
+	<li>To change how often the user interface updates with monitoring and health information from the CompactRIO device, change the <strong>Monitoring Loop Rate (ms)</strong>. The default is 200 ms.</li>
+	<li>To change the time period during which identical errors are considered duplicates, change the <strong>Error Log Duplicate Interval (ms)</strong>. This control defines the interval of time during which only the first in a series of identical errors will be logged. For example, if an error occurs after 2000 ms have elapsed and occurs again after 5000 ms have elapsed, and <strong>Error Log Duplicate Interval (ms)</strong> is 6000 ms, the second occurrence is considered a duplicate and not logged. Only 3000 ms have elapsed, not the 6000 ms required to treat the second error as unique.<br><br>The default is 5000 ms.</li>	
+	<li>To change the names of the network streams, modify the <strong>UI Stream Name</strong> or <strong>RT Stream Name</strong> controls. These names affect the endpoint URLs but otherwise have no impact on the application.</li>
+	<li>To change the location of the error log file, set the <strong>RT Error Log</strong> control. The default is <span id="Monospace">c:\logs\logs.txt</span>.</li>
+	<li>To change the maximum size of the error log, change the <strong>Error Log Max Size (bytes)</strong> control. The default is 100000 bytes.</li>
+</ul>
+
+<h2>Additional Resources</h2>
+<p>Refer to the <em>LabVIEW Help</em>, available by selecting <strong>Help&#0187;LabVIEW Help</strong> from LabVIEW, for information about LabVIEW concepts or objects used in this sample project. You can also use the <strong>Context Help</strong> window to learn basic information about LabVIEW objects as you move the cursor over each object. To display the <strong>Context Help</strong> window in LabVIEW, select <strong>Help&#0187;Show Context Help</strong>.</p>
+<p class="Body">Refer to <a href="javascript:WWW(L_walkthrough)">ni.com</a> for a developer walkthrough of the LabVIEW Real-Time sample projects.</p>
+
+<hr>
+<h2>Important Information</h2>
+
+<p class="Body"><strong>Copyright</strong></p>
+
+<p class="Body">&#0169;&nbsp;2014 National Instruments Corporation. All rights reserved.</p>
+
+<p class="Body">Under the copyright laws, this publication may not be reproduced or transmitted in any form, electronic or mechanical, including photocopying, recording, storing in an information retrieval system, or translating, in whole or in part, without the prior written consent of National Instruments Corporation.</p>
+
+<p class="Body">National Instruments respects the intellectual property of others, and we ask our users to do the same. NI software is protected by copyright and other intellectual property laws. Where NI software may be used to reproduce software or other materials belonging to others, you may use NI software only to reproduce materials that you may reproduce in accordance with the terms of any applicable license or other legal restriction.</p>
+
+
+<p class="Body"><strong>End-User License Agreements and Third-Party Legal Notices</strong></p>
+<p>You can find end-user license agreements (EULAs) and third-party legal notices in the following locations after installation:</p>
+<ul class="List-Diamond">
+	<p class="Indent1"></p><li>Notices are located in the <span class="Monospace">&lt;National Instruments&gt;\_Legal Information</span> and <span class="Monospace">&lt;National Instruments&gt;</span> directories.</li> 
+	<p class="Indent2"></p><li>EULAs are located in the <span class="Monospace">&lt;National Instruments&gt;\Shared\MDF\Legal\license</span> directory.</li>
+	<p class="Indent3"></p><li>Review <span class="Monospace">&lt;National Instruments&gt;\_Legal Information.txt</span> for information on including legal information in installers built with NI products.</li>
+</ul>
+
+
+<p class="Body"><strong>Trademarks</strong></p>
+<p class="Body">Refer to the <em><span class="DNL">NI Trademarks and Logo Guidelines</span></em> at <a href="http://digital.ni.com/express.nsf/bycode/rdtrad" target="_blank"><span class="DNL">ni.com/trademarks</span></a> for information on <span class="DNL">National Instruments</span> trademarks. Other product and company names mentioned herein are trademarks or trade names of their respective companies.</p>
+
+
+<p class="Body"><strong>Patents</strong></p>
+<p class="Body">For patents covering the National Instruments products/technology, refer to the appropriate location: <strong>Help»Patents</strong> in your software, the <span id="Monospace">patents.txt</span> file on your media, or the <a href="http://digital.ni.com/express.nsf/bycode/rdlv17" target="_blank">National Instruments Patent Notice</a> at <span id="Monospace">ni.com/patents</span>.</p>
+
+
+</body>
+</html>
