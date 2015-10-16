@@ -1,0 +1,149 @@
+<!DOCTYPE OMNotebook>
+<Notebook>
+  <GroupCell closed="false">
+    <GraphCell style="Graph" closed="false">
+      <Input>loadModelica3D()</Input>
+      <Output>true</Output>
+    </GraphCell>
+    <GraphCell style="Graph" closed="false">
+      <Input>model FourBar2
+  import ControlFunctions.*;
+  parameter Modelica.SIunits.Thickness thick = 0.008;
+  parameter Modelica.SIunits.Diameter diam = 0.075;
+  parameter Modelica.SIunits.RotationalDampingConstant bd = 0.0;
+  parameter Modelica.SIunits.Length len1 = 0.15, len3 = 0.25, len4 = 0.3;
+  parameter Modelica.SIunits.Length len2(fixed = false);
+  parameter Modelica.SIunits.Breadth beamWidth = 0.01;
+  inner Modelica.Mechanics.MultiBody.World world annotation(Placement(visible = true, transformation(origin = {-88, 52}, extent = {{-10, -10}, {10, 10}}, rotation = 0)));
+  Modelica.Mechanics.MultiBody.Parts.Fixed fixed1 annotation(Placement(visible = true, transformation(origin = {-60, 60}, extent = {{-10, -10}, {10, 10}}, rotation = 0)));
+  Modelica.Mechanics.MultiBody.Joints.Revolute revolute1(w(fixed = true, start = 1.5), phi(fixed = true)) annotation(Placement(visible = true, transformation(origin = {-32, 60}, extent = {{-10, -10}, {10, 10}}, rotation = 0)));
+  Modelica.Mechanics.MultiBody.Parts.BodyBox bodyBox1(r = {0, len1, 0}, widthDirection = {1, 0, 0}, length = len1, width = beamWidth) annotation(Placement(visible = true, transformation(origin = {-6, 60}, extent = {{-10, -10}, {10, 10}}, rotation = 0)));
+  Modelica.Mechanics.MultiBody.Joints.Assemblies.JointRRR jointRRR1(rRod1_ia = {len4, len3 - len1, 0}, rRod2_ib = {0, len3, 0}) annotation(Placement(visible = true, transformation(origin = {32, 60}, extent = {{-20, -20}, {20, 20}}, rotation = 0)));
+  Modelica.Mechanics.MultiBody.Parts.Fixed fixed2(r = {len4, 0, 0}) annotation(Placement(visible = true, transformation(origin = {76, 60}, extent = {{-10, -10}, {10, 10}}, rotation = 180)));
+initial equation
+  len2 = sqrt(len4 ^ 2 + (len3 - len1) ^ 2);
+equation
+  connect(jointRRR1.frame_b, fixed2.frame_b) annotation(Line(points = {{52, 60}, {66, 60}, {66, 60}, {66, 60}}, color = {95, 95, 95}));
+  connect(bodyBox1.frame_b, jointRRR1.frame_a) annotation(Line(points = {{4, 60}, {12, 60}, {12, 58}, {12, 58}}, color = {95, 95, 95}));
+  connect(revolute1.frame_b, bodyBox1.frame_a) annotation(Line(points = {{-22, 60}, {-16, 60}, {-16, 60}, {-16, 60}, {-16, 60}}, color = {95, 95, 95}));
+  connect(fixed1.frame_b, revolute1.frame_a) annotation(Line(points = {{-50, 60}, {-42, 60}, {-42, 60}, {-42, 60}}, color = {95, 95, 95}));
+  annotation(Icon(coordinateSystem(extent = {{-100, -100}, {100, 100}}, preserveAspectRatio = true, initialScale = 0.1, grid = {2, 2})), Diagram(coordinateSystem(extent = {{-100, -100}, {100, 100}}, preserveAspectRatio = true, initialScale = 0.1, grid = {2, 2})));
+end FourBar2;</Input>
+      <Output>{FourBar2}</Output>
+    </GraphCell>
+    <GraphCell style="Graph" closed="false">
+      <Input>model Visualize_MyModel
+inner ModelicaServices.Modelica3D.Controller m3d_control;
+extends FourBar2;
+end Visualize_MyModel;
+</Input>
+      <Output>{Visualize_MyModel}</Output>
+    </GraphCell>
+    <GraphCell style="Graph" closed="false">
+      <Input>simulate(Visualize_MyModel,startTime=0,endTime=10)</Input>
+      <Output>record SimulationResult
+    resultFile = "Visualize_MyModel_res.mat",
+    messages = "stdout            | info    | SHAPE  cylinder
+stdout            | info    | length = 0.053033
+stdout            | info    | width = 0.0125
+stdout            | info    | height = 0.0125
+stdout            | info    | SHAPE  cylinder
+stdout            | info    | length = 0.053033
+stdout            | info    | width = 0.0125
+stdout            | info    | height = 0.0125
+stdout            | info    | SHAPE  cylinder
+stdout            | info    | length = 0.0676041
+stdout            | info    | width = 0.0125
+stdout            | info    | height = 0.0125
+stdout            | info    | SHAPE  cylinder
+stdout            | info    | length = 0.033802
+stdout            | info    | width = 0.0125
+stdout            | info    | height = 0.0125
+stdout            | info    | SHAPE  cylinder
+stdout            | info    | length = 0.0375
+stdout            | info    | width = 0.0125
+stdout            | info    | height = 0.0125
+stdout            | info    | SHAPE  cylinder
+stdout            | info    | length = 0.0375
+stdout            | info    | width = 0.0125
+stdout            | info    | height = 0.0125
+stdout            | info    | SHAPE  cylinder
+stdout            | info    | length = 0.053033
+stdout            | info    | width = 0.0125
+stdout            | info    | height = 0.0125
+stdout            | info    | SHAPE  cylinder
+stdout            | info    | length = 0.4375
+stdout            | info    | width = 0.0125
+stdout            | info    | height = 0.0125
+stdout            | info    | SHAPE  cone
+stdout            | info    | length = 0.0625
+stdout            | info    | width = 0.0375
+stdout            | info    | height = 0.0375
+stdout            | info    | SHAPE  cylinder
+stdout            | info    | length = 0.4375
+stdout            | info    | width = 0.0125
+stdout            | info    | height = 0.0125
+stdout            | info    | SHAPE  cone
+stdout            | info    | length = 0.0625
+stdout            | info    | width = 0.0375
+stdout            | info    | height = 0.0375
+stdout            | info    | SHAPE  cylinder
+stdout            | info    | length = 0.4375
+stdout            | info    | width = 0.0125
+stdout            | info    | height = 0.0125
+stdout            | info    | SHAPE  cone
+stdout            | info    | length = 0.0625
+stdout            | info    | width = 0.0375
+stdout            | info    | height = 0.0375
+stdout            | info    | SHAPE  cylinder
+stdout            | info    | length = 0.2
+stdout            | info    | width = 0.0125
+stdout            | info    | height = 0.0125
+stdout            | info    | SHAPE  cone
+stdout            | info    | length = 0.05
+stdout            | info    | width = 0.0375
+stdout            | info    | height = 0.0375
+stdout            | info    | SHAPE  cylinder
+stdout            | info    | length = 0
+stdout            | info    | width = 0
+stdout            | info    | height = 0
+stdout            | info    | SHAPE  cylinder
+stdout            | info    | length = 0.1
+stdout            | info    | width = 0.05
+stdout            | info    | height = 0.05
+stdout            | info    | SHAPE  cylinder
+stdout            | info    | length = 0.1
+stdout            | info    | width = 0.05
+stdout            | info    | height = 0.05
+stdout            | info    | SHAPE  cylinder
+stdout            | info    | length = 0.316228
+stdout            | info    | width = 0.055
+stdout            | info    | height = 0.055
+stdout            | info    | SHAPE  cylinder
+stdout            | info    | length = 0.25
+stdout            | info    | width = 0.055
+stdout            | info    | height = 0.055
+stdout            | info    | SHAPE  cylinder
+stdout            | info    | length = 0.3
+stdout            | info    | width = 0.015
+stdout            | info    | height = 0.015
+stdout            | info    | SHAPE  box
+stdout            | info    | length = 0.15
+stdout            | info    | width = 0.01
+stdout            | info    | height = 0.01
+stdout            | info    | SHAPE  cylinder
+stdout            | info    | length = 0.1
+stdout            | info    | width = 0.05
+stdout            | info    | height = 0.05
+stdout            | info    | SHAPE  cylinder
+stdout            | info    | length = 0.1
+stdout            | info    | width = 0.05
+stdout            | info    | height = 0.05
+"
+end SimulationResult;
+OMC-ERROR: 
+"Warning: The initial conditions are not fully specified. Use +d=initialization for more information.
+"</Output>
+    </GraphCell>
+  </GroupCell>
+</Notebook>

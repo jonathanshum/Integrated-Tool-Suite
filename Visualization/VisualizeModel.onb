@@ -1,0 +1,33 @@
+<!DOCTYPE OMNotebook>
+<Notebook>
+  <GroupCell closed="false">
+    <GraphCell style="Graph" closed="false">
+      <Input>loadModelica3D()</Input>
+      <Output>true</Output>
+    </GraphCell>
+    <GraphCell style="Graph" closed="false">
+      <Input></Input>
+      <Output>{}</Output>
+    </GraphCell>
+    <GraphCell style="Graph" closed="false">
+      <Input>model Visualize_MyModel
+inner ModelicaServices.Modelica3D.Controller m3d_control;
+extends MyModel;
+end Visualize_MyModel;
+</Input>
+      <Output>{Visualize_MyModel}</Output>
+    </GraphCell>
+    <GraphCell style="Graph" closed="false">
+      <Input>simulate(Visualize_MyModel,startTime=0,endTime=10)</Input>
+      <Output>record SimulationResult
+    resultFile = "",
+    messages = "Failed to build model: Visualize_MyModel"
+end SimulationResult;
+OMC-ERROR: 
+"[&lt;interactive>:3:1-3:16:writable] Error: Base class MyModel not found in scope Visualize_MyModel.
+[&lt;interactive>:2:1-2:57:writable] Error: Class ModelicaServices.Modelica3D.Controller not found in scope Visualize_MyModel.
+Error: Error occurred while flattening model Visualize_MyModel
+"</Output>
+    </GraphCell>
+  </GroupCell>
+</Notebook>

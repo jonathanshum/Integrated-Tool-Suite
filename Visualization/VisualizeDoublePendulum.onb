@@ -1,0 +1,104 @@
+<!DOCTYPE OMNotebook>
+<Notebook>
+  <GroupCell closed="false">
+    <GraphCell style="Graph" closed="false">
+      <Input>loadModelica3D()</Input>
+      <Output>true</Output>
+    </GraphCell>
+    <GraphCell style="Graph" closed="false">
+      <Input>model DoublePendulum
+extends Modelica.Mechanics.MultiBody.Examples.Elementary.DoublePendulum;
+inner ModelicaServices.Modelica3D.Controller m3d_control;
+end DoublePendulum;
+</Input>
+      <Output>{DoublePendulum}</Output>
+    </GraphCell>
+    <GraphCell style="Graph" closed="false">
+      <Input>simulate(DoublePendulum)
+</Input>
+      <Output>record SimulationResult
+    resultFile = "DoublePendulum_res.mat",
+    messages = "stdout            | info    | SHAPE  cylinder
+stdout            | info    | length = 0.053033
+stdout            | info    | width = 0.0125
+stdout            | info    | height = 0.0125
+stdout            | info    | SHAPE  cylinder
+stdout            | info    | length = 0.053033
+stdout            | info    | width = 0.0125
+stdout            | info    | height = 0.0125
+stdout            | info    | SHAPE  cylinder
+stdout            | info    | length = 0.0676041
+stdout            | info    | width = 0.0125
+stdout            | info    | height = 0.0125
+stdout            | info    | SHAPE  cylinder
+stdout            | info    | length = 0.033802
+stdout            | info    | width = 0.0125
+stdout            | info    | height = 0.0125
+stdout            | info    | SHAPE  cylinder
+stdout            | info    | length = 0.0375
+stdout            | info    | width = 0.0125
+stdout            | info    | height = 0.0125
+stdout            | info    | SHAPE  cylinder
+stdout            | info    | length = 0.0375
+stdout            | info    | width = 0.0125
+stdout            | info    | height = 0.0125
+stdout            | info    | SHAPE  cylinder
+stdout            | info    | length = 0.053033
+stdout            | info    | width = 0.0125
+stdout            | info    | height = 0.0125
+stdout            | info    | SHAPE  cylinder
+stdout            | info    | length = 0.4375
+stdout            | info    | width = 0.0125
+stdout            | info    | height = 0.0125
+stdout            | info    | SHAPE  cone
+stdout            | info    | length = 0.0625
+stdout            | info    | width = 0.0375
+stdout            | info    | height = 0.0375
+stdout            | info    | SHAPE  cylinder
+stdout            | info    | length = 0.4375
+stdout            | info    | width = 0.0125
+stdout            | info    | height = 0.0125
+stdout            | info    | SHAPE  cone
+stdout            | info    | length = 0.0625
+stdout            | info    | width = 0.0375
+stdout            | info    | height = 0.0375
+stdout            | info    | SHAPE  cylinder
+stdout            | info    | length = 0.4375
+stdout            | info    | width = 0.0125
+stdout            | info    | height = 0.0125
+stdout            | info    | SHAPE  cone
+stdout            | info    | length = 0.0625
+stdout            | info    | width = 0.0375
+stdout            | info    | height = 0.0375
+stdout            | info    | SHAPE  cylinder
+stdout            | info    | length = 0.2
+stdout            | info    | width = 0.0125
+stdout            | info    | height = 0.0125
+stdout            | info    | SHAPE  cone
+stdout            | info    | length = 0.05
+stdout            | info    | width = 0.0375
+stdout            | info    | height = 0.0375
+stdout            | info    | SHAPE  cylinder
+stdout            | info    | length = 0.1
+stdout            | info    | width = 0.05
+stdout            | info    | height = 0.05
+stdout            | info    | SHAPE  box
+stdout            | info    | length = 0.5
+stdout            | info    | width = 0.06
+stdout            | info    | height = 0.06
+stdout            | info    | SHAPE  cylinder
+stdout            | info    | length = 0.1
+stdout            | info    | width = 0.05
+stdout            | info    | height = 0.05
+stdout            | info    | SHAPE  box
+stdout            | info    | length = 0.5
+stdout            | info    | width = 0.06
+stdout            | info    | height = 0.06
+"
+end SimulationResult;
+OMC-ERROR: 
+"Warning: The initial conditions are not fully specified. Use +d=initialization for more information.
+"</Output>
+    </GraphCell>
+  </GroupCell>
+</Notebook>

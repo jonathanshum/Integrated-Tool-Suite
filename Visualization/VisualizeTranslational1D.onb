@@ -1,0 +1,116 @@
+<!DOCTYPE OMNotebook>
+<Notebook>
+  <GroupCell closed="false">
+    <GraphCell style="Graph" closed="false">
+      <Input>loadModelica3D()</Input>
+      <Output>true</Output>
+    </GraphCell>
+    <GraphCell style="Graph" closed="false">
+      <Input>model Translational1D
+  inner Modelica.Mechanics.MultiBody.World world annotation(Placement(visible = true, transformation(origin = {-38, 0}, extent = {{-10, -10}, {10, 10}}, rotation = 0)));
+  Modelica.Mechanics.MultiBody.Joints.Prismatic prismatic1(useAxisFlange = true) annotation(Placement(visible = true, transformation(origin = {0, 0}, extent = {{-10, -10}, {10, 10}}, rotation = 0)));
+  Modelica.Mechanics.MultiBody.Parts.Body body1(r_CM = {1, 1, 1}, m = 1) annotation(Placement(visible = true, transformation(origin = {38, 0}, extent = {{-10, -10}, {10, 10}}, rotation = 0)));
+  Modelica.Mechanics.Translational.Sources.Force force1(useSupport = true) annotation(Placement(visible = true, transformation(origin = {-4, 50}, extent = {{-10, -10}, {10, 10}}, rotation = 0)));
+  Modelica.Blocks.Sources.Constant const(k = 1) annotation(Placement(visible = true, transformation(origin = {-52, 50}, extent = {{-10, -10}, {10, 10}}, rotation = 0)));
+equation
+  connect(const.y, force1.f) annotation(Line(points = {{-41, 50}, {-16, 50}, {-16, 48}, {-16, 48}}, color = {0, 0, 127}));
+  connect(force1.flange, prismatic1.axis) annotation(Line(points = {{6, 50}, {8, 50}, {8, 6}, {8, 6}}, color = {0, 127, 0}));
+  connect(force1.support, prismatic1.support) annotation(Line(points = {{-4, 40}, {-4, 40}, {-4, 6}, {-4, 6}}, color = {0, 127, 0}));
+  connect(prismatic1.frame_b, body1.frame_a) annotation(Line(points = {{10, 0}, {28, 0}}, color = {95, 95, 95}));
+  connect(world.frame_b, prismatic1.frame_a) annotation(Line(points = {{-28, 0}, {-10, 0}}, color = {95, 95, 95}));
+  annotation(Icon(coordinateSystem(extent = {{-100, -100}, {100, 100}}, preserveAspectRatio = true, initialScale = 0.1, grid = {2, 2})), Diagram(coordinateSystem(extent = {{-100, -100}, {100, 100}}, preserveAspectRatio = true, initialScale = 0.1, grid = {2, 2})));
+end Translational1D;</Input>
+      <Output>{Translational1D}</Output>
+    </GraphCell>
+    <GraphCell style="Graph" closed="false">
+      <Input>model Visualize_MyModel
+inner ModelicaServices.Modelica3D.Controller m3d_control;
+extends Translational1D;
+end Visualize_MyModel;
+</Input>
+      <Output>{Visualize_MyModel}</Output>
+    </GraphCell>
+    <GraphCell style="Graph" closed="false">
+      <Input>simulate(Visualize_MyModel,startTime=0,endTime=10)</Input>
+      <Output>record SimulationResult
+    resultFile = "Visualize_MyModel_res.mat",
+    messages = "stdout            | info    | SHAPE  cylinder
+stdout            | info    | length = 0.053033
+stdout            | info    | width = 0.0125
+stdout            | info    | height = 0.0125
+stdout            | info    | SHAPE  cylinder
+stdout            | info    | length = 0.053033
+stdout            | info    | width = 0.0125
+stdout            | info    | height = 0.0125
+stdout            | info    | SHAPE  cylinder
+stdout            | info    | length = 0.0676041
+stdout            | info    | width = 0.0125
+stdout            | info    | height = 0.0125
+stdout            | info    | SHAPE  cylinder
+stdout            | info    | length = 0.033802
+stdout            | info    | width = 0.0125
+stdout            | info    | height = 0.0125
+stdout            | info    | SHAPE  cylinder
+stdout            | info    | length = 0.0375
+stdout            | info    | width = 0.0125
+stdout            | info    | height = 0.0125
+stdout            | info    | SHAPE  cylinder
+stdout            | info    | length = 0.0375
+stdout            | info    | width = 0.0125
+stdout            | info    | height = 0.0125
+stdout            | info    | SHAPE  cylinder
+stdout            | info    | length = 0.053033
+stdout            | info    | width = 0.0125
+stdout            | info    | height = 0.0125
+stdout            | info    | SHAPE  cylinder
+stdout            | info    | length = 0.4375
+stdout            | info    | width = 0.0125
+stdout            | info    | height = 0.0125
+stdout            | info    | SHAPE  cone
+stdout            | info    | length = 0.0625
+stdout            | info    | width = 0.0375
+stdout            | info    | height = 0.0375
+stdout            | info    | SHAPE  cylinder
+stdout            | info    | length = 0.4375
+stdout            | info    | width = 0.0125
+stdout            | info    | height = 0.0125
+stdout            | info    | SHAPE  cone
+stdout            | info    | length = 0.0625
+stdout            | info    | width = 0.0375
+stdout            | info    | height = 0.0375
+stdout            | info    | SHAPE  cylinder
+stdout            | info    | length = 0.4375
+stdout            | info    | width = 0.0125
+stdout            | info    | height = 0.0125
+stdout            | info    | SHAPE  cone
+stdout            | info    | length = 0.0625
+stdout            | info    | width = 0.0375
+stdout            | info    | height = 0.0375
+stdout            | info    | SHAPE  cylinder
+stdout            | info    | length = 0.2
+stdout            | info    | width = 0.0125
+stdout            | info    | height = 0.0125
+stdout            | info    | SHAPE  cone
+stdout            | info    | length = 0.05
+stdout            | info    | width = 0.0375
+stdout            | info    | height = 0.0375
+stdout            | info    | SHAPE  sphere
+stdout            | info    | length = 0.111111
+stdout            | info    | width = 0.111111
+stdout            | info    | height = 0.111111
+stdout            | info    | SHAPE  cylinder
+stdout            | info    | length = 1.73205
+stdout            | info    | width = 0.037037
+stdout            | info    | height = 0.037037
+stdout            | info    | SHAPE  box
+stdout            | info    | length = 1e-006
+stdout            | info    | width = 0.05
+stdout            | info    | height = 0.05
+"
+end SimulationResult;
+OMC-ERROR: 
+"Warning: The initial conditions are not fully specified. Use +d=initialization for more information.
+"</Output>
+    </GraphCell>
+  </GroupCell>
+</Notebook>
