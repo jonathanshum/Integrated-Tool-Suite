@@ -47,3 +47,6 @@ To view specific files, please download following software. Autodesk Inventor an
     * [Control Design and Simulation Module](http://www.ni.com/labview/cd-sim/)
     * [OpenG LabVIEW ZIP Library](http://sine.ni.com/nips/cds/view/p/lang/en/nid/209027)
     * In EMI_FMI Configuration.ini configure UseDefaultUnzipMethod = FALSE
+* [Python 2.7.3](http://www.python.org/download/releases/2.7.3/)
+	* [Python PyGTK](http://ftp.gnome.org/pub/GNOME/binaries/win32/pygtk/2.24/)
+	* Python and PyGTK are required for Modelica3D Visualization
