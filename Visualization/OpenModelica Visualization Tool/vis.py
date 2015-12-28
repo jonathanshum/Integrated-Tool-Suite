@@ -1,6 +1,7 @@
 import wx
 import os
 import subprocess
+from ConfigParser import SafeConfigParser, NoSectionError, NoOptionError
 
 # OpenModelica Directory
 modelicaLocation = 'C:\OpenModelica1.9.4-dev'
@@ -14,9 +15,31 @@ omcLocation = modelicaLocation + R'\bin\omc.exe'
 # Location of Modelica Model
 modelLocation = ' '
 
+# Location of Dependencies
+dependenciesLocation = ' '
+
 # Location of Modelica Script File
 scriptDirectory = dbusDirectory + '\VisualizationScripts'
 scriptLocation = scriptDirectory +'\VisualizationScript.mos'
+
+# Runtime Defaults
+startTime = "0"
+endTime = "10"
+
+config = SafeConfigParser()
+config.read('config.ini')
+try:
+    savedModelicaLocation = config.get('main','modelicaLocation')
+    modelicaLocation = savedModelicaLocation
+    modelLocation = config.get('main','modelLocation')
+    dependenciesLocation = config.get('main','dependenciesLocation')
+    startTime = config.get('main','startTime')
+    endTime = config.get('main','endTime')
+except NoSectionError as e:
+    config.add_section('main')
+except:
+    print "New Session" 
+
 
 class Frame(wx.Frame):
     def __init__(self, parent, title):
@@ -33,15 +56,20 @@ class Frame(wx.Frame):
 
         inputTwoIco = wx.StaticBitmap(self.panel, wx.ID_ANY, bmp)
         labelTwo = wx.StaticText(self.panel, wx.ID_ANY, 'Modelica Model', size=(75, -1))
-        self.inputTxtTwo = wx.TextCtrl(self.panel, wx.ID_ANY, '.mo', size=(200, -1))
+        self.inputTxtTwo = wx.TextCtrl(self.panel, wx.ID_ANY, modelLocation, size=(200, -1))
         inputTwoIco.Bind(wx.EVT_LEFT_DOWN, self.GetFile)
 
+        inputFiveIco = wx.StaticBitmap(self.panel, wx.ID_ANY, bmp)
+        labelFive = wx.StaticText(self.panel, wx.ID_ANY, 'Dependencies', size=(75, -1))
+        self.inputTxtFive = wx.TextCtrl(self.panel, wx.ID_ANY, dependenciesLocation, size=(200, -1))
+        inputFiveIco.Bind(wx.EVT_LEFT_DOWN, self.GetFiles)
+
         labelThree = wx.StaticText(self.panel, wx.ID_ANY, 'Start Time (s)', size=(75, -1))
-        self.inputTxtThree = wx.TextCtrl(self.panel, wx.ID_ANY, '0', size=(225, -1))
+        self.inputTxtThree = wx.TextCtrl(self.panel, wx.ID_ANY, startTime, size=(225, -1))
         self.inputTxtThree.Bind(wx.EVT_CHAR, self.onChar) 
 
         labelFour = wx.StaticText(self.panel, wx.ID_ANY, 'End Time (s)', size=(75, -1))
-        self.inputTxtFour = wx.TextCtrl(self.panel, wx.ID_ANY, '10', size=(225, -1))
+        self.inputTxtFour = wx.TextCtrl(self.panel, wx.ID_ANY, endTime, size=(225, -1))
         self.inputTxtFour.Bind(wx.EVT_CHAR, self.onChar) 
 
         okBtn = wx.Button(self.panel, wx.ID_ANY, 'Run')
@@ -50,6 +78,7 @@ class Frame(wx.Frame):
         topSizer        = wx.BoxSizer(wx.VERTICAL)
         inputOneSizer   = wx.BoxSizer(wx.HORIZONTAL)
         inputTwoSizer   = wx.BoxSizer(wx.HORIZONTAL)
+        inputFiveSizer  = wx.BoxSizer(wx.HORIZONTAL)
         inputThreeSizer = wx.BoxSizer(wx.HORIZONTAL)
         inputFourSizer  = wx.BoxSizer(wx.HORIZONTAL)
         btnSizer        = wx.BoxSizer(wx.HORIZONTAL)
@@ -62,6 +91,10 @@ class Frame(wx.Frame):
         inputTwoSizer.Add(self.inputTxtTwo, 1, wx.ALL|wx.EXPAND, 5)
         inputTwoSizer.Add(inputTwoIco, 0, wx.ALL, 5)
 
+        inputFiveSizer.Add(labelFive, 0, wx.ALL, 5)
+        inputFiveSizer.Add(self.inputTxtFive, 1, wx.ALL|wx.EXPAND, 5)
+        inputFiveSizer.Add(inputFiveIco, 0, wx.ALL, 5)
+
         inputThreeSizer.Add(labelThree, 0, wx.ALL, 5)
         inputThreeSizer.Add(self.inputTxtThree, 1, wx.ALL|wx.EXPAND, 5)
 
@@ -72,6 +105,7 @@ class Frame(wx.Frame):
 
         topSizer.Add(inputOneSizer, 0, wx.ALL|wx.EXPAND, 5)
         topSizer.Add(inputTwoSizer, 0, wx.ALL|wx.EXPAND, 5)
+        topSizer.Add(inputFiveSizer, 0, wx.ALL|wx.EXPAND, 5)
         topSizer.Add(inputThreeSizer, 0, wx.ALL|wx.EXPAND, 5)
         topSizer.Add(inputFourSizer, 0, wx.ALL|wx.EXPAND, 5)
         topSizer.Add(btnSizer, 0, wx.ALL|wx.CENTER, 5)
@@ -96,18 +130,38 @@ class Frame(wx.Frame):
         self.inputTxtTwo.SetValue(dlg.GetPath())
         dlg.Destroy()
 
+    def GetFiles(self, e):
+    	dlg = wx.FileDialog(self, "Open .Mo file", "", "",
+                                       "Mo files (*.mo)|*.mo", wx.FD_OPEN | wx.FD_FILE_MUST_EXIST | wx.FD_MULTIPLE)
+        dlg.ShowModal()
+        self.inputTxtFive.SetValue(';'.join(dlg.GetPaths()))
+        dlg.Destroy()
+
     def Run(self,e):
         global modelicaLocation
         modelicaLocation = self.inputTxtOne.GetValue()
         global modelLocation
         modelLocation = self.inputTxtTwo.GetValue()
+        global dependenciesLocation
+        dependenciesLocation = self.inputTxtFive.GetValue()
         self.UpdateLocations()
         activateDBUS = "python dbus-server.py"
         process1 = subprocess.Popen(activateDBUS.split(), cwd=dbusDirectory)
-        self.createMOS(self.inputTxtThree.GetValue(), self.inputTxtFour.GetValue())
+        global startTime 
+        startTime = self.inputTxtThree.GetValue()
+        global endTime
+        endTime = self.inputTxtFour.GetValue()
+        self.createMOS()
         process2 = subprocess.call([omcLocation, scriptLocation], shell=True)
+        with open('config.ini', 'w') as f:
+            config.set('main', 'modelicaLocation', modelicaLocation)
+            config.set('main', 'modelLocation', modelLocation)
+            config.set('main', 'dependenciesLocation', dependenciesLocation)
+            config.set('main', 'startTime', startTime)
+            config.set('main', 'endTime', endTime)
+            config.write(f)
         
-    def createMOS(self, startTime, endTime):
+    def createMOS(self):
         mo_file = open(modelLocation, 'r')
         model_name = mo_file.read().split(' ')[1]
         print '\nVisualizing ' + model_name
@@ -116,9 +170,21 @@ class Frame(wx.Frame):
                 raise ValueError
         except ValueError:
             print "Invalid Start Time and/or End Time"
+            global startTime
             startTime = "0"
+            global endTime
             endTime = "10"
-        mos_code = 'loadModelica3D();\ngetErrorString();\nloadFile("' + modelLocation.replace('\\','\\\\') + '");\ngetErrorString();\nloadString("model Visualize_MyModel inner ModelicaServices.Modelica3D.Controller m3d_control; extends ' + model_name + '; end Visualize_MyModel;");\ngetErrorString();\nsimulate(Visualize_MyModel, numberOfIntervals=1000, startTime=' + startTime + ', stopTime=' + endTime + ');\ngetErrorString();'
+
+        loadString = ''
+        if (dependenciesLocation != ' '):
+        	locations = dependenciesLocation.split(';')
+        	for location in locations:
+        		loadString = loadString + ';\nloadFile("'
+        		loadString = loadString + location
+        		loadString = loadString + '")'
+        loadString = loadString.replace('\\','\\\\')
+
+        mos_code = 'loadModelica3D();\ngetErrorString()' + loadString + ';\nloadFile("' + modelLocation.replace('\\','\\\\') + '")' + ';\ngetErrorString();\nloadString("model Visualize_MyModel inner ModelicaServices.Modelica3D.Controller m3d_control; extends ' + model_name + '; end Visualize_MyModel;");\ngetErrorString();\nsimulate(Visualize_MyModel, numberOfIntervals=1000, startTime=' + startTime + ', stopTime=' + endTime + ');\ngetErrorString();'
         mos_file = open(scriptLocation, 'w')
         mos_file.write(mos_code)
     
