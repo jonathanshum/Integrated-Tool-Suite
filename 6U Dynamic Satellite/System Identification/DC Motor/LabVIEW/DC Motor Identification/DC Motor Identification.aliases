@@ -1,0 +1,6 @@
+[My Computer]
+My Computer = "172.16.0.10"
+
+[StarTracker]
+StarTracker = "172.16.0.1"
+
