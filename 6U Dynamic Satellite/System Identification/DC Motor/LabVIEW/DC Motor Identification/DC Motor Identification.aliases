@@ -1,5 +1,5 @@
 [My Computer]
-My Computer = "172.16.0.10"
+My Computer = "127.0.0.1"
 
 [StarTracker]
 StarTracker = "172.16.0.1"

@@ -1,0 +1,12 @@
+Key specs at 6 V 34 RPM and 250 mA free-run, 200 oz-in (14.5 kg-cm) and 2.4 A stall.
+
+MATLAB script to plot motor performance curves for Pololu brushed DC gearmotors:
+
+Resistance of motor = 0.002500
+Peak Output Power 1700.000000 @ Current = 1325.000000, Torque = 100.000000
+Peak Efficiency 0.269892 @ Current = 776.750000, Torque = 49.000000
+
+The electromotive force constant (Ke) can be approximated by dividing the rated voltage by the free-run speed (at the rated voltage). To approximate the motor torque constant (Kt), you can divide the stall torque by the stall current.
+
+Ke = 6/34
+Kt = 200/2.4

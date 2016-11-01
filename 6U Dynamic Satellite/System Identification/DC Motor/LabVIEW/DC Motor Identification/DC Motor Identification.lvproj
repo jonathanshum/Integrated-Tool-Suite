@@ -116,6 +116,7 @@ AddOutputFilter chunkFilter
 		<Item Name="Flywheels.vi" Type="VI" URL="../Flywheels.vi"/>
 		<Item Name="IMUdata.vi" Type="VI" URL="../IMUdata.vi"/>
 		<Item Name="Main.vi" Type="VI" URL="../Main.vi"/>
+		<Item Name="RampTest.vi" Type="VI" URL="../RampTest.vi"/>
 		<Item Name="SpinningBooms.vi" Type="VI" URL="../SpinningBooms.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
